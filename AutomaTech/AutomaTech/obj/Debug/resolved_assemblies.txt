@@ -1,0 +1,6 @@
+C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\assemblies\AutomaTech.dll
+C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\assemblies\mscorlib.dll
+C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Core.dll
+C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\assemblies\System.dll
+C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Xml.dll
