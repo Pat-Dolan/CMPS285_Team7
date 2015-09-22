@@ -16,27 +16,32 @@ namespace AutomaTech
 	[Activity (Label = "LoginActivity", MainLauncher = true, Icon = "@drawable/icon")]			
 	public class LoginActivity : Activity
 	{
+		Button login;
+		Button register;
+
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
 			// Create your application here
 			SetContentView(Resource.Layout.LoginLayout);
 
-			Button login = FindViewById<Button> (Resource.Id.btnLogin);
+			login = FindViewById<Button> (Resource.Id.btnLogin);
 			login.Click += Login_Click;
 
-			Button register = FindViewById<Button> (Resource.Id.btnRegisterScreen);
+			register = FindViewById<Button> (Resource.Id.btnRegisterScreen);
 			register.Click += Register_Click;
 		}
 
 		void Register_Click (object sender, EventArgs e)
 		{
+			
 			StartActivity (typeof(RegisterMainActivity));
 		}
 
 		void Login_Click (object sender, EventArgs e)
 		{
+			
 			StartActivity(typeof(MainActivity));
 		}
 	}

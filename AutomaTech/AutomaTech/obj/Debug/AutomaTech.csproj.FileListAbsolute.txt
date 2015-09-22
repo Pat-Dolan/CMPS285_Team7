@@ -22,3 +22,5 @@ C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\res\layout\regis
 C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\res\layout\registerconfirmationlayout.xml
 C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\res\layout\registerfinalizelayout.xml
 C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\res\layout\myaccountmainlayout.xml
+C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\res\layout\accountmainlayout.xml
+C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech\obj\Debug\res\layout\dbaccesslayout.xml

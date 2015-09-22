@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -54,11 +55,18 @@
     <Compile Include="Activities\RegisterFinalizeActivity.cs" />
     <Compile Include="Activities\RegisterMainActivity.cs" />
     <Compile Include="Activities\TourMainActivity.cs" />
+    <Compile Include="ORM\DBRepository.cs" />
+    <Compile Include="ORM\UserInfo.cs" />
+    <Compile Include="ORM\SQLite.cs" />
+    <Compile Include="ORM\SQLiteAsync.cs" />
+    <Compile Include="Activities\AccountMainActivity.cs" />
+    <Compile Include="Activities\DBAccessActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -76,9 +84,12 @@
     <AndroidResource Include="Resources\layout\RegisterConfirmationLayout.axml" />
     <AndroidResource Include="Resources\layout\RegisterFinalizeLayout.axml" />
     <AndroidResource Include="Resources\layout\MyAccountMainLayout.axml" />
+    <AndroidResource Include="Resources\layout\AccountMainLayout.axml" />
+    <AndroidResource Include="Resources\layout\DBAccessLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Activities\" />
+    <Folder Include="ORM\" />
   </ItemGroup>
 </Project>

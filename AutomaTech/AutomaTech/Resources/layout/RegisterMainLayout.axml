@@ -71,6 +71,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtEmail" />
+    <TextView
+        android:text="Profile Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtPName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rGroupAccess">
+        <RadioButton
+            android:checked="true"
+            android:text="Manager"
+            android:id="@+id/rBtnManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Artist"
+            android:id="@+id/rBtnArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
     <Button
         android:text="Register"
         android:layout_width="match_parent"

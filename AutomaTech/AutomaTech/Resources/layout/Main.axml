@@ -9,6 +9,16 @@
         android:layout_height="wrap_content"
         android:text="Login (Temp Button)" />
     <Button
+        android:text="SQLite Database Access (temp)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDBAccess" />
+    <Button
+        android:text="My Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAccount" />
+    <Button
         android:text="Event Manager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

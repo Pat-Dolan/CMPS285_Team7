@@ -24,11 +24,24 @@ namespace AutomaTech
 			SetContentView(Resource.Layout.RegisterFinalizeLayout);
 			Button finishReg = FindViewById<Button> (Resource.Id.btnFinalize);
 			finishReg.Click += FinishReg_Click;
+
+			//RadioGroup rBtnGroup = FindViewById<RadioGroup> (Resource.Id.rGroupAccess);
+
+		
+			//rBtnGroup.AddView (accessM);
+			//rBtnGroup.AddView (accessA);
+			//rBtnGroup.Click += RBtnGroup_Click;
+
+		}
+
+		void RBtnGroup_Click (object sender, EventArgs e)
+		{
+			
 		}
 
 		void FinishReg_Click (object sender, EventArgs e)
 		{
-			StartActivity (typeof(LoginActivity));
+			StartActivity(typeof(LoginActivity));
 		}
 	}
 }

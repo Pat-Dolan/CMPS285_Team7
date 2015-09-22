@@ -32,8 +32,22 @@ namespace AutomaTech
 			Button tourScreen = FindViewById<Button> (Resource.Id.btnTourScreen);
 			tourScreen.Click += TourScreen_Click;
 
+			Button myAccount = FindViewById<Button> (Resource.Id.btnAccount);
+			myAccount.Click += MyAccount_Click;
 
+			Button DBAccess = FindViewById<Button> (Resource.Id.btnDBAccess);
+			DBAccess.Click += DBAccess_Click;
 		
+		}
+
+		void DBAccess_Click (object sender, EventArgs e)
+		{
+			StartActivity (typeof(DBAccessActivity));
+		}
+
+		void MyAccount_Click (object sender, EventArgs e)
+		{
+			StartActivity (typeof(AccountMainActivity));
 		}
 
 		void TourScreen_Click (object sender, EventArgs e)

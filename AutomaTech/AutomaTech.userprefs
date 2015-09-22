@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus10KitKat" />
   <MonoDevelop.Ide.Workbench ActiveDocument="AutomaTech\Activities\MainActivity.cs">
     <Files>
-      <File FileName="AutomaTech\Resources\AboutResources.txt" Line="22" Column="96" />
-      <File FileName="AutomaTech\Activities\MainActivity.cs" Line="14" Column="3" />
+      <File FileName="AutomaTech\Activities\MainActivity.cs" Line="28" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
