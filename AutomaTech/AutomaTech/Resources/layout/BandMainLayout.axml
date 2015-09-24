@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnNewBand" />
     <Button
-        android:text="Udpate Band Information"
+        android:text="Update Band Information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnUpdateBand" />
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnRemoveBand" />
     <Button
-        android:text="View Band(s)"
+        android:text="View Band"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnGetBands" />
