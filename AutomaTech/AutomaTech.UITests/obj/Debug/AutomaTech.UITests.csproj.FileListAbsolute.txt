@@ -16,3 +16,14 @@ C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\Xam
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.csprojResolveAssemblyReference.cache
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.dll
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.pdb
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.csprojResolveAssemblyReference.cache
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\AutomaTech.UITests.dll
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\AutomaTech.UITests.pdb
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\mscorlib.dll
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\normidna.nlp
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\normnfc.nlp
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\normnfd.nlp
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\normnfkc.nlp
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\normnfkd.nlp
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.dll
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.pdb

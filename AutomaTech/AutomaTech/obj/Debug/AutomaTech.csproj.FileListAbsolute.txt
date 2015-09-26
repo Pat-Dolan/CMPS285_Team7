@@ -50,3 +50,29 @@ C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\dbaccesslayout.xml
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\R.cs.flag
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\uploadflags.txt
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\bin\Debug\AutomaTech.dll
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\bin\Debug\AutomaTech.pdb
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\bin\Debug\com.companyname.automatech.apk
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\bin\Debug\com.companyname.automatech-Signed.apk
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\AutomaTech.dll
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\AutomaTech.pdb
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\android\bin\com.companyname.automatech.apk
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\main.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\values\strings.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\drawable-mdpi\icon.png
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\drawable-xxxhdpi\icon.png
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\loginlayout.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\eventmainlayout.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\tourmainlayout.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\bandmainlayout.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\registermainlayout.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\registerconfirmationlayout.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\registerfinalizelayout.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\myaccountmainlayout.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\accountmainlayout.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\dbaccesslayout.xml
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\R.cs.flag
+C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\uploadflags.txt

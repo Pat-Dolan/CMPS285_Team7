@@ -26,6 +26,9 @@ namespace AutomaTech
 			base.OnCreate (bundle);
 			// Create your application here
 			SetContentView(Resource.Layout.LoginLayout);
+			DBRepository dbr = new DBRepository ();
+			var result = dbr.CreateDB ();
+			Toast.MakeText (this, result.ToString(), ToastLength.Short).Show ();
 
 			login = FindViewById<Button> (Resource.Id.btnLogin);
 			login.Click += Login_Click;
@@ -44,6 +47,7 @@ namespace AutomaTech
 		{
 			string name = FindViewById<EditText> (Resource.Id.txtLoginName).Text.ToString();
 			string pass = FindViewById<EditText>(Resource.Id.txtLoginPassword).Text.ToString();
+
 			validLoginId = verifyLogin (name, pass);
 
 			if (validLogin) {

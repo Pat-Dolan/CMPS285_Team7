@@ -24,6 +24,21 @@ namespace AutomaTech
 
 			return output;
 		}
+
+		//Overloading the createdb function for first time logins
+		public string CreateDB()
+		{
+			var output = "";
+			output += "Creating Database if it doesn't exist.";
+			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
+
+			var db = new SQLiteConnection (dbPath);
+			output += "\nDatabase Created...";
+
+			CreateTable ();
+			return output;
+		}
+
 		//Creating table
 
 	
