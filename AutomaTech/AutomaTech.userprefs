@@ -1,9 +1,22 @@
 ﻿<Properties StartupItem="AutomaTech\AutomaTech.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus10KitKat" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AutomaTech\Activities\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="AutomaTech\Activities\MainActivity.cs" Line="28" Column="4" />
+      <File FileName="AutomaTech\Activities\MainActivity.cs" Line="16" Column="3" NotebookId="2" />
+      <File FileName="AutomaTech\Activities\LoginActivity.cs" Line="69" Column="17" NotebookId="2" />
+      <File FileName="AutomaTech\Activities\RegisterMainActivity.cs" Line="90" Column="6" NotebookId="2" />
+      <File FileName="AutomaTech\Activities\RegisterFinalizeActivity.cs" Line="1" Column="1" NotebookId="2" />
+      <File FileName="AutomaTech\Activities\RegisterConfirmActivity.cs" Line="16" Column="51" NotebookId="2" />
+      <File FileName="AutomaTech\Activities\DBAccessActivity.cs" Line="26" Column="18" NotebookId="3" />
     </Files>
+    <FloatingWindows>
+      <FloatingWindow WindowId="1" X="-8" Y="384" Width="1600" Height="878">
+        <Files>
+          <File FileName="AutomaTech\ORM\DBRepository.cs" Line="26" Column="4" />
+          <File FileName="AutomaTech\ORM\UserInfo.cs" Line="19" Column="34" NotebookId="1" />
+        </Files>
+      </FloatingWindow>
+    </FloatingWindows>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

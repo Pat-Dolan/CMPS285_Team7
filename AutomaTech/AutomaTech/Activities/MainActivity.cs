@@ -13,7 +13,7 @@ namespace AutomaTech
 	public class MainActivity : Activity
 	{
 		
-		//Hello Comments
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);

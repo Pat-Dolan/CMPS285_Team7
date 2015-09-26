@@ -61,7 +61,7 @@ namespace AutomaTech
 		{
 			//Add additional fields as necessary
 			DBRepository dbr = new DBRepository ();
-			var user = dbr.GetTableById (id);
+			var user = dbr.GetUserById (id);
 
 			//setting texts to information
 			Id.Text = (user.ID).ToString();

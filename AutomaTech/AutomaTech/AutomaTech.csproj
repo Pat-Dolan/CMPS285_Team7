@@ -61,6 +61,7 @@
     <Compile Include="ORM\SQLiteAsync.cs" />
     <Compile Include="Activities\AccountMainActivity.cs" />
     <Compile Include="Activities\DBAccessActivity.cs" />
+    <Compile Include="ORM\EventInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

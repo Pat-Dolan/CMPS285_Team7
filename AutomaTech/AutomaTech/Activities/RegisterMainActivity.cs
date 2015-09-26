@@ -81,11 +81,52 @@ namespace AutomaTech
 			string ProfileName = FindViewById<EditText>(Resource.Id.txtPName).Text.ToString();
 			//int acc = getAccess()
 
-			
-			DBRepository dbr = new DBRepository();
-			var result = dbr.CreateDB (User, Password, ProfileName, accessLevel, Fname, Lname, Email);
-			Toast.MakeText (this, result, ToastLength.Short).Show ();
-			StartActivity (typeof(RegisterConfirmActivity));
+			bool validUser, validPass;
+			validUser = verifyUsername(User);
+			validPass = verifyPassword(Password, RePassword);
+
+			//char[] errorPass = {"Passwords do not match!"};
+			if (!validUser) 
+				{
+				//FindViewById<EditText> (Resource.Id.txtUsername).SetText (errorName);
+				} 
+			else if (!validPass) 
+				{
+				//FindViewById<EditText> (Resource.Id.txtRePassword).SetText (errorPass);
+				} 
+			else 
+				{
+					DBRepository dbr = new DBRepository ();
+					var result = dbr.CreateDB (User, Password, ProfileName, accessLevel, Fname, Lname, Email);
+					Toast.MakeText (this, result, ToastLength.Short).Show ();
+					StartActivity (typeof(RegisterConfirmActivity));
+				}
+		}
+
+		public bool verifyUsername(string name)
+		{
+			bool valid = false;
+			DBRepository dbrUserTest = new DBRepository ();
+			//var nameTestResult = dbrUserTest.TestNewName (name);
+			//string errorMessage = "Username is already taken!"; 
+			//if (!nameTestResult)
+			//	//make error message for taken username
+			//	Toast.MakeText(this, errorMessage, ToastLength.Short).Show();
+			// set valid to false
+			//else
+				valid = true;
+			return valid;
+				
+		}
+
+		public bool verifyPassword(string pass, string rePass)
+		{
+			bool validPass = false;
+			if (pass != rePass)
+				validPass = false;
+			else
+				validPass = true;
+			return validPass;
 		}
 	}
 }

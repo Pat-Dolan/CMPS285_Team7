@@ -37,7 +37,6 @@ public final class R {
         public static final int btnTourScreen=0x7f050028;
         public static final int btnUpdateBand=0x7f05000a;
         public static final int btnUpdateEvent=0x7f05001a;
-        public static final int editText1=0x7f05001f;
         public static final int linearLayout1=0x7f050015;
         public static final int rBtnArtist=0x7f050036;
         public static final int rBtnManager=0x7f050035;
@@ -65,8 +64,9 @@ public final class R {
         public static final int txtGetPassword=0x7f050006;
         public static final int txtGetUsername=0x7f050004;
         public static final int txtLName=0x7f05002d;
+        public static final int txtLoginName=0x7f05001f;
+        public static final int txtLoginPassword=0x7f050020;
         public static final int txtPName=0x7f050033;
-        public static final int txtPass=0x7f050020;
         public static final int txtPassword=0x7f05002f;
         public static final int txtRePassword=0x7f050030;
         public static final int txtUsername=0x7f05002e;

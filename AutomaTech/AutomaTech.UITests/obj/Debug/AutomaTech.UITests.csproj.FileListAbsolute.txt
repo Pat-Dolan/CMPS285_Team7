@@ -7,3 +7,12 @@ C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech.UITests\bin\Debug\Xamarin.
 C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.csprojResolveAssemblyReference.cache
 C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.dll
 C:\Users\Jay\Documents\Projects\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.pdb
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\AutomaTech.UITests.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\AutomaTech.UITests.pdb
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\nunit.framework.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\Xamarin.UITest.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\nunit.framework.xml
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\bin\Debug\Xamarin.UITest.xml
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.csprojResolveAssemblyReference.cache
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech.UITests\obj\Debug\AutomaTech.UITests.pdb

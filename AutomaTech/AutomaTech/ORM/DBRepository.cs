@@ -20,11 +20,15 @@ namespace AutomaTech
 
 			CreateTable ();
 
-			InsertRecord (user, pass, profile, access, firstName, lastName, email);
+			InsertUser (user, pass, profile, access, firstName, lastName, email);
 
 			return output;
 		}
 		//Creating table
+
+	
+
+
 		public string CreateTable()
 		{
 			try
@@ -44,7 +48,7 @@ namespace AutomaTech
 
 
 		//Inserting record
-		public string InsertRecord(string user, string pass, string profile, int access, string firstName, string lastName, string email)
+		public string InsertUser(string user, string pass, string profile, int access, string firstName, string lastName, string email)
 		{
 			try
 			{
@@ -87,7 +91,7 @@ namespace AutomaTech
 			return output;
 		}
 		//code to retrieve record using ORM
-		public UserInfo GetTableById(int id)
+		public UserInfo GetUserById(int id)
 		{
 			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
 			var db = new SQLiteConnection (dbPath);
@@ -98,8 +102,54 @@ namespace AutomaTech
 			return item;
 		}
 
+		//TESTING FUNCTION TO DISPLAY USERNAME BY ID
+		public string DisplayUserById(int id)
+		{
+
+			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
+			var db = new SQLiteConnection (dbPath);
+			var table = db.Table<UserInfo> ();
+
+			string username = "";
+
+			var item = db.Get<UserInfo> (id);
+			username = item.UserName.ToString ();
+			return username;
+		}
+
+		public int GetUserByLogin(string name, string pass)
+		{
+			string testName;
+			string testPass;
+			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
+			var db = new SQLiteConnection (dbPath);
+			var table = db.Table<UserInfo> ();
+			int index = -1;
+			//var item = db.Get<UserInfo>(id);
+		/*	do
+			{
+				item = db.Get<UserInfo>(id);
+				testName = item.UserName.ToString();
+				testPass = item.Pass.ToString();
+				if((name == testName) && (pass == testPass))
+					index = id;
+				else
+					id++;
+			}while(table.);
+*/
+			foreach(var item in table)
+			{		testName = item.UserName.ToString();
+					testPass = item.Pass.ToString();
+				if((name == testName) && (pass == testPass))
+					index = item.ID;
+			}
+
+			return index;
+
+		}
+
 		//Update using ORM
-		public string updateRecord(int id, string task)
+		public string updateUser(int id, string task)
 		{
 			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
 			var db = new SQLiteConnection(dbPath);
@@ -110,7 +160,7 @@ namespace AutomaTech
 		}
 
 		//Removing record
-		public string RemoveTask(int id)
+		public string RemoveUser(int id)
 		{
 			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
 			var db = new SQLiteConnection (dbPath);
@@ -118,6 +168,108 @@ namespace AutomaTech
 			db.Delete (item);
 			return "Record Deleted...";
 		}
+
+
+		//Events
+
+		//Creating table
+		public string CreateEventTable()
+		{
+			try
+			{
+				string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
+				var db = new SQLiteConnection(dbPath);
+				db.CreateTable<EventInfo>();
+				string result = "Table created successfully...";
+				return result;
+			}
+			catch(Exception ex)
+			{
+				return "Error : " + ex.Message;
+			}
+		}
+
+
+
+		//Inserting record
+		public string InsertEvent(string name, string location, string date, string time)
+		{
+			try
+			{
+				string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
+
+				var db = new SQLiteConnection (dbPath);
+				EventInfo item = new EventInfo();
+				item.EventName = name;
+				item.location = location;
+				item.date = date;
+				item.time = time;
+				db.Insert(item);
+				return "Record added...";
+			}
+			catch(Exception ex) 
+			{
+				return "Error : " + ex.Message;
+
+			}
+		}
+
+
+		//Code to retrieve records
+		public string GetEvent()
+		{
+			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
+			var db = new SQLiteConnection(dbPath);
+
+			string output = "";
+			output += "Retrieving the data using ORM...";
+			var table = db.Table<EventInfo> ();
+
+			foreach (var item in table) 
+			{
+				output += "\n" + item.EventName + " " + item.location + "  " + item.date +"  " + item.time;
+			}
+			return output;
+		}
+		//code to retrieve record using ORM
+		public EventInfo GetEventById(int id)
+		{
+			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
+			var db = new SQLiteConnection (dbPath);
+			var table = db.Table<EventInfo> ();
+
+			var item = db.Get<EventInfo> (id);
+
+			return item;
+		}
+
+		//Update using ORM
+		public string updateEvent(int id,string name, string location, string date, string time)
+		{
+			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
+			var db = new SQLiteConnection(dbPath);
+			var item = db.Get<EventInfo>(id) ;
+			item.EventName = name;
+			item.location = location;
+			item.date = date;
+			item.time = time;
+			db.Update (item);
+			return "Record Updated...";
+		}
+
+		//Removing record
+		public string RemoveEvent(int id)
+		{
+			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
+			var db = new SQLiteConnection (dbPath);
+			var item = db.Get<EventInfo> (id);
+			db.Delete (item);
+			return "Record Deleted...";
+		}
+
+
+			
+		
 			
 
 	}
