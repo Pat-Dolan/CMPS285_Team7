@@ -1,9 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -20,12 +18,15 @@ namespace AutomaTech
 		{
 			base.OnCreate (bundle);
 
-			// Create your application here
+			//Setting layout
+			SetContentView(Resource.Layout.AccountMainLayout);
+
 			Button loadAccount = FindViewById<Button>(Resource.Id.btnLoadAccount);
 			//loadAccount.Click += LoadAccount_Click;
-
 		}
 
+		//This function loads the text fields with user information
+		//UNDER CONSTRUCTION !! GLOBAL VARIABLE FOR DETERMINING USER ID IS NECESSARY
 		void LoadAccount_Click (object sender, EventArgs e)
 		{
 			DBRepository dbr = new DBRepository ();
@@ -33,7 +34,7 @@ namespace AutomaTech
 			Toast.MakeText (this, result, ToastLength.Short).Show ();
 
 			EditText ID = FindViewById<EditText> (Resource.Id.txtGetId);
-			//ID.SetText = dbr.GetAccount(
+			//ID.SetText = dbr.GetAccount(UGHHHHH)
 			EditText user = FindViewById<EditText> (Resource.Id.txtGetUsername);
 			EditText pass = FindViewById<EditText> (Resource.Id.txtGetPassword);
 			EditText access = FindViewById<EditText> (Resource.Id.txtGetAccess);

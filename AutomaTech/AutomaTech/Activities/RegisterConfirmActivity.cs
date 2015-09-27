@@ -20,17 +20,19 @@ namespace AutomaTech
 		{
 			base.OnCreate (bundle);
 
-			// Create your application here
+			//Setting layout
 			SetContentView(Resource.Layout.RegisterConfirmationLayout);
+
+			//Adding components
 			Button confirm = FindViewById<Button> (Resource.Id.btnConfirmCode);
 			confirm.Click += Confirm_Click;
-
-
 
 			Button returnReg = FindViewById<Button> (Resource.Id.btnRegisterScreen);
 			returnReg.Click += ReturnReg_Click;
 		}
 
+		//This handler returns the user to the registration page to correct information. 
+		//*****THIS BUTTON CURRENTLY RESUBMITS USER INFORMATION!!!!*******
 		void ReturnReg_Click (object sender, EventArgs e)
 		{
 			StartActivity (typeof(RegisterMainActivity));
@@ -38,14 +40,6 @@ namespace AutomaTech
 
 		void Confirm_Click (object sender, EventArgs e)
 		{
-			//if confirmed, start finalize
-
-			//TESTING DB TABLE
-			//DBRepository dbr = new DBRepository();
-			//string result = dbr.GetAccount ();
-			//Toast.MakeText (this, result, ToastLength.Short).Show ();
-
-
 			StartActivity (typeof(RegisterFinalizeActivity));
 		}
 	}

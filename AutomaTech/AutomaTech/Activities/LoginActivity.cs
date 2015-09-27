@@ -9,27 +9,31 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-
 namespace AutomaTech
 {
 	[Activity (Label = "LoginActivity", MainLauncher = true, Icon = "@drawable/icon")]			
 	public class LoginActivity : Activity
 	{
+		//Declaring variables that are accessed in functions
 		Button login;
 		Button register;
-		int validLoginId;
+		int LoginId;		
 		bool validLogin;
 		string display;
 
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			// Create your application here
-			SetContentView(Resource.Layout.LoginLayout);
-			DBRepository dbr = new DBRepository ();
-			var result = dbr.CreateDB ();
-			Toast.MakeText (this, result.ToString(), ToastLength.Short).Show ();
 
+			//Setting layout
+			SetContentView(Resource.Layout.LoginLayout);
+
+			//Opening database connection for testing login info
+			DBRepository dbr = new DBRepository ();
+			var result = dbr.CreateDB ();						//returns testing string
+			Toast.MakeText (this, result.ToString(), ToastLength.Short).Show ();		//displaying testing value
+
+			//Adding event handlers to components
 			login = FindViewById<Button> (Resource.Id.btnLogin);
 			login.Click += Login_Click;
 
@@ -37,39 +41,50 @@ namespace AutomaTech
 			register.Click += Register_Click;
 		}
 
+
+		//This function sends the user to the registration page
 		void Register_Click (object sender, EventArgs e)
 		{
 			
 			StartActivity (typeof(RegisterMainActivity));
 		}
 
+		//This function checks the information entered with the information in the database
 		void Login_Click (object sender, EventArgs e)
 		{
 			string name = FindViewById<EditText> (Resource.Id.txtLoginName).Text.ToString();
 			string pass = FindViewById<EditText>(Resource.Id.txtLoginPassword).Text.ToString();
 
-			validLoginId = verifyLogin (name, pass);
+			LoginId = verifyLogin (name, pass);
 
-			if (validLogin) {
+			//If valid
+			if (validLogin) 
+			{
 				DBRepository dbr = new DBRepository ();
-				display = dbr.DisplayUserById (validLoginId);
-				Toast.MakeText (this, display, ToastLength.Short).Show ();
+				display = dbr.DisplayUserById (LoginId);		//returns testing string
+				Toast.MakeText (this, display, ToastLength.Short).Show ();		//displays testing string
+
+				//initial start of the Main activity
 				StartActivity (typeof(MainActivity));
 			} 
+			//If not valid
 			else 
 			{
-				display = "Info not found";
+				display = "Username or Password not valid.";
 				Toast.MakeText (this, display, ToastLength.Short).Show ();
 			
 			}
 		}
 
+		//This function tests the information entered into the login fields, and returns the user Id
+		//****May use this function in DBRepository to send user info to each activity page****
 		int verifyLogin(string name, string pass)
 		{
 			int id;
 
 			DBRepository dbr = new DBRepository ();
 			id = dbr.GetUserByLogin (name, pass);
+
 			if (id == -1)
 				validLogin = false;
 			else

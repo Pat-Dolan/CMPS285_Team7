@@ -45,7 +45,6 @@ C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\registermainlayout.xml
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\registerconfirmationlayout.xml
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\registerfinalizelayout.xml
-C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\myaccountmainlayout.xml
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\accountmainlayout.xml
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\res\layout\dbaccesslayout.xml
 C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\R.cs.flag

@@ -16,8 +16,6 @@
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>AutomaTech</AssemblyName>
     <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,6 +62,7 @@
     <Compile Include="Activities\AccountMainActivity.cs" />
     <Compile Include="Activities\DBAccessActivity.cs" />
     <Compile Include="ORM\EventInfo.cs" />
+    <Compile Include="ORM\CurrentSessionInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -86,7 +85,6 @@
     <AndroidResource Include="Resources\layout\RegisterMainLayout.axml" />
     <AndroidResource Include="Resources\layout\RegisterConfirmationLayout.axml" />
     <AndroidResource Include="Resources\layout\RegisterFinalizeLayout.axml" />
-    <AndroidResource Include="Resources\layout\MyAccountMainLayout.axml" />
     <AndroidResource Include="Resources\layout\AccountMainLayout.axml" />
     <AndroidResource Include="Resources\layout\DBAccessLayout.axml" />
   </ItemGroup>

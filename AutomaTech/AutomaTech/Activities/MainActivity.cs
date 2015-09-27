@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -10,19 +9,17 @@ using Android.OS;
 namespace AutomaTech
 {
 	[Activity (Label = "TourPlus+", Icon = "@drawable/icon")]
+
 	public class MainActivity : Activity
 	{
-		
-
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 
-			// Set our view from the "main" layout resource
+			// Setting layout
 			SetContentView (Resource.Layout.Main);
-			Button loginScreen = FindViewById<Button> (Resource.Id.btnLoginScreen);
-			loginScreen.Click += LoginScreen_Click;
 
+			//Adding layout components
 			Button eventScreen = FindViewById<Button> (Resource.Id.btnEventScreen);
 			eventScreen.Click += EventScreen_Click;
 
@@ -35,11 +32,16 @@ namespace AutomaTech
 			Button myAccount = FindViewById<Button> (Resource.Id.btnAccount);
 			myAccount.Click += MyAccount_Click;
 
+			//Test components
+			Button loginScreen = FindViewById<Button> (Resource.Id.btnLoginScreen);
+			loginScreen.Click += LoginScreen_Click;
+
 			Button DBAccess = FindViewById<Button> (Resource.Id.btnDBAccess);
 			DBAccess.Click += DBAccess_Click;
 		
 		}
 
+		//For all events: Starting corresponding activity
 		void DBAccess_Click (object sender, EventArgs e)
 		{
 			StartActivity (typeof(DBAccessActivity));

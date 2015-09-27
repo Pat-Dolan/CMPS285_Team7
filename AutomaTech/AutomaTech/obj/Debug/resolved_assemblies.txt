@@ -1,10 +1,10 @@
-C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\AutomaTech.dll
-C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Android.dll
-C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\mscorlib.dll
-C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Core.dll
-C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Data.dll
-C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\System.dll
-C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Xml.dll
-C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Data.Tds.dll
-C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Security.dll
-C:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Transactions.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\AutomaTech.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\mscorlib.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Core.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Data.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\System.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Xml.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Data.Tds.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Security.dll
+C:\Users\Jay\Documents\CMPS285_Team7\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Transactions.dll

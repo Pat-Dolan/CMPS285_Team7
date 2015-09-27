@@ -120,7 +120,6 @@ namespace AutomaTech
 		//TESTING FUNCTION TO DISPLAY USERNAME BY ID
 		public string DisplayUserById(int id)
 		{
-
 			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
 			var db = new SQLiteConnection (dbPath);
 			var table = db.Table<UserInfo> ();
@@ -140,27 +139,32 @@ namespace AutomaTech
 			var db = new SQLiteConnection (dbPath);
 			var table = db.Table<UserInfo> ();
 			int index = -1;
-			//var item = db.Get<UserInfo>(id);
-		/*	do
-			{
-				item = db.Get<UserInfo>(id);
-				testName = item.UserName.ToString();
-				testPass = item.Pass.ToString();
-				if((name == testName) && (pass == testPass))
-					index = id;
-				else
-					id++;
-			}while(table.);
-*/
 			foreach(var item in table)
 			{		testName = item.UserName.ToString();
 					testPass = item.Pass.ToString();
 				if((name == testName) && (pass == testPass))
 					index = item.ID;
 			}
-
 			return index;
+		}
 
+		public bool TestUsername(string newName)
+		{
+			int test = -1;
+			bool valid = true;
+			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
+			var db = new SQLiteConnection (dbPath);
+			var table = db.Table<UserInfo> ();
+			foreach (var item in table) 
+			{
+				if (newName == item.UserName)
+					test++;
+			}
+			if (test != -1)
+				valid = false;
+			else
+				valid = true;
+			return valid;
 		}
 
 		//Update using ORM
