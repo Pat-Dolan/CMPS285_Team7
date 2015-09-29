@@ -12,9 +12,11 @@ namespace AutomaTech
 
 	public class MainActivity : Activity
 	{
+		GlobalVars g = GlobalVars.getInstance();
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+		
 
 			// Setting layout
 			SetContentView (Resource.Layout.Main);

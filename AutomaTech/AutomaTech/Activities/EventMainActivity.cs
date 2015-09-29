@@ -14,6 +14,7 @@ namespace AutomaTech
 	[Activity (Label = "EventMainActivity", Icon = "@drawable/icon")]			
 	public class EventMainActivity : Activity
 	{
+		GlobalVars g = GlobalVars.getInstance();
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -37,7 +38,9 @@ namespace AutomaTech
 
 		void ViewEvents_Click (object sender, EventArgs e)
 		{
-			
+			int LogId = g.getTest ();
+			string showing = LogId.ToString ();
+			Toast.MakeText (this, showing, ToastLength.Short).Show ();
 		}
 
 		void RemoveEvent_Click (object sender, EventArgs e)

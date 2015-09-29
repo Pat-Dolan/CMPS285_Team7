@@ -63,6 +63,7 @@
     <Compile Include="Activities\DBAccessActivity.cs" />
     <Compile Include="ORM\EventInfo.cs" />
     <Compile Include="ORM\CurrentSessionInfo.cs" />
+    <Compile Include="GlobalVars.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

@@ -11,6 +11,7 @@ using Android.Widget;
 
 namespace AutomaTech
 {
+	
 	[Activity (Label = "LoginActivity", MainLauncher = true, Icon = "@drawable/icon")]			
 	public class LoginActivity : Activity
 	{
@@ -20,6 +21,7 @@ namespace AutomaTech
 		int LoginId;		
 		bool validLogin;
 		string display;
+		GlobalVars g = GlobalVars.getInstance();
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -63,7 +65,7 @@ namespace AutomaTech
 				DBRepository dbr = new DBRepository ();
 				display = dbr.DisplayUserById (LoginId);		//returns testing string
 				Toast.MakeText (this, display, ToastLength.Short).Show ();		//displays testing string
-
+				g.setTest(LoginId);
 				//initial start of the Main activity
 				StartActivity (typeof(MainActivity));
 			} 
