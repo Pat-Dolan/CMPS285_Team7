@@ -29,8 +29,6 @@ namespace AutomaTech
 			Button updateEvent = FindViewById<Button> (Resource.Id.btnUpdateEvent);
 			updateEvent.Click += UpdateEvent_Click;
 
-			Button removeEvent = FindViewById<Button> (Resource.Id.btnRemoveEvent);
-			removeEvent.Click += RemoveEvent_Click; 
 
 			Button viewEvents = FindViewById<Button> (Resource.Id.btnGetEvents);
 			viewEvents.Click += ViewEvents_Click; 

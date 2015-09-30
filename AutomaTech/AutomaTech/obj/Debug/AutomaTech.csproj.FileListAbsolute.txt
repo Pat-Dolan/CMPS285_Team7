@@ -103,3 +103,30 @@ C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debu
 C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\bin\Debug\Xamarin.Android.Support.v4.dll
 C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\bin\Debug\Xamarin.Facebook.dll
 C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\AutomaTech.csprojResolveAssemblyReference.cache
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\AutomaTech.csprojResolveAssemblyReference.cache
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\AutomaTech.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\AutomaTech.pdb
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\com.companyname.automatech.apk
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\com.companyname.automatech-Signed.apk
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\AutomaTech.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\AutomaTech.pdb
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\android\bin\com.companyname.automatech.apk
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\main.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\values\strings.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\drawable-mdpi\icon.png
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\drawable-xxxhdpi\icon.png
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\loginlayout.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\eventmainlayout.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\tourmainlayout.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\bandmainlayout.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\registermainlayout.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\registerconfirmationlayout.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\registerfinalizelayout.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\accountmainlayout.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\dbaccesslayout.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\R.cs.flag
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\uploadflags.txt

@@ -22,13 +22,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnUpdateBand" />
     <Button
-        android:text="Delete Band"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnRemoveBand" />
-    <Button
         android:text="View Band"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnGetBands" />
+    <Button
+        android:text="Delete Band"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRemoveBand" />
 </LinearLayout>

@@ -1,12 +1,11 @@
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\AutomaTech.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Android.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\mscorlib.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Core.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Data.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\System.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Xml.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\Xamarin.Facebook.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Data.Tds.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Security.dll
-C:\Users\jonto\Documents\CMPS285_Team7\AutomaTech\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Transactions.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\AutomaTech.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\mscorlib.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Core.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Data.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\System.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Xml.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Data.Tds.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\Mono.Security.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\assemblies\System.Transactions.dll
