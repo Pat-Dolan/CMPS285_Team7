@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="AutomaTech.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus10KitKat" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Activities\LoginActivity.cs">
+    <Files>
+      <File FileName="Activities\LoginActivity.cs" Line="21" Column="19" />
+      <File FileName="c:\Users\Mr. Sherman\Documents\CMPS285_Team7\AutomaTech\AutomaTech\ORM\SQLite.cs" Line="2979" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

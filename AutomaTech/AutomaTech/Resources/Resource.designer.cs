@@ -129,9 +129,6 @@ namespace AutomaTech
 			// aapt resource value: 0x7f05001a
 			public const int btnUpdateEvent = 2131034138;
 			
-			// aapt resource value: 0x7f05001f
-			public const int editText1 = 2131034143;
-			
 			// aapt resource value: 0x7f050015
 			public const int linearLayout1 = 2131034133;
 			
@@ -213,11 +210,14 @@ namespace AutomaTech
 			// aapt resource value: 0x7f05002d
 			public const int txtLName = 2131034157;
 			
-			// aapt resource value: 0x7f050033
-			public const int txtPName = 2131034163;
+			// aapt resource value: 0x7f05001f
+			public const int txtLoginName = 2131034143;
 			
 			// aapt resource value: 0x7f050020
-			public const int txtPass = 2131034144;
+			public const int txtLoginPassword = 2131034144;
+			
+			// aapt resource value: 0x7f050033
+			public const int txtPName = 2131034163;
 			
 			// aapt resource value: 0x7f05002f
 			public const int txtPassword = 2131034159;
@@ -260,19 +260,16 @@ namespace AutomaTech
 			public const int Main = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int MyAccountMainLayout = 2130903046;
+			public const int RegisterConfirmationLayout = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int RegisterConfirmationLayout = 2130903047;
+			public const int RegisterFinalizeLayout = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int RegisterFinalizeLayout = 2130903048;
+			public const int RegisterMainLayout = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int RegisterMainLayout = 2130903049;
-			
-			// aapt resource value: 0x7f03000a
-			public const int TourMainLayout = 2130903050;
+			public const int TourMainLayout = 2130903049;
 			
 			static Layout()
 			{

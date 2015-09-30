@@ -1,9 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -20,23 +18,12 @@ namespace AutomaTech
 		{
 			base.OnCreate (bundle);
 
-			// Create your application here
+			//Setting layout
 			SetContentView(Resource.Layout.RegisterFinalizeLayout);
+
+			//Adding components
 			Button finishReg = FindViewById<Button> (Resource.Id.btnFinalize);
 			finishReg.Click += FinishReg_Click;
-
-			//RadioGroup rBtnGroup = FindViewById<RadioGroup> (Resource.Id.rGroupAccess);
-
-		
-			//rBtnGroup.AddView (accessM);
-			//rBtnGroup.AddView (accessA);
-			//rBtnGroup.Click += RBtnGroup_Click;
-
-		}
-
-		void RBtnGroup_Click (object sender, EventArgs e)
-		{
-			
 		}
 
 		void FinishReg_Click (object sender, EventArgs e)

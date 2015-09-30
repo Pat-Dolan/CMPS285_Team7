@@ -1,9 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -16,13 +14,15 @@ namespace AutomaTech
 	[Activity (Label = "EventMainActivity", Icon = "@drawable/icon")]			
 	public class EventMainActivity : Activity
 	{
+		GlobalVars g = GlobalVars.getInstance();
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 
-			// Create your application here
+			//Setting layout
 			SetContentView(Resource.Layout.EventMainLayout);
 
+			//Adding components
 			Button newEvent = FindViewById<Button> (Resource.Id.btnNewEvent);
 			newEvent.Click+= NewEvent_Click;
 
@@ -38,7 +38,9 @@ namespace AutomaTech
 
 		void ViewEvents_Click (object sender, EventArgs e)
 		{
-			
+			int LogId = g.getTest ();
+			string showing = LogId.ToString ();
+			Toast.MakeText (this, showing, ToastLength.Short).Show ();
 		}
 
 		void RemoveEvent_Click (object sender, EventArgs e)

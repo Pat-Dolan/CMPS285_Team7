@@ -1,9 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -16,7 +14,7 @@ namespace AutomaTech
 	[Activity (Label = "DBAccessActivity")]			
 	public class DBAccessActivity : Activity
 	{
-		int id;
+		int id = 0;
 		EditText Id;
 		EditText Username;
 		EditText Password;
@@ -28,15 +26,12 @@ namespace AutomaTech
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			id = 1;
+
+			//Setting layout
 			SetContentView (Resource.Layout.DBAccessLayout);
 
-			//Create your application here
-			Button btnNext = FindViewById<Button>(Resource.Id.btnDBNext);
-			btnNext.Click += BtnNext_Click;
-
+			//Assigning text fields
 			Id = FindViewById<EditText> (Resource.Id.txtDBId);
-			Id.Text = id.ToString ();
 			Username = FindViewById<EditText> (Resource.Id.txtDBUsername);
 			Password = FindViewById<EditText> (Resource.Id.txtDBPassword);
 			ProfileName = FindViewById<EditText> (Resource.Id.txtDBProfileName);
@@ -45,11 +40,30 @@ namespace AutomaTech
 			LName = FindViewById<EditText> (Resource.Id.txtDBLastName);
 			Email = FindViewById<EditText> (Resource.Id.txtDBEmail);
 
+			//Adding Components
+			Button btnNext = FindViewById<Button>(Resource.Id.btnDBNext);
+			btnNext.Click += BtnNext_Click;
+
 			Button getAll = FindViewById<Button> (Resource.Id.btnGetAll);
 			getAll.Click += GetAll_Click;
 
+			Button btnPrevious = FindViewById<Button> (Resource.Id.btnDBPrevious);
+			btnPrevious.Click += BtnPrevious_Click;
+
 		}
 
+		//This function shows the previous user
+		void BtnPrevious_Click (object sender, EventArgs e)
+		{
+			if (id > 1) 
+			{
+				id--;
+				DisplayTable (id);
+			}
+			Id.Text = id.ToString ();
+		}
+
+		//This function displays all users as a message
 		void GetAll_Click (object sender, EventArgs e)
 		{
 			DBRepository dbr = new DBRepository ();
@@ -57,13 +71,23 @@ namespace AutomaTech
 			Toast.MakeText (this, result, ToastLength.Short).Show ();
 		}
 
+		//This function displays the next user
 		void BtnNext_Click (object sender, EventArgs e)
 		{
-			//Add additional fields as necessary
-			DBRepository dbr = new DBRepository ();
-			var user = dbr.GetTableById (id);
+			//Moving to next Table;
+			id++;
+			DisplayTable (id);
+			Id.Text = id.ToString ();
+		}
 
-			//setting texts to information
+
+		//This function updates the text fields in the layout to relect user information by id number
+		void DisplayTable(int id)
+		{
+			DBRepository dbr = new DBRepository ();
+			var user = dbr.GetUserById (id);
+
+			//Setting text fields to information
 			Id.Text = (user.ID).ToString();
 			Username.Text = user.UserName;
 			Password.Text = user.Pass;
@@ -72,10 +96,6 @@ namespace AutomaTech
 			FName.Text = user.FirstName;
 			LName.Text = user.LastName;
 			Email.Text = user.Email;
-			//Moving to next Table;
-			id++;
-
-
 		}
 	}
 }

@@ -61,6 +61,9 @@
     <Compile Include="ORM\SQLiteAsync.cs" />
     <Compile Include="Activities\AccountMainActivity.cs" />
     <Compile Include="Activities\DBAccessActivity.cs" />
+    <Compile Include="ORM\EventInfo.cs" />
+    <Compile Include="ORM\CurrentSessionInfo.cs" />
+    <Compile Include="GlobalVars.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -83,7 +86,6 @@
     <AndroidResource Include="Resources\layout\RegisterMainLayout.axml" />
     <AndroidResource Include="Resources\layout\RegisterConfirmationLayout.axml" />
     <AndroidResource Include="Resources\layout\RegisterFinalizeLayout.axml" />
-    <AndroidResource Include="Resources\layout\MyAccountMainLayout.axml" />
     <AndroidResource Include="Resources\layout\AccountMainLayout.axml" />
     <AndroidResource Include="Resources\layout\DBAccessLayout.axml" />
   </ItemGroup>
