@@ -2,10 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.automatech">
   <uses-sdk android:minSdkVersion="16" />
   <application android:label="AutomaTech" android:name="mono.android.app.Application" android:debuggable="true">
-    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
-    <!--Facebook Necessary API's-->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <activity android:icon="@drawable/icon" android:label="BandMainActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.BandMainActivity" />
     <activity android:icon="@drawable/icon" android:label="EventMainActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.EventMainActivity" />
     <activity android:icon="@drawable/icon" android:label="LoginActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.LoginActivity">
@@ -29,5 +25,6 @@
       </intent-filter>
     </receiver>
   </application>
+  <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 </manifest>

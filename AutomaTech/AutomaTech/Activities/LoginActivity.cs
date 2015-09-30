@@ -8,7 +8,6 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Xamarin.Facebook;
 
 namespace AutomaTech
 {
@@ -27,9 +26,6 @@ namespace AutomaTech
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
-			//This Function will Allow users to Register Via FaceBook
-			FacebookSdk.SdkInitialize(this.ApplicationContext); 
 
 			//Setting layout
 			SetContentView(Resource.Layout.LoginLayout);
@@ -81,7 +77,6 @@ namespace AutomaTech
 			
 			}
 		}
-			
 
 		//This function tests the information entered into the login fields, and returns the user Id
 		//****May use this function in DBRepository to send user info to each activity page****

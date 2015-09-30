@@ -80,8 +80,6 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"AutomaTech.dll",
-		"Xamarin.Android.Support.v4.dll",
-		"Xamarin.Facebook.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
