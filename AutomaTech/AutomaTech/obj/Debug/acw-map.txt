@@ -38,6 +38,10 @@ AutomaTech.DBAccessActivity, AutomaTech;md5f424497de6707ca4dc3b401f9326f17a.DBAc
 AutomaTech.DBAccessActivity, AutomaTech, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f424497de6707ca4dc3b401f9326f17a.DBAccessActivity
 AutomaTech.DBAccessActivity;md5f424497de6707ca4dc3b401f9326f17a.DBAccessActivity
 automatech.DBAccessActivity;md5f424497de6707ca4dc3b401f9326f17a.DBAccessActivity
+AutomaTech.BandCreationActivity, AutomaTech;md5f424497de6707ca4dc3b401f9326f17a.BandCreationActivity
+AutomaTech.BandCreationActivity, AutomaTech, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f424497de6707ca4dc3b401f9326f17a.BandCreationActivity
+AutomaTech.BandCreationActivity;md5f424497de6707ca4dc3b401f9326f17a.BandCreationActivity
+automatech.BandCreationActivity;md5f424497de6707ca4dc3b401f9326f17a.BandCreationActivity
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor

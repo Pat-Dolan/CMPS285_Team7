@@ -16,8 +16,6 @@
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>AutomaTech</AssemblyName>
     <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,11 +43,11 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="System.Data" />
-    <Reference Include="Xamarin.Facebook">
-      <HintPath>..\packages\Xamarin.Facebook.Android.4.5.1.0\lib\MonoAndroid403\Xamarin.Facebook.dll</HintPath>
+    <Reference Include="FormsViewGroup">
+      <HintPath>..\packages\Xamarin.Forms.1.5.0.6447\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v4">
-      <HintPath>packages\Xamarin.Android.Support.v4.23.0.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.0.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +70,7 @@
     <Compile Include="ORM\EventInfo.cs" />
     <Compile Include="ORM\CurrentSessionInfo.cs" />
     <Compile Include="GlobalVars.cs" />
+    <Compile Include="Activities\BandCreationActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -96,6 +95,7 @@
     <AndroidResource Include="Resources\layout\RegisterFinalizeLayout.axml" />
     <AndroidResource Include="Resources\layout\AccountMainLayout.axml" />
     <AndroidResource Include="Resources\layout\DBAccessLayout.axml" />
+    <AndroidResource Include="Resources\layout\BandCreationLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

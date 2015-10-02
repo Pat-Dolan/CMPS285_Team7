@@ -35,12 +35,8 @@ namespace AutomaTech
 			myAccount.Click += MyAccount_Click;
 
 			//Test components
-			Button loginScreen = FindViewById<Button> (Resource.Id.btnLoginScreen);
-			loginScreen.Click += LoginScreen_Click;
-
-			Button DBAccess = FindViewById<Button> (Resource.Id.btnDBAccess);
-			DBAccess.Click += DBAccess_Click;
-		
+			Button logoutScreen = FindViewById<Button> (Resource.Id.btnLogoutScreen);
+			logoutScreen.Click += LogoutScreen_Click;
 		}
 
 		//For all events: Starting corresponding activity
@@ -69,7 +65,7 @@ namespace AutomaTech
 			StartActivity (typeof(EventMainActivity));
 		}
 
-		void LoginScreen_Click (object sender, EventArgs e)
+		void LogoutScreen_Click (object sender, EventArgs e)
 		{
 			StartActivity (typeof(LoginActivity));
 		}

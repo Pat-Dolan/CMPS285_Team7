@@ -23,6 +23,9 @@ namespace AutomaTech
 
 			Button loadAccount = FindViewById<Button>(Resource.Id.btnLoadAccount);
 			//loadAccount.Click += LoadAccount_Click;
+
+			Button homeFromAccount = FindViewById<Button> (Resource.Id.homeFromAccount);
+			homeFromAccount.Click += HomeFromAccount_Click;
 		}
 
 		//This function loads the text fields with user information
@@ -38,6 +41,10 @@ namespace AutomaTech
 			EditText user = FindViewById<EditText> (Resource.Id.txtGetUsername);
 			EditText pass = FindViewById<EditText> (Resource.Id.txtGetPassword);
 			EditText access = FindViewById<EditText> (Resource.Id.txtGetAccess);
+		}
+		void HomeFromAccount_Click (object sender, EventArgs e)
+		{
+			StartActivity (typeof(MainActivity));
 		}
 	}
 }

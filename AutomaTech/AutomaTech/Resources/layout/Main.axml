@@ -4,15 +4,10 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <Button
-        android:id="@+id/btnLoginScreen"
+        android:id="@+id/btnLogoutScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login (Temp Button)" />
-    <Button
-        android:text="SQLite Database Access (temp)"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnDBAccess" />
+        android:text="Logout" />
     <Button
         android:text="My Account"
         android:layout_width="match_parent"
@@ -32,5 +27,6 @@
         android:text="Tour Manager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnTourScreen" />
+        android:id="@+id/btnTourScreen"
+        android:visibility="invisible" />
 </LinearLayout>

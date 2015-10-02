@@ -24,4 +24,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnGetEvents" />
+    <Button
+        android:text="Back to Home Page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeFromEvent" />
 </LinearLayout>

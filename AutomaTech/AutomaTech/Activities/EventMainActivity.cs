@@ -32,6 +32,9 @@ namespace AutomaTech
 
 			Button viewEvents = FindViewById<Button> (Resource.Id.btnGetEvents);
 			viewEvents.Click += ViewEvents_Click; 
+
+			Button homeFromEvent = FindViewById<Button> (Resource.Id.homeFromEvent);
+			homeFromEvent.Click += HomeFromEvent_Click;
 		}
 
 		void ViewEvents_Click (object sender, EventArgs e)
@@ -54,6 +57,10 @@ namespace AutomaTech
 		void NewEvent_Click (object sender, EventArgs e)
 		{
 			
+		}
+		void HomeFromEvent_Click (object sender, EventArgs e)
+		{
+			StartActivity (typeof(MainActivity));
 		}
 	}
 }

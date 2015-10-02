@@ -108,7 +108,6 @@ C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\AutomaTech.dll
 C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\AutomaTech.pdb
 C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\com.companyname.automatech.apk
 C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\com.companyname.automatech-Signed.apk
-C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\Xamarin.Android.Support.v4.dll
 C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\AutomaTech.dll
 C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\AutomaTech.pdb
 C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\android\bin\com.companyname.automatech.apk
@@ -130,3 +129,6 @@ C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\accoun
 C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\dbaccesslayout.xml
 C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\R.cs.flag
 C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\uploadflags.txt
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\FormsViewGroup.dll
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\obj\Debug\res\layout\bandcreationlayout.xml
+C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\bin\Debug\Xamarin.Android.Support.v4.dll
