@@ -5,3 +5,8 @@ Version 0.0 (Justin)
 Version 0.1
 **************************************************
 - Initial test solution is up.
+
+Version 0.2 (Christian)
+**************************************************
+-Changed Background colors, and performed minor
+ edits to the layout.
