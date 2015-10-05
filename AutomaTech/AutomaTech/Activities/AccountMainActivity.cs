@@ -11,7 +11,7 @@ using Android.Widget;
 
 namespace AutomaTech
 {
-	[Activity (Label = "AccountMainActivity")]			
+	[Activity (Label = "TourPlus+")]			
 	public class AccountMainActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

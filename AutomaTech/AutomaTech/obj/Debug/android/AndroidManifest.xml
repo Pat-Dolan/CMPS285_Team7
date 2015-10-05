@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.automatech">
-  <uses-sdk android:minSdkVersion="16" />
-  <application android:label="AutomaTech" android:name="mono.android.app.Application" android:debuggable="true">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19" />
+  <application android:label="TourPlus+" android:name="mono.android.app.Application" android:debuggable="true">
     <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
     <!--Facebook Necessary API's-->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <activity android:icon="@drawable/icon" android:label="BandMainActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.BandMainActivity" />
-    <activity android:icon="@drawable/icon" android:label="EventMainActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.EventMainActivity" />
-    <activity android:icon="@drawable/icon" android:label="LoginActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.LoginActivity">
+    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.BandMainActivity" />
+    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.EventMainActivity" />
+    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.LoginActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
     <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.MainActivity" />
-    <activity android:label="RegisterConfirmActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.RegisterConfirmActivity" />
-    <activity android:label="RegisterFinalizeActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.RegisterFinalizeActivity" />
-    <activity android:label="RegisterMainActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.RegisterMainActivity" />
-    <activity android:icon="@drawable/icon" android:label="TourMainActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.TourMainActivity" />
-    <activity android:label="AccountMainActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.AccountMainActivity" />
-    <activity android:label="DBAccessActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.DBAccessActivity" />
-    <activity android:label="BandCreationActivity" android:name="md5f424497de6707ca4dc3b401f9326f17a.BandCreationActivity" />
+    <activity android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.RegisterConfirmActivity" />
+    <activity android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.RegisterFinalizeActivity" />
+    <activity android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.RegisterMainActivity" />
+    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.TourMainActivity" />
+    <activity android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.AccountMainActivity" />
+    <activity android:label="TourPus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.DBAccessActivity" />
+    <activity android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.BandCreationActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.automatech.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>

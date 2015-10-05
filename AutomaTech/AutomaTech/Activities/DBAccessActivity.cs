@@ -11,7 +11,7 @@ using Android.Widget;
 
 namespace AutomaTech
 {
-	[Activity (Label = "DBAccessActivity")]			
+	[Activity (Label = "TourPus+")]			
 	public class DBAccessActivity : Activity
 	{
 		int id = 0;

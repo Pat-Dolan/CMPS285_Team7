@@ -10,3 +10,9 @@ Version 0.2 (Christian)
 **************************************************
 -Changed Background colors, and performed minor
  edits to the layout.
+
+Version 0.3 (Christian and Randy)
+**************************************************
+-Changed Background colors, rounded off buttons
+-Updated current account page to look more like 
+ the final build intention.

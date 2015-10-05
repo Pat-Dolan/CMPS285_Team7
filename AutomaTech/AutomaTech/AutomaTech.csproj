@@ -99,11 +99,13 @@
     <AndroidResource Include="Resources\layout\AccountMainLayout.axml" />
     <AndroidResource Include="Resources\layout\DBAccessLayout.axml" />
     <AndroidResource Include="Resources\layout\BandCreationLayout.axml" />
+    <AndroidResource Include="Resources\drawable\ButtonStyle.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Activities\" />
     <Folder Include="ORM\" />
+    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="facebookandroid">

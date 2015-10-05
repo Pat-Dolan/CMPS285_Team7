@@ -11,7 +11,7 @@ using Android.Widget;
 
 namespace AutomaTech
 {
-	[Activity (Label = "EventMainActivity", Icon = "@drawable/icon")]			
+	[Activity (Label = "TourPlus+", Icon = "@drawable/icon")]			
 	public class EventMainActivity : Activity
 	{
 		GlobalVars g = GlobalVars.getInstance();

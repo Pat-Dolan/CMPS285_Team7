@@ -11,7 +11,7 @@ using Android.Widget;
 
 namespace AutomaTech
 {
-	[Activity (Label = "BandCreationActivity")]			
+	[Activity (Label = "TourPlus+")]			
 	public class BandCreationActivity : Activity
 	{
 		GlobalVars g = GlobalVars.getInstance();

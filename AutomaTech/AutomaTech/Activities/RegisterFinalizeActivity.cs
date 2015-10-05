@@ -11,7 +11,7 @@ using Android.Widget;
 
 namespace AutomaTech
 {
-	[Activity (Label = "RegisterFinalizeActivity")]			
+	[Activity (Label = "TourPlus+")]			
 	public class RegisterFinalizeActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

@@ -9,55 +9,55 @@
     <TextView
         android:text="Band Manager"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="120dp"
         android:layout_marginRight="25dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp" />
     <Button
         android:text="Manage a New Band"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/btnNewBand"
-        android:background="#ff2790b0"
+        android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp" />
     <Button
         android:text="Update Band Information"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/btnUpdateBand"
-        android:background="#ff2790b0"
+        android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp" />
     <Button
         android:text="View Band"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/btnGetBands"
-        android:background="#ff2790b0"
+        android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp" />
     <Button
         android:text="Delete Band"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/btnRemoveBand"
-        android:background="#ff2790b0"
+        android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp" />
     <Button
         android:text="Back To Home Page"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/homeFromBand"
-        android:background="#ff2790b0"
+        android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp" />

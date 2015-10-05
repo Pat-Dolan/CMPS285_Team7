@@ -169,5 +169,5 @@
         android:id="@+id/btnRegister"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
-        android:background="#ff2790b0" />
+        android:background="@drawable/buttonstyle" />
 </LinearLayout>

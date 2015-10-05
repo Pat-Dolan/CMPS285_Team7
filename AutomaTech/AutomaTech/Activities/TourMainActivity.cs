@@ -11,7 +11,7 @@ using Android.Widget;
 
 namespace AutomaTech
 {
-	[Activity (Label = "TourMainActivity", Icon = "@drawable/icon")]			
+	[Activity (Label = "TourPlus+", Icon = "@drawable/icon")]			
 	public class TourMainActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

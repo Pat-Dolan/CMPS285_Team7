@@ -29,7 +29,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/btnConfirmCode"
-        android:background="#ff2790b0"
+        android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp" />
@@ -38,8 +38,9 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/btnRegisterScreen"
-        android:background="#ff2790b0"
+        android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible" />
 </LinearLayout>

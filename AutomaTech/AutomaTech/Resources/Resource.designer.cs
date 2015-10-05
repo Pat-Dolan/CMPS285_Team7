@@ -203,88 +203,91 @@ namespace AutomaTech
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int com_facebook_button_background = 2130837504;
+			public const int ButtonStyle = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int com_facebook_button_icon = 2130837505;
+			public const int com_facebook_button_background = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int com_facebook_button_like_background = 2130837506;
+			public const int com_facebook_button_icon = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int com_facebook_button_like_icon_selected = 2130837507;
+			public const int com_facebook_button_like_background = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int com_facebook_button_login_silver_background = 2130837508;
+			public const int com_facebook_button_like_icon_selected = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int com_facebook_button_send_background = 2130837509;
+			public const int com_facebook_button_login_silver_background = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int com_facebook_button_send_icon = 2130837510;
+			public const int com_facebook_button_send_background = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int com_facebook_close = 2130837511;
+			public const int com_facebook_button_send_icon = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int com_facebook_profile_picture_blank_portrait = 2130837512;
+			public const int com_facebook_close = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int com_facebook_profile_picture_blank_square = 2130837513;
+			public const int com_facebook_profile_picture_blank_portrait = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int com_facebook_tooltip_black_background = 2130837514;
+			public const int com_facebook_profile_picture_blank_square = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int com_facebook_tooltip_black_bottomnub = 2130837515;
+			public const int com_facebook_tooltip_black_background = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int com_facebook_tooltip_black_topnub = 2130837516;
+			public const int com_facebook_tooltip_black_bottomnub = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int com_facebook_tooltip_black_xout = 2130837517;
+			public const int com_facebook_tooltip_black_topnub = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int com_facebook_tooltip_blue_background = 2130837518;
+			public const int com_facebook_tooltip_black_xout = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int com_facebook_tooltip_blue_bottomnub = 2130837519;
+			public const int com_facebook_tooltip_blue_background = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int com_facebook_tooltip_blue_topnub = 2130837520;
+			public const int com_facebook_tooltip_blue_bottomnub = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int com_facebook_tooltip_blue_xout = 2130837521;
+			public const int com_facebook_tooltip_blue_topnub = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int Icon = 2130837522;
+			public const int com_facebook_tooltip_blue_xout = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int messenger_bubble_large_blue = 2130837523;
+			public const int Icon = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int messenger_bubble_large_white = 2130837524;
+			public const int messenger_bubble_large_blue = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int messenger_bubble_small_blue = 2130837525;
+			public const int messenger_bubble_large_white = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int messenger_bubble_small_white = 2130837526;
+			public const int messenger_bubble_small_blue = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int messenger_button_blue_bg_round = 2130837527;
+			public const int messenger_bubble_small_white = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int messenger_button_blue_bg_selector = 2130837528;
+			public const int messenger_button_blue_bg_round = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int messenger_button_send_round_shadow = 2130837529;
+			public const int messenger_button_blue_bg_selector = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int messenger_button_white_bg_round = 2130837530;
+			public const int messenger_button_send_round_shadow = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int messenger_button_white_bg_selector = 2130837531;
+			public const int messenger_button_white_bg_round = 2130837531;
+			
+			// aapt resource value: 0x7f02001c
+			public const int messenger_button_white_bg_selector = 2130837532;
 			
 			static Drawable()
 			{
@@ -302,8 +305,8 @@ namespace AutomaTech
 			// aapt resource value: 0x7f08000c
 			public const int automatic = 2131230732;
 			
-			// aapt resource value: 0x7f08001c
-			public const int bandName = 2131230748;
+			// aapt resource value: 0x7f080021
+			public const int bandName = 2131230753;
 			
 			// aapt resource value: 0x7f080006
 			public const int bottom = 2131230726;
@@ -311,65 +314,65 @@ namespace AutomaTech
 			// aapt resource value: 0x7f080003
 			public const int box_count = 2131230723;
 			
-			// aapt resource value: 0x7f08003d
-			public const int btnAccount = 2131230781;
-			
-			// aapt resource value: 0x7f08003f
-			public const int btnBandScreen = 2131230783;
+			// aapt resource value: 0x7f080042
+			public const int btnAccount = 2131230786;
 			
 			// aapt resource value: 0x7f080044
-			public const int btnConfirmCode = 2131230788;
+			public const int btnBandScreen = 2131230788;
 			
-			// aapt resource value: 0x7f080036
-			public const int btnDBNext = 2131230774;
+			// aapt resource value: 0x7f080049
+			public const int btnConfirmCode = 2131230793;
 			
-			// aapt resource value: 0x7f080034
-			public const int btnDBPrevious = 2131230772;
-			
-			// aapt resource value: 0x7f08003e
-			public const int btnEventScreen = 2131230782;
-			
-			// aapt resource value: 0x7f080046
-			public const int btnFinalize = 2131230790;
-			
-			// aapt resource value: 0x7f080035
-			public const int btnGetAll = 2131230773;
-			
-			// aapt resource value: 0x7f080021
-			public const int btnGetBands = 2131230753;
+			// aapt resource value: 0x7f08003b
+			public const int btnDBNext = 2131230779;
 			
 			// aapt resource value: 0x7f080039
-			public const int btnGetEvents = 2131230777;
+			public const int btnDBPrevious = 2131230777;
 			
-			// aapt resource value: 0x7f080012
-			public const int btnLoadAccount = 2131230738;
+			// aapt resource value: 0x7f080043
+			public const int btnEventScreen = 2131230787;
 			
-			// aapt resource value: 0x7f080041
-			public const int btnLogoutScreen = 2131230785;
+			// aapt resource value: 0x7f08004b
+			public const int btnFinalize = 2131230795;
 			
-			// aapt resource value: 0x7f08001f
-			public const int btnNewBand = 2131230751;
+			// aapt resource value: 0x7f08003a
+			public const int btnGetAll = 2131230778;
 			
-			// aapt resource value: 0x7f080038
-			public const int btnNewEvent = 2131230776;
+			// aapt resource value: 0x7f080026
+			public const int btnGetBands = 2131230758;
 			
-			// aapt resource value: 0x7f080053
-			public const int btnRegister = 2131230803;
+			// aapt resource value: 0x7f08003e
+			public const int btnGetEvents = 2131230782;
+			
+			// aapt resource value: 0x7f080018
+			public const int btnLoadAccount = 2131230744;
 			
 			// aapt resource value: 0x7f080045
-			public const int btnRegisterScreen = 2131230789;
+			public const int btnLogoutScreen = 2131230789;
 			
-			// aapt resource value: 0x7f080022
-			public const int btnRemoveBand = 2131230754;
+			// aapt resource value: 0x7f080024
+			public const int btnNewBand = 2131230756;
 			
-			// aapt resource value: 0x7f080040
-			public const int btnTourScreen = 2131230784;
+			// aapt resource value: 0x7f08003d
+			public const int btnNewEvent = 2131230781;
 			
-			// aapt resource value: 0x7f080020
-			public const int btnUpdateBand = 2131230752;
+			// aapt resource value: 0x7f080058
+			public const int btnRegister = 2131230808;
 			
-			// aapt resource value: 0x7f080037
-			public const int btnUpdateEvent = 2131230775;
+			// aapt resource value: 0x7f08004a
+			public const int btnRegisterScreen = 2131230794;
+			
+			// aapt resource value: 0x7f080027
+			public const int btnRemoveBand = 2131230759;
+			
+			// aapt resource value: 0x7f080046
+			public const int btnTourScreen = 2131230790;
+			
+			// aapt resource value: 0x7f080025
+			public const int btnUpdateBand = 2131230757;
+			
+			// aapt resource value: 0x7f08003c
+			public const int btnUpdateEvent = 2131230780;
 			
 			// aapt resource value: 0x7f080004
 			public const int button = 2131230724;
@@ -377,44 +380,47 @@ namespace AutomaTech
 			// aapt resource value: 0x7f080009
 			public const int center = 2131230729;
 			
-			// aapt resource value: 0x7f080026
-			public const int com_facebook_body_frame = 2131230758;
+			// aapt resource value: 0x7f08002b
+			public const int com_facebook_body_frame = 2131230763;
 			
-			// aapt resource value: 0x7f080028
-			public const int com_facebook_button_xout = 2131230760;
-			
-			// aapt resource value: 0x7f080024
-			public const int com_facebook_fragment_container = 2131230756;
-			
-			// aapt resource value: 0x7f080025
-			public const int com_facebook_login_activity_progress_bar = 2131230757;
-			
-			// aapt resource value: 0x7f08002a
-			public const int com_facebook_tooltip_bubble_view_bottom_pointer = 2131230762;
+			// aapt resource value: 0x7f08002d
+			public const int com_facebook_button_xout = 2131230765;
 			
 			// aapt resource value: 0x7f080029
-			public const int com_facebook_tooltip_bubble_view_text_body = 2131230761;
+			public const int com_facebook_fragment_container = 2131230761;
 			
-			// aapt resource value: 0x7f080027
-			public const int com_facebook_tooltip_bubble_view_top_pointer = 2131230759;
+			// aapt resource value: 0x7f08002a
+			public const int com_facebook_login_activity_progress_bar = 2131230762;
+			
+			// aapt resource value: 0x7f08002f
+			public const int com_facebook_tooltip_bubble_view_bottom_pointer = 2131230767;
+			
+			// aapt resource value: 0x7f08002e
+			public const int com_facebook_tooltip_bubble_view_text_body = 2131230766;
+			
+			// aapt resource value: 0x7f08002c
+			public const int com_facebook_tooltip_bubble_view_top_pointer = 2131230764;
 			
 			// aapt resource value: 0x7f08000d
 			public const int display_always = 2131230733;
 			
-			// aapt resource value: 0x7f08001d
-			public const int editText1 = 2131230749;
-			
-			// aapt resource value: 0x7f08001e
-			public const int finishCreation = 2131230750;
-			
-			// aapt resource value: 0x7f08001b
-			public const int homeFromAccount = 2131230747;
+			// aapt resource value: 0x7f080022
+			public const int editText1 = 2131230754;
 			
 			// aapt resource value: 0x7f080023
-			public const int homeFromBand = 2131230755;
+			public const int finishCreation = 2131230755;
 			
-			// aapt resource value: 0x7f08003a
-			public const int homeFromEvent = 2131230778;
+			// aapt resource value: 0x7f080017
+			public const int homeFromAccount = 2131230743;
+			
+			// aapt resource value: 0x7f080028
+			public const int homeFromBand = 2131230760;
+			
+			// aapt resource value: 0x7f08003f
+			public const int homeFromEvent = 2131230783;
+			
+			// aapt resource value: 0x7f080012
+			public const int imageView1 = 2131230738;
 			
 			// aapt resource value: 0x7f080007
 			public const int inline = 2131230727;
@@ -425,11 +431,11 @@ namespace AutomaTech
 			// aapt resource value: 0x7f08000a
 			public const int left = 2131230730;
 			
-			// aapt resource value: 0x7f080033
-			public const int linearLayout1 = 2131230771;
+			// aapt resource value: 0x7f080038
+			public const int linearLayout1 = 2131230776;
 			
-			// aapt resource value: 0x7f080042
-			public const int messenger_send_button = 2131230786;
+			// aapt resource value: 0x7f080047
+			public const int messenger_send_button = 2131230791;
 			
 			// aapt resource value: 0x7f08000e
 			public const int never_display = 2131230734;
@@ -443,14 +449,14 @@ namespace AutomaTech
 			// aapt resource value: 0x7f080001
 			public const int page = 2131230721;
 			
-			// aapt resource value: 0x7f080052
-			public const int rBtnArtist = 2131230802;
+			// aapt resource value: 0x7f080057
+			public const int rBtnArtist = 2131230807;
 			
-			// aapt resource value: 0x7f080051
-			public const int rBtnManager = 2131230801;
+			// aapt resource value: 0x7f080056
+			public const int rBtnManager = 2131230806;
 			
-			// aapt resource value: 0x7f080050
-			public const int rGroupAccess = 2131230800;
+			// aapt resource value: 0x7f080055
+			public const int rGroupAccess = 2131230805;
 			
 			// aapt resource value: 0x7f08000b
 			public const int right = 2131230731;
@@ -461,92 +467,104 @@ namespace AutomaTech
 			// aapt resource value: 0x7f080005
 			public const int standard = 2131230725;
 			
-			// aapt resource value: 0x7f08003c
-			public const int tempLogin = 2131230780;
-			
-			// aapt resource value: 0x7f080013
-			public const int textView1 = 2131230739;
-			
-			// aapt resource value: 0x7f080048
-			public const int textView2 = 2131230792;
-			
-			// aapt resource value: 0x7f080015
-			public const int textView3 = 2131230741;
-			
-			// aapt resource value: 0x7f08003b
-			public const int textView4 = 2131230779;
-			
-			// aapt resource value: 0x7f080017
-			public const int textView5 = 2131230743;
-			
-			// aapt resource value: 0x7f08004d
-			public const int textView6 = 2131230797;
+			// aapt resource value: 0x7f080041
+			public const int tempLogin = 2131230785;
 			
 			// aapt resource value: 0x7f080019
-			public const int textView7 = 2131230745;
+			public const int textView1 = 2131230745;
+			
+			// aapt resource value: 0x7f080015
+			public const int textView10 = 2131230741;
+			
+			// aapt resource value: 0x7f080016
+			public const int textView11 = 2131230742;
+			
+			// aapt resource value: 0x7f08004d
+			public const int textView2 = 2131230797;
+			
+			// aapt resource value: 0x7f08001b
+			public const int textView3 = 2131230747;
+			
+			// aapt resource value: 0x7f080040
+			public const int textView4 = 2131230784;
+			
+			// aapt resource value: 0x7f08001d
+			public const int textView5 = 2131230749;
+			
+			// aapt resource value: 0x7f080052
+			public const int textView6 = 2131230802;
+			
+			// aapt resource value: 0x7f08001f
+			public const int textView7 = 2131230751;
+			
+			// aapt resource value: 0x7f080013
+			public const int textView8 = 2131230739;
+			
+			// aapt resource value: 0x7f080014
+			public const int textView9 = 2131230740;
 			
 			// aapt resource value: 0x7f080008
 			public const int top = 2131230728;
 			
+			// aapt resource value: 0x7f080035
+			public const int txtDBAccess = 2131230773;
+			
+			// aapt resource value: 0x7f080033
+			public const int txtDBEmail = 2131230771;
+			
+			// aapt resource value: 0x7f080036
+			public const int txtDBFirstName = 2131230774;
+			
 			// aapt resource value: 0x7f080030
-			public const int txtDBAccess = 2131230768;
+			public const int txtDBId = 2131230768;
 			
-			// aapt resource value: 0x7f08002e
-			public const int txtDBEmail = 2131230766;
-			
-			// aapt resource value: 0x7f080031
-			public const int txtDBFirstName = 2131230769;
-			
-			// aapt resource value: 0x7f08002b
-			public const int txtDBId = 2131230763;
+			// aapt resource value: 0x7f080037
+			public const int txtDBLastName = 2131230775;
 			
 			// aapt resource value: 0x7f080032
-			public const int txtDBLastName = 2131230770;
+			public const int txtDBPassword = 2131230770;
 			
-			// aapt resource value: 0x7f08002d
-			public const int txtDBPassword = 2131230765;
+			// aapt resource value: 0x7f080034
+			public const int txtDBProfileName = 2131230772;
 			
-			// aapt resource value: 0x7f08002f
-			public const int txtDBProfileName = 2131230767;
+			// aapt resource value: 0x7f080031
+			public const int txtDBUsername = 2131230769;
 			
-			// aapt resource value: 0x7f08002c
-			public const int txtDBUsername = 2131230764;
+			// aapt resource value: 0x7f080048
+			public const int txtEConfirm = 2131230792;
 			
-			// aapt resource value: 0x7f080043
-			public const int txtEConfirm = 2131230787;
-			
-			// aapt resource value: 0x7f08004e
-			public const int txtEmail = 2131230798;
-			
-			// aapt resource value: 0x7f080047
-			public const int txtFName = 2131230791;
-			
-			// aapt resource value: 0x7f08001a
-			public const int txtGetAccess = 2131230746;
-			
-			// aapt resource value: 0x7f080014
-			public const int txtGetId = 2131230740;
-			
-			// aapt resource value: 0x7f080018
-			public const int txtGetPassword = 2131230744;
-			
-			// aapt resource value: 0x7f080016
-			public const int txtGetUsername = 2131230742;
-			
-			// aapt resource value: 0x7f080049
-			public const int txtLName = 2131230793;
-			
-			// aapt resource value: 0x7f08004f
-			public const int txtPName = 2131230799;
-			
-			// aapt resource value: 0x7f08004b
-			public const int txtPassword = 2131230795;
+			// aapt resource value: 0x7f080053
+			public const int txtEmail = 2131230803;
 			
 			// aapt resource value: 0x7f08004c
-			public const int txtRePassword = 2131230796;
+			public const int txtFName = 2131230796;
 			
-			// aapt resource value: 0x7f08004a
-			public const int txtUsername = 2131230794;
+			// aapt resource value: 0x7f080020
+			public const int txtGetAccess = 2131230752;
+			
+			// aapt resource value: 0x7f08001a
+			public const int txtGetId = 2131230746;
+			
+			// aapt resource value: 0x7f08001e
+			public const int txtGetPassword = 2131230750;
+			
+			// aapt resource value: 0x7f08001c
+			public const int txtGetUsername = 2131230748;
+			
+			// aapt resource value: 0x7f08004e
+			public const int txtLName = 2131230798;
+			
+			// aapt resource value: 0x7f080054
+			public const int txtPName = 2131230804;
+			
+			// aapt resource value: 0x7f080050
+			public const int txtPassword = 2131230800;
+			
+			// aapt resource value: 0x7f080051
+			public const int txtRePassword = 2131230801;
+			
+			// aapt resource value: 0x7f08004f
+			public const int txtUsername = 2131230799;
 			
 			// aapt resource value: 0x7f080002
 			public const int unknown = 2131230722;
