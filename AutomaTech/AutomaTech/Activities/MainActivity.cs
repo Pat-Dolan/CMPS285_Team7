@@ -8,7 +8,7 @@ using Android.OS;
 
 namespace AutomaTech
 {
-	[Activity (Label = "TourPlus+", Icon = "@drawable/icon")]
+	[Activity (Label = "TourPlus+", Icon = "@drawable/Icon")]
 
 	public class MainActivity : Activity
 	{

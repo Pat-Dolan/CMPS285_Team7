@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace AutomaTech
 {
-	[Activity (Label = "TourPlus+")]			
+	[Activity (Label = "TourPlus+", Icon = "@drawable/Icon")]			
 	public class RegisterConfirmActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

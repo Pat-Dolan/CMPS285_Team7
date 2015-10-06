@@ -11,7 +11,7 @@ using Android.Widget;
 
 namespace AutomaTech
 {
-	[Activity (Label = "TourPlus+")]			
+	[Activity (Label = "TourPlus+", Icon = "@drawable/Icon")]			
 	public class RegisterMainActivity : Activity
 	{
 		int accessLevel;	//Variable for manager or artist status

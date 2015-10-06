@@ -16,3 +16,7 @@ Version 0.3 (Christian and Randy)
 -Changed Background colors, rounded off buttons
 -Updated current account page to look more like 
  the final build intention.
+
+Version 0.4 (Christian)
+**************************************************
+-Added icons for each activity/page for consistency

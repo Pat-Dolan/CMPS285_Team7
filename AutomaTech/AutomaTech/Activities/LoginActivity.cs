@@ -13,7 +13,7 @@ using Android.Widget;
 namespace AutomaTech
 {
 	
-	[Activity (Label = "TourPlus+", MainLauncher = true, Icon = "@drawable/icon")]			
+	[Activity (Label = "TourPlus+", MainLauncher = true, Icon = "@drawable/Icon")]			
 	public class LoginActivity : Activity
 	{
 		//Declaring variables that are accessed in functions

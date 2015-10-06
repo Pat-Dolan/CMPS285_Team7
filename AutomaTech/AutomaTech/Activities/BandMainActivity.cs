@@ -12,7 +12,7 @@ using Xamarin.Forms;
 
 namespace AutomaTech
 {
-	[Activity (Label = "TourPlus+", Icon = "@drawable/icon")]			
+	[Activity (Label = "TourPlus+", Icon = "@drawable/Icon")]			
 	public class BandMainActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
