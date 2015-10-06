@@ -163,3 +163,8 @@ C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\R.cs.flag
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\uploadflags.txt
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\drawable\buttonstyle.xml
+C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventcancellayout.xml
+C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventlistviewrowlayout.xml
+C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventselectlayout.xml
+C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventupdatelayout.xml
+C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventviewlayout.xml

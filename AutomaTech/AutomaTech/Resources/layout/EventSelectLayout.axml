@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:background="#ff353432">
+    <Button
+        p1:text="View"
+        p1:layout_width="250dp"
+        p1:layout_height="50dp"
+        p1:id="@+id/btnViewEvent"
+        p1:layout_centerHorizontal="true"
+        p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginTop="15dp"
+        p1:layout_marginBottom="15dp" />
+    <Button
+        p1:text="Update"
+        p1:layout_width="250dp"
+        p1:layout_height="50dp"
+        p1:layout_below="@id/btnViewEvent"
+        p1:id="@+id/btnUpdateEvent"
+        p1:layout_centerHorizontal="true"
+        p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginBottom="15dp" />
+    <Button
+        p1:text="Cancel"
+        p1:layout_width="250dp"
+        p1:layout_height="50dp"
+        p1:layout_below="@id/btnUpdateEvent"
+        p1:id="@+id/btnRemoveEvent"
+        p1:layout_centerHorizontal="true"
+        p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginBottom="15dp"
+        p1:visibility="gone" />
+    <Button
+        p1:text="Back"
+        p1:layout_width="250dp"
+        p1:layout_height="50dp"
+        p1:layout_below="@id/btnRemoveEvent"
+        p1:id="@+id/btnSelectBack"
+        p1:layout_centerHorizontal="true"
+        p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginBottom="15dp" />
+</RelativeLayout>

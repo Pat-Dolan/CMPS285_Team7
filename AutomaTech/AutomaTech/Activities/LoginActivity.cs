@@ -32,7 +32,7 @@ namespace AutomaTech
 			//Opening database connection for testing login info
 			DBRepository dbr = new DBRepository ();
 			var result = dbr.CreateDB ();						//returns testing string
-			Toast.MakeText (this, result.ToString(), ToastLength.Short).Show ();		//displaying testing value
+			//Toast.MakeText (this, result.ToString(), ToastLength.Short).Show ();		//displaying testing value
 
 			Button tempLogin = FindViewById<Button> (Resource.Id.tempLogin);
 			tempLogin.Click += TempLogin_Click;

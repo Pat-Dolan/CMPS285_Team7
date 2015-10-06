@@ -207,7 +207,7 @@ namespace AutomaTech
 				return "Error : " + ex.Message;
 			}
 		}
-			
+		/*	
 		//Inserting record
 		public string InsertEvent(string name, string location, string date, string time)
 		{
@@ -286,6 +286,7 @@ namespace AutomaTech
 			db.Delete (item);
 			return "Record Deleted...";
 		}
+		*/
 	}
 }
 

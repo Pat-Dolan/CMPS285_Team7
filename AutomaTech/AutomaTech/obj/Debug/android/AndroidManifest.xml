@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.BandMainActivity" />
-    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.EventMainActivity" />
     <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.LoginActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -22,6 +21,12 @@
     <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.AccountMainActivity" />
     <activity android:icon="@drawable/icon" android:label="TourPus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.DBAccessActivity" />
     <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.BandCreationActivity" />
+    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.EventCancelActivity" />
+    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.EventMainActivity" />
+    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.EventNewActivity" />
+    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.EventSelectActivity" />
+    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.EventUpdateActivity" />
+    <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.EventViewActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.automatech.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>

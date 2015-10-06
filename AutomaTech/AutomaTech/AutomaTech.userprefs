@@ -1,16 +1,8 @@
 ﻿<Properties StartupItem="AutomaTech.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.AVD_GalaxyNexus_ToolsForApacheCordova" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Activities\BandCreationActivity.cs">
-    <Files>
-      <File FileName="Activities\MainActivity.cs" Line="18" Column="27" />
-      <File FileName="Activities\BandMainActivity.cs" Line="28" Column="18" />
-      <File FileName="Activities\BandCreationActivity.cs" Line="8" Column="21" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 KitKat" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <RunToCursorBreakpoint file="C:\Users\Jmac\Desktop\GIT Root\AutomaTech\AutomaTech\Activities\BandMainActivity.cs" line="76" column="11" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.AutomaTech AndroidDesignerPreferredDevice="Nexus 4" />

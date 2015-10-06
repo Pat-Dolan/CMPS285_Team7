@@ -33,7 +33,8 @@
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:visibility="gone" />
     <Button
         android:text="View Band"
         android:layout_width="250dp"
@@ -42,7 +43,8 @@
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:visibility="gone" />
     <Button
         android:text="Delete Band"
         android:layout_width="250dp"
@@ -51,7 +53,8 @@
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:visibility="gone" />
     <Button
         android:text="Back To Home Page"
         android:layout_width="250dp"
