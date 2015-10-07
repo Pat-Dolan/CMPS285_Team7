@@ -691,16 +691,19 @@ namespace AutomaTech
 			public const int messenger_button_send_white_small = 2130903060;
 			
 			// aapt resource value: 0x7f030015
-			public const int RegisterConfirmationLayout = 2130903061;
+			public const int MyAccountMainLayout = 2130903061;
 			
 			// aapt resource value: 0x7f030016
-			public const int RegisterFinalizeLayout = 2130903062;
+			public const int RegisterConfirmationLayout = 2130903062;
 			
 			// aapt resource value: 0x7f030017
-			public const int RegisterMainLayout = 2130903063;
+			public const int RegisterFinalizeLayout = 2130903063;
 			
 			// aapt resource value: 0x7f030018
-			public const int TourMainLayout = 2130903064;
+			public const int RegisterMainLayout = 2130903064;
+			
+			// aapt resource value: 0x7f030019
+			public const int TourMainLayout = 2130903065;
 			
 			static Layout()
 			{

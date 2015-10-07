@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff353432">
+    <TextView
+        android:text="Please enter your email confirmation code: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEConfirm"
+        android:layout_marginBottom="30dp"
+        android:background="#ff726e6a"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp" />
+    <Button
+        android:text="Submit"
+        android:layout_width="500dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnConfirmCode"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/txtEConfirm"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:text="Edit Registration Information"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegisterScreen"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/btnConfirmCode" />
+</RelativeLayout>

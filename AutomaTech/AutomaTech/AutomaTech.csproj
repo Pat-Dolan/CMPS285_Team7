@@ -117,6 +117,23 @@
     <AndroidResource Include="Resources\layout\EventViewLayout.axml" />
     <AndroidResource Include="Resources\layout\EventMainLayout.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\layout-xlarge\AccountMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\BandCreationLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\BandMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\DBAccessLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\EventCancelLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\EventListViewRowLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\EventMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\EventSelectLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\EventUpdateLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\EventViewLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\LoginLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\Main.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\MyAccountMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\RegisterConfirmationLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\RegisterFinalizeLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\RegisterMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\TourMainLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -125,6 +142,7 @@
     <Folder Include="Resources\drawable\" />
     <Folder Include="Activities\Event Manager\" />
     <Folder Include="Resources\values\" />
+    <Folder Include="Resources\layout-xlarge\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="facebookandroid">

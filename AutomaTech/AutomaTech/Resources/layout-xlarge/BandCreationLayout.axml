@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff353432">
+    <TextView
+        android:text="Band Name:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bandName"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp" />
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:textColor="#ffffff"
+        android:background="#ff726e6a"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="30dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/bandName"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:text="Finish"
+        android:layout_width="500dp"
+        android:layout_height="75dp"
+        android:id="@+id/finishCreation"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginRight="150dp"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

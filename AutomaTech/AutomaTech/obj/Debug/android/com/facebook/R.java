@@ -326,10 +326,11 @@ containing a value of this type.
         public static final int messenger_button_send_white_large=0x7f030012;
         public static final int messenger_button_send_white_round=0x7f030013;
         public static final int messenger_button_send_white_small=0x7f030014;
-        public static final int registerconfirmationlayout=0x7f030015;
-        public static final int registerfinalizelayout=0x7f030016;
-        public static final int registermainlayout=0x7f030017;
-        public static final int tourmainlayout=0x7f030018;
+        public static final int myaccountmainlayout=0x7f030015;
+        public static final int registerconfirmationlayout=0x7f030016;
+        public static final int registerfinalizelayout=0x7f030017;
+        public static final int registermainlayout=0x7f030018;
+        public static final int tourmainlayout=0x7f030019;
     }
     public static final class string {
         public static final int NewEvent=0x7f040014;
