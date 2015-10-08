@@ -16,12 +16,12 @@
         p1:layout_marginBottom="15dp" />
     <TextView
         p1:layout_width="match_parent"
-        p1:layout_height="30dp"
+        p1:layout_height="60dp"
         p1:layout_below="@id/textView1"
         p1:id="@+id/txtTitle"
-        p1:layout_marginLeft="25dp"
-        p1:layout_marginRight="25dp"
-        p1:layout_marginBottom="5dp"
+        p1:layout_marginLeft="60dp"
+        p1:layout_marginRight="60dp"
+        p1:layout_marginBottom="15dp"
         p1:textSize="40sp" />
     <TextView
         p1:text=" Location:"
@@ -35,12 +35,12 @@
         p1:layout_marginBottom="15dp" />
     <TextView
         p1:layout_width="match_parent"
-        p1:layout_height="30dp"
+        p1:layout_height="60dp"
         p1:layout_below="@id/textView2"
         p1:id="@+id/txtLocation"
-        p1:layout_marginLeft="25dp"
-        p1:layout_marginRight="25dp"
-        p1:layout_marginBottom="5dp"
+        p1:layout_marginLeft="60dp"
+        p1:layout_marginRight="60dp"
+        p1:layout_marginBottom="15dp"
         p1:textSize="40sp" />
     <TextView
         p1:text=" Date:"
@@ -54,12 +54,12 @@
         p1:layout_marginBottom="15dp" />
     <TextView
         p1:layout_width="match_parent"
-        p1:layout_height="30dp"
+        p1:layout_height="60dp"
         p1:layout_below="@id/textView3"
         p1:id="@+id/txtDate"
-        p1:layout_marginLeft="25dp"
-        p1:layout_marginRight="25dp"
-        p1:layout_marginBottom="5dp"
+        p1:layout_marginLeft="60dp"
+        p1:layout_marginRight="60dp"
+        p1:layout_marginBottom="15dp"
         p1:textSize="40sp" />
     <TextView
         p1:text=" Time: "
@@ -73,12 +73,12 @@
         p1:layout_marginBottom="30dp" />
     <TextView
         p1:layout_width="match_parent"
-        p1:layout_height="30dp"
+        p1:layout_height="60dp"
         p1:layout_below="@id/textView4"
         p1:id="@+id/txtTime"
-        p1:layout_marginLeft="25dp"
-        p1:layout_marginRight="25dp"
-        p1:layout_marginBottom="5dp"
+        p1:layout_marginLeft="60dp"
+        p1:layout_marginRight="60dp"
+        p1:layout_marginBottom="30dp"
         p1:textSize="40sp" />
     <Button
         p1:text="Back"
