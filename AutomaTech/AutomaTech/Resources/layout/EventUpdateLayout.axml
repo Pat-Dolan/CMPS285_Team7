@@ -79,7 +79,7 @@
         p1:id="@+id/textView4"
         p1:layout_marginLeft="25dp"
         p1:layout_marginBottom="5dp" />
-    <EditText
+    <TextView
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:layout_below="@id/textView4"
@@ -108,6 +108,26 @@
         p1:layout_height="50dp"
         p1:layout_below="@id/btnUpdate"
         p1:id="@+id/btnUpdateBack"
+        p1:layout_centerHorizontal="true"
+        p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginBottom="15dp" />
+    <Button
+        p1:text="Update Time"
+        p1:layout_width="130.3dp"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/txtDate"
+        p1:id="@+id/btnUpdateTime"
+        p1:layout_centerHorizontal="true"
+        p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginBottom="15dp" />
+    <Button
+        p1:text="Update Date"
+        p1:layout_width="126.9dp"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/txtLocation"
+        p1:id="@+id/btnUpdateDate"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
         p1:layout_marginLeft="73dp"
