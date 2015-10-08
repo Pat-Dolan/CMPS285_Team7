@@ -6,11 +6,15 @@
     android:weightSum="100"
     android:background="#ff353432">
     <TextView
+        android:textSize="40sp"
+        android:textColor="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/txtEventTitle"
         android:layout_weight="50" />
     <TextView
+        android:textSize="40sp"
+        android:textColor="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/txtEventDate"

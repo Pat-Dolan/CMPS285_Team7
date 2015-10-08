@@ -16,6 +16,7 @@
         android:layout_centerHorizontal="true" />
     <TextView
         android:text="Name:"
+        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,6 +26,7 @@
         android:layout_below="@+id/imageView1" />
     <TextView
         android:text="Band:"
+        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,6 +36,7 @@
         android:layout_below="@+id/textView8" />
     <TextView
         android:text="Manager:"
+        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,6 +46,7 @@
         android:layout_below="@+id/textView9" />
     <TextView
         android:text="Members:"
+        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,8 +56,9 @@
         android:layout_below="@+id/textView10" />
     <Button
         android:text="Back To Home Page"
+        android:textSize="40sp"
         android:layout_width="500dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:id="@+id/homeFromAccount"
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="150dp"
@@ -63,6 +68,7 @@
         android:layout_centerHorizontal="true" />
     <Button
         android:text="Load Account"
+        android:textSize="40sp"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:id="@+id/btnLoadAccount"
@@ -74,6 +80,7 @@
         android:visibility="gone" />
     <TextView
         android:text="ID: "
+        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

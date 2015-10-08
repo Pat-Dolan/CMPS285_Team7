@@ -6,6 +6,7 @@
     p1:background="#ff353432">
     <TextView
         p1:text=" Title:"
+        p1:textSize="40sp"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
@@ -26,9 +27,11 @@
         p1:paddingTop="20dp"
         p1:paddingRight="15dp"
         p1:paddingBottom="20dp"
-        p1:paddingLeft="15dp" />
+        p1:paddingLeft="15dp"
+        p1:textSize="40sp" />
     <TextView
         p1:text=" Location:"
+        p1:textSize="40sp"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
@@ -49,9 +52,11 @@
         p1:paddingTop="20dp"
         p1:paddingRight="15dp"
         p1:paddingBottom="20dp"
-        p1:paddingLeft="15dp" />
+        p1:paddingLeft="15dp"
+        p1:textSize="40sp" />
     <TextView
         p1:text=" Date:"
+        p1:textSize="40sp"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
@@ -72,9 +77,11 @@
         p1:paddingTop="20dp"
         p1:paddingRight="15dp"
         p1:paddingBottom="20dp"
-        p1:paddingLeft="15dp" />
+        p1:paddingLeft="15dp"
+        p1:textSize="40sp" />
     <TextView
         p1:text=" Time: "
+        p1:textSize="40sp"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
@@ -95,22 +102,25 @@
         p1:paddingTop="20dp"
         p1:paddingRight="15dp"
         p1:paddingBottom="20dp"
-        p1:paddingLeft="15dp" />
+        p1:paddingLeft="15dp"
+        p1:textSize="40sp" />
     <Button
         p1:text="@+string/UpdateEvent"
         p1:layout_width="500dp"
-        p1:layout_height="75dp"
+        p1:layout_height="100dp"
         p1:layout_below="@id/txtTime"
         p1:id="@+id/btnUpdate"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
         p1:layout_marginLeft="150dp"
         p1:layout_marginBottom="30dp"
-        p1:layout_marginRight="150dp" />
+        p1:layout_marginRight="150dp"
+        p1:textSize="40sp" />
     <Button
         p1:text="Back"
+        p1:textSize="40sp"
         p1:layout_width="500dp"
-        p1:layout_height="75dp"
+        p1:layout_height="100dp"
         p1:layout_below="@id/btnUpdate"
         p1:id="@+id/btnUpdateBack"
         p1:layout_centerHorizontal="true"

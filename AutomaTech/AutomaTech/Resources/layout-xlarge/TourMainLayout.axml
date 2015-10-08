@@ -8,6 +8,7 @@
     android:background="#ff353432">
     <TextView
         android:text="Tour Manager"
+        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,7 +19,8 @@
         android:layout_marginBottom="30dp"
         android:layout_centerHorizontal="true" />
     <TextView
-        android:text="Under Construction!!!"
+        android:text="Under Construction!"
+        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

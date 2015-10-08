@@ -6,6 +6,7 @@
     android:background="#ff353432">
     <TextView
         android:text="Please enter your email confirmation code: "
+        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,11 +28,13 @@
         android:layout_marginRight="60dp"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:paddingBottom="20dp" />
+        android:paddingBottom="20dp"
+        android:textSize="40sp" />
     <Button
         android:text="Submit"
+        android:textSize="40sp"
         android:layout_width="500dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:id="@+id/btnConfirmCode"
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
@@ -41,6 +44,7 @@
         android:layout_centerHorizontal="true" />
     <Button
         android:text="Edit Registration Information"
+        android:textSize="40sp"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/btnRegisterScreen"

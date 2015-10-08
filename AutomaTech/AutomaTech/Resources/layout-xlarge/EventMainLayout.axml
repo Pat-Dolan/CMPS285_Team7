@@ -7,8 +7,9 @@
     android:background="#ff353432">
     <Button
         android:text="Create A New Event"
+        android:textSize="30sp"
         android:layout_width="500dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:id="@+id/btnFirstEvent"
         android:layout_weight="10"
         android:background="@drawable/buttonstyle"
@@ -26,8 +27,9 @@
         android:background="#ff353432" />
     <Button
         android:text="Back"
+        android:textSize="30sp"
         android:layout_width="500dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:id="@+id/btnEventMainBack"
         android:layout_weight="10"
         android:background="@drawable/buttonstyle"

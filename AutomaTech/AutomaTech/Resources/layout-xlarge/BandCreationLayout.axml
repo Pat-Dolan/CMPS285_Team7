@@ -6,6 +6,7 @@
     android:background="#ff353432">
     <TextView
         android:text="Band Name:"
+        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,11 +30,13 @@
         android:layout_marginBottom="30dp"
         android:paddingBottom="20dp"
         android:layout_below="@+id/bandName"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
     <Button
         android:text="Finish"
+        android:textSize="40sp"
         android:layout_width="500dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:id="@+id/finishCreation"
         android:layout_marginLeft="150dp"
         android:layout_marginBottom="30dp"

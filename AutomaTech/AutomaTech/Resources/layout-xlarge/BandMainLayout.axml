@@ -8,19 +8,19 @@
     android:background="#ff353432">
     <TextView
         android:text="Band Manager"
+        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
-        android:layout_marginLeft="327dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
-        android:layout_marginRight="327dp"
         android:layout_centerHorizontal="true" />
     <Button
         android:text="Manage a New Band"
+        android:textSize="40sp"
         android:layout_width="500dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:id="@+id/btnNewBand"
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="150dp"
@@ -30,6 +30,7 @@
         android:layout_centerHorizontal="true" />
     <Button
         android:text="Update Band Information"
+        android:textSize="40sp"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:id="@+id/btnUpdateBand"
@@ -41,6 +42,7 @@
         android:layout_below="@+id/btnNewBand" />
     <Button
         android:text="View Band"
+        android:textSize="40sp"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:id="@+id/btnGetBands"
@@ -52,6 +54,7 @@
         android:layout_below="@+id/btnUpdateBand" />
     <Button
         android:text="Delete Band"
+        android:textSize="40sp"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:id="@+id/btnRemoveBand"
@@ -63,8 +66,9 @@
         android:layout_below="@+id/btnGetBands" />
     <Button
         android:text="Back To Home Page"
+        android:textSize="40sp"
         android:layout_width="500dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:id="@+id/homeFromBand"
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="150dp"

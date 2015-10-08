@@ -6,8 +6,9 @@
     p1:background="#ff353432">
     <Button
         p1:text="View"
+        p1:textSize="40sp"
         p1:layout_width="500dp"
-        p1:layout_height="75dp"
+        p1:layout_height="100dp"
         p1:id="@+id/btnViewEvent"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
@@ -17,8 +18,9 @@
         p1:layout_marginRight="150dp" />
     <Button
         p1:text="Update"
+        p1:textSize="40sp"
         p1:layout_width="500dp"
-        p1:layout_height="75dp"
+        p1:layout_height="100dp"
         p1:layout_below="@id/btnViewEvent"
         p1:id="@+id/btnUpdateEvent"
         p1:layout_centerHorizontal="true"
@@ -28,6 +30,7 @@
         p1:layout_marginRight="150dp" />
     <Button
         p1:text="Cancel"
+        p1:textSize="40sp"
         p1:layout_width="500dp"
         p1:layout_height="75dp"
         p1:layout_below="@id/btnUpdateEvent"
@@ -40,8 +43,9 @@
         p1:layout_marginRight="150dp" />
     <Button
         p1:text="Back"
+        p1:textSize="40sp"
         p1:layout_width="500dp"
-        p1:layout_height="75dp"
+        p1:layout_height="100dp"
         p1:layout_below="@id/btnRemoveEvent"
         p1:id="@+id/btnSelectBack"
         p1:layout_centerHorizontal="true"

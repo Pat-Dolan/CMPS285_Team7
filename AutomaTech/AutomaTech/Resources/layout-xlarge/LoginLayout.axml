@@ -10,26 +10,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
-        android:layout_marginLeft="343dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
-        android:layout_marginRight="343dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
     <TextView
         android:text="Welcome to TourPlus+"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
-        android:layout_marginLeft="286dp"
-        android:layout_marginRight="286dp"
         android:layout_marginBottom="30dp"
         android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
     <Button
         android:text="Login"
+        android:textSize="40sp"
         android:layout_width="500dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:id="@+id/tempLogin"
         android:layout_marginLeft="150dp"
         android:layout_marginBottom="30dp"

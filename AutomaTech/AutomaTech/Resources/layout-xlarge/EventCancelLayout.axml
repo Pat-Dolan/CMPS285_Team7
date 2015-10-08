@@ -6,38 +6,42 @@
     p1:background="#ff353432">
     <TextView
         p1:text="Cancel  Event"
+        p1:textSize="40sp"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:id="@+id/textView1"
         p1:layout_centerHorizontal="true"
-        p1:layout_marginTop="15dp"
-        p1:layout_marginBottom="5dp" />
+        p1:layout_marginTop="30dp"
+        p1:layout_marginBottom="15dp" />
     <TextView
         p1:text="Are You Sure?"
+        p1:textSize="40sp"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:layout_below="@id/textView1"
         p1:id="@+id/textView3"
         p1:layout_centerHorizontal="true"
-        p1:layout_marginBottom="15dp" />
+        p1:layout_marginBottom="30dp" />
     <Button
         p1:text="Cancel Event"
-        p1:layout_width="250dp"
-        p1:layout_height="50dp"
+        p1:textSize="40sp"
+        p1:layout_width="500dp"
+        p1:layout_height="100dp"
         p1:layout_below="@id/textView3"
         p1:id="@+id/btnCancel"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginLeft="73dp"
-        p1:layout_marginBottom="15dp" />
+        p1:layout_marginBottom="30dp" />
     <Button
         p1:text="Back"
-        p1:layout_width="250dp"
-        p1:layout_height="50dp"
+        p1:textSize="40sp"
+        p1:layout_width="500dp"
+        p1:layout_height="100dp"
         p1:layout_below="@id/btnCancel"
         p1:id="@+id/btnCancelBack"
         p1:layout_centerHorizontal="true"
-        p1:background="@drawable/buttonstyle" />
+        p1:background="@drawable/buttonstyle"
+        p1:layout_marginBottom="30dp" />
 </RelativeLayout>
