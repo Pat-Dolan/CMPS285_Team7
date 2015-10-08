@@ -24,15 +24,51 @@ namespace AutomaTech
 		Button update;
 		Button back;
 		int nCount;
+
+		private TextView timeDisplay;
+		private Button pick_button;
+
+		private int hour;
+		private int minute;
+
+		const int TIME_DIALOG_ID = 0;
+
+		private TextView dateDisplay;
+		private Button pickDate;
+		private DateTime date;
+
+		const int DATE_DIALOG_ID = 1;
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.EventUpdateLayout);
 
+
+			timeDisplay = FindViewById<TextView> (Resource.Id.txtTime);
+			pick_button = FindViewById<Button> (Resource.Id.btnUpdateTime);
+
+			// Add a click listener to the button
+			pick_button.Click += (o, e) => ShowDialog (TIME_DIALOG_ID);
+
+			// Get the current time
+			hour = DateTime.Now.Hour;
+			minute = DateTime.Now.Minute;
+
+			dateDisplay = FindViewById<TextView> (Resource.Id.txtDate);
+			pickDate = FindViewById<Button> (Resource.Id.btnUpdateDate);
+
+			// add a click event handler to the button
+			pickDate.Click += delegate { ShowDialog (DATE_DIALOG_ID); };
+
+			// get the current date
+			date = DateTime.Today;
+
+			// Display the current date/time
+			UpdateDisplay ();
+
 			updateTitle = FindViewById <EditText>(Resource.Id.txtTitle);
 			updateLocation = FindViewById<EditText> (Resource.Id.txtLocation);
-			updateDate = FindViewById <EditText>(Resource.Id.txtDate);
-			updateTime = FindViewById <EditText>(Resource.Id.txtTime);
 			update = FindViewById <Button>(Resource.Id.btnUpdate);
 			update.Click += Update_Click;
 			back = FindViewById<Button> (Resource.Id.btnUpdateBack);
@@ -60,8 +96,8 @@ namespace AutomaTech
 
 			updateTitle.Text = tempEvent.title;
 			updateLocation.Text = tempEvent.location;
-			updateDate.Text = tempEvent.date;
-			updateTime.Text = tempEvent.time;
+			dateDisplay.Text = tempEvent.date;
+			timeDisplay.Text = tempEvent.time;
 
 		}
 
@@ -69,8 +105,36 @@ namespace AutomaTech
 		{
 			string result;
 			EventDB dbr = new EventDB ();
-			result = dbr.updateEvent ((GEventID.getEventId () +1), updateTitle.Text, updateLocation.Text, updateDate.Text, updateTime.Text);
+			result = dbr.updateEvent ((GEventID.getEventId () +1), updateTitle.Text, updateLocation.Text, dateDisplay.Text, timeDisplay.Text);
 			Toast.MakeText(this, result, ToastLength.Short).Show();
+		}
+		private void UpdateDisplay ()
+		{
+			string time = string.Format ("{0}:{1}", hour, minute.ToString ().PadLeft (2, '0'));
+			timeDisplay.Text = time;
+			dateDisplay.Text = date.ToString ("d");
+		}
+		private void TimePickerCallback (object sender, TimePickerDialog.TimeSetEventArgs e)
+		{
+			hour = e.HourOfDay;
+			minute = e.Minute;
+			UpdateDisplay ();
+		}
+		protected override Dialog OnCreateDialog (int id)
+		{
+			switch (id) {
+			case DATE_DIALOG_ID:
+				return new DatePickerDialog (this, OnDateSet, date.Year, date.Month - 1, date.Day); 
+
+			case TIME_DIALOG_ID:
+				return new TimePickerDialog (this, TimePickerCallback, hour, minute, false);
+			}
+			return null;
+		}
+		void OnDateSet (object sender, DatePickerDialog.DateSetEventArgs e)
+		{
+			this.date = e.Date;
+			UpdateDisplay ();
 		}
 	}
 }
