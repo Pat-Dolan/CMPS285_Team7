@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -24,7 +24,8 @@
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/textView1" />
     <Button
         android:text="Update Band Information"
         android:layout_width="250dp"
@@ -34,6 +35,7 @@
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp"
+        android:layout_below="@+id/btnNewBand"
         android:visibility="gone" />
     <Button
         android:text="View Band"
@@ -44,6 +46,7 @@
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp"
+        android:layout_below="@+id/btnUpdateBand"
         android:visibility="gone" />
     <Button
         android:text="Delete Band"
@@ -54,6 +57,7 @@
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp"
+        android:layout_below="@+id/btnGetBands"
         android:visibility="gone" />
     <Button
         android:text="Back To Home Page"
@@ -63,5 +67,6 @@
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp" />
-</LinearLayout>
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/btnRemoveBand" />
+</RelativeLayout>

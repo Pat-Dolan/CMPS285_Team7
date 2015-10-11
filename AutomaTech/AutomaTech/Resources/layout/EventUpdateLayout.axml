@@ -20,7 +20,7 @@
         p1:id="@+id/txtTitle"
         p1:layout_marginLeft="25dp"
         p1:layout_marginRight="25dp"
-        p1:layout_marginBottom="5dp"
+        p1:layout_marginBottom="10dp"
         p1:background="#ff726e6a"
         p1:paddingTop="7.5dp"
         p1:paddingRight="15dp"
@@ -34,7 +34,8 @@
         p1:layout_below="@id/txtTitle"
         p1:id="@+id/textView2"
         p1:layout_marginLeft="25dp"
-        p1:layout_marginBottom="5dp" />
+        p1:layout_marginBottom="5dp"
+        p1:layout_marginRight="25dp" />
     <EditText
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
@@ -42,7 +43,7 @@
         p1:id="@+id/txtLocation"
         p1:layout_marginLeft="25dp"
         p1:layout_marginRight="25dp"
-        p1:layout_marginBottom="5dp"
+        p1:layout_marginBottom="10dp"
         p1:background="#ff726e6a"
         p1:paddingTop="7.5dp"
         p1:paddingRight="15dp"
@@ -56,7 +57,8 @@
         p1:layout_below="@id/txtLocation"
         p1:id="@+id/textView3"
         p1:layout_marginLeft="25dp"
-        p1:layout_marginBottom="5dp" />
+        p1:layout_marginBottom="5dp"
+        p1:layout_marginRight="25dp" />
     <EditText
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
@@ -64,7 +66,7 @@
         p1:id="@+id/txtDate"
         p1:layout_marginLeft="25dp"
         p1:layout_marginRight="25dp"
-        p1:layout_marginBottom="5dp"
+        p1:layout_marginBottom="10dp"
         p1:background="#ff726e6a"
         p1:paddingTop="7.5dp"
         p1:paddingRight="15dp"
@@ -78,7 +80,8 @@
         p1:layout_below="@+id/btnUpdateDate"
         p1:id="@+id/textView4"
         p1:layout_marginLeft="25dp"
-        p1:layout_marginBottom="5dp" />
+        p1:layout_marginBottom="5dp"
+        p1:layout_marginRight="25dp" />
     <TextView
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
@@ -86,7 +89,7 @@
         p1:id="@+id/txtTime"
         p1:layout_marginLeft="25dp"
         p1:layout_marginRight="25dp"
-        p1:layout_marginBottom="15dp"
+        p1:layout_marginBottom="10dp"
         p1:background="#ff726e6a"
         p1:paddingTop="7.5dp"
         p1:paddingRight="15dp"
@@ -100,8 +103,7 @@
         p1:id="@+id/btnUpdate"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginLeft="73dp"
-        p1:layout_marginBottom="15dp" />
+        p1:layout_marginBottom="10dp" />
     <Button
         p1:text="Back"
         p1:layout_width="250dp"
@@ -110,8 +112,7 @@
         p1:id="@+id/btnUpdateBack"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginLeft="73dp"
-        p1:layout_marginBottom="15dp" />
+        p1:layout_marginBottom="10dp" />
     <Button
         p1:text="Update Time"
         p1:layout_width="250dp"
@@ -120,7 +121,7 @@
         p1:id="@+id/btnUpdateTime"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginBottom="15dp" />
+        p1:layout_marginBottom="10dp" />
     <Button
         p1:text="Update Date"
         p1:layout_width="250dp"
@@ -129,6 +130,5 @@
         p1:id="@+id/btnUpdateDate"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginLeft="73dp"
-        p1:layout_marginBottom="15dp" />
+        p1:layout_marginBottom="10dp" />
 </RelativeLayout>

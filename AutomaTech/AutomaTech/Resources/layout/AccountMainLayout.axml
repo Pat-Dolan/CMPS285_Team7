@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -19,7 +19,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView8"
         android:layout_marginLeft="25dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/imageView1" />
     <TextView
         android:text="Band:"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -27,7 +28,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView9"
         android:layout_marginLeft="25dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/textView8" />
     <TextView
         android:text="Manager:"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -35,7 +37,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView10"
         android:layout_marginLeft="50dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/textView9" />
     <TextView
         android:text="Members:"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -43,7 +46,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView11"
         android:layout_marginLeft="50dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/textView10" />
     <Button
         android:text="Back To Home Page"
         android:layout_width="250dp"
@@ -52,7 +56,8 @@
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/textView11" />
     <Button
         android:text="Load Account"
         android:layout_width="250dp"
@@ -126,4 +131,4 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtGetAccess"
         android:visibility="gone" />
-</LinearLayout>
+</RelativeLayout>
