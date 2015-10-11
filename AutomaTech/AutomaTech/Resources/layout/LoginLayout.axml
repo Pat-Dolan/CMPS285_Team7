@@ -23,6 +23,13 @@
         android:layout_marginLeft="85dp"
         android:layout_marginRight="25dp"
         android:layout_marginBottom="15dp" />
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30.0dp" />
     <Button
         android:text="Login"
         android:layout_width="250dp"
@@ -31,5 +38,6 @@
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/buttonstyle" />
+        android:background="@drawable/buttonstyle"
+        android:visibility="invisible" />
 </LinearLayout>
