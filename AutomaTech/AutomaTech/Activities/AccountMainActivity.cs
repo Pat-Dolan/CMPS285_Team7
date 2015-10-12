@@ -8,12 +8,16 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Xamarin.Facebook;
 
 namespace AutomaTech
 {
 	[Activity (Label = "TourPlus+", Icon = "@drawable/Icon")]			
 	public class AccountMainActivity : Activity
 	{
+		private TextView mTxtFirstName;
+		public myProfileTracker mProfileTracker;
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -21,11 +25,33 @@ namespace AutomaTech
 			//Setting layout
 			SetContentView(Resource.Layout.AccountMainLayout);
 
+			//mProfileTracker.mOnProfileChanged += mProfileTracker_mOnProfileChanged;
+
+			mTxtFirstName = FindViewById<TextView> (Resource.Id.txtFirstName);
 			Button loadAccount = FindViewById<Button>(Resource.Id.btnLoadAccount);
+			
 			//loadAccount.Click += LoadAccount_Click;
 
 			Button homeFromAccount = FindViewById<Button> (Resource.Id.homeFromAccount);
 			homeFromAccount.Click += HomeFromAccount_Click;
+		}
+
+		void mProfileTracker_mOnProfileChanged(object sender, OnProfileChangedEventArgs e)
+		{
+			mTxtFirstName.Text = e.mProfile.FirstName;
+		}
+
+		public class myProfileTracker : ProfileTracker
+		{
+			public event EventHandler<OnProfileChangedEventArgs> mOnProfileChanged;
+
+			protected override void OnCurrentProfileChanged(Profile oldProfile, Profile newProfile)
+			{
+				if (mOnProfileChanged != null) 
+				{
+					mOnProfileChanged.Invoke (this, new OnProfileChangedEventArgs (newProfile));
+				}
+			}
 		}
 
 		//This function loads the text fields with user information

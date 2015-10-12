@@ -6,6 +6,7 @@
     <!--Facebook Necessary API's-->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" />
     <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.BandMainActivity" />
     <activity android:icon="@drawable/icon" android:label="TourPlus+" android:name="md5f424497de6707ca4dc3b401f9326f17a.LoginActivity">
       <intent-filter>
@@ -35,5 +36,6 @@
       </intent-filter>
     </receiver>
   </application>
+  <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 </manifest>

@@ -44,7 +44,7 @@ namespace AutomaTech
 			SetContentView (Resource.Layout.EventUpdateLayout);
 
 			timeDisplay = FindViewById<TextView> (Resource.Id.txtTime);
-			pick_button = FindViewById<Button> (Resource.Id.btnUpdateTime);
+			//pick_button = FindViewById<Button> (Resource.Id.btnUpdateTime);
 
 			// Add a click listener to the button
 			pick_button.Click += (o, e) => ShowDialog (TIME_DIALOG_ID);
@@ -54,7 +54,7 @@ namespace AutomaTech
 			minute = DateTime.Now.Minute;
 
 			dateDisplay = FindViewById<TextView> (Resource.Id.txtDate);
-			pickDate = FindViewById<Button> (Resource.Id.btnUpdateDate);
+			//pickDate = FindViewById<Button> (Resource.Id.btnUpdateDate);
 
 			// add a click event handler to the button
 			pickDate.Click += delegate { ShowDialog (DATE_DIALOG_ID); };

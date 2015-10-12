@@ -1,9 +1,32 @@
 ﻿<Properties StartupItem="AutomaTech\AutomaTech.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 KitKat" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Lollipop)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AutomaTech\Activities\Event Manager\EventUpdateActivity.cs">
     <Files>
       <File FileName="AutomaTech\Resources\drawable\ButtonStyle.xml" Line="35" Column="44" />
+      <File FileName="AutomaTech\Activities\Event Manager\EventNewActivity.cs" Line="57" Column="6" />
+      <File FileName="AutomaTech\Activities\Event Manager\EventUpdateActivity.cs" Line="59" Column="6" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AutomaTech" expanded="True">
+            <Node name="AutomaTech" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="Packages" expanded="True" />
+              <Node name="Activities" expanded="True">
+                <Node name="Event Manager" expanded="True">
+                  <Node name="EventUpdateActivity.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
