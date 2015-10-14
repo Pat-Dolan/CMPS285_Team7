@@ -19,14 +19,11 @@ namespace AutomaTech
 		GlobalVariables GEventID = GlobalVariables.getInstance();
 		EditText updateTitle;
 		EditText updateLocation;
-		EditText updateDate;
-		EditText updateTime;
 		Button update;
 		Button back;
 		int nCount;
 
 		private TextView timeDisplay;
-		private Button pick_button;
 
 		private int hour;
 		private int minute;
@@ -34,7 +31,6 @@ namespace AutomaTech
 		const int TIME_DIALOG_ID = 0;
 
 		private TextView dateDisplay;
-		private Button pickDate;
 		private DateTime date;
 
 		const int DATE_DIALOG_ID = 1;
@@ -46,20 +42,18 @@ namespace AutomaTech
 
 
 			timeDisplay = FindViewById<TextView> (Resource.Id.txtTime);
-			pick_button = FindViewById<Button> (Resource.Id.btnUpdateTime);
 
 			// Add a click listener to the button
-			pick_button.Click += (o, e) => ShowDialog (TIME_DIALOG_ID);
+			timeDisplay.Click += (o, e) => ShowDialog (TIME_DIALOG_ID);
 
 			// Get the current time
 			hour = DateTime.Now.Hour;
 			minute = DateTime.Now.Minute;
 
 			dateDisplay = FindViewById<TextView> (Resource.Id.txtDate);
-			pickDate = FindViewById<Button> (Resource.Id.btnUpdateDate);
 
 			// add a click event handler to the button
-			pickDate.Click += delegate { ShowDialog (DATE_DIALOG_ID); };
+			dateDisplay.Click += delegate { ShowDialog (DATE_DIALOG_ID); };
 
 			// get the current date
 			date = DateTime.Today;

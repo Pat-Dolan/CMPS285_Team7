@@ -59,7 +59,7 @@
         p1:layout_marginLeft="25dp"
         p1:layout_marginBottom="5dp"
         p1:layout_marginRight="25dp" />
-    <EditText
+    <TextView
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:layout_below="@id/textView3"
@@ -77,7 +77,7 @@
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
-        p1:layout_below="@+id/btnUpdateDate"
+        p1:layout_below="@+id/txtDate"
         p1:id="@+id/textView4"
         p1:layout_marginLeft="25dp"
         p1:layout_marginBottom="5dp"
@@ -99,7 +99,7 @@
         p1:text="@+string/UpdateEvent"
         p1:layout_width="250dp"
         p1:layout_height="50dp"
-        p1:layout_below="@+id/btnUpdateTime"
+        p1:layout_below="@+id/txtTime"
         p1:id="@+id/btnUpdate"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
@@ -110,24 +110,6 @@
         p1:layout_height="50dp"
         p1:layout_below="@id/btnUpdate"
         p1:id="@+id/btnUpdateBack"
-        p1:layout_centerHorizontal="true"
-        p1:background="@drawable/buttonstyle"
-        p1:layout_marginBottom="10dp" />
-    <Button
-        p1:text="Update Time"
-        p1:layout_width="250dp"
-        p1:layout_height="50dp"
-        p1:layout_below="@id/txtTime"
-        p1:id="@+id/btnUpdateTime"
-        p1:layout_centerHorizontal="true"
-        p1:background="@drawable/buttonstyle"
-        p1:layout_marginBottom="10dp" />
-    <Button
-        p1:text="Update Date"
-        p1:layout_width="250dp"
-        p1:layout_height="50dp"
-        p1:layout_below="@+id/txtDate"
-        p1:id="@+id/btnUpdateDate"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
         p1:layout_marginBottom="10dp" />
