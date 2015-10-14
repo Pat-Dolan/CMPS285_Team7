@@ -22,7 +22,11 @@ namespace AutomaTech
 		GlobalVars g = GlobalVars.getInstance();
 
 		private ICallbackManager mCallBackManager;
+<<<<<<< HEAD
 		private myProfileTracker mProfileTracker;
+=======
+		public myProfileTracker mProfileTracker;
+>>>>>>> origin/Facebook_Integration_Branch
 
 
 		protected override void OnCreate (Bundle bundle)
@@ -38,12 +42,21 @@ namespace AutomaTech
 			mProfileTracker.StartTracking ();
 
 			LoginButton button = FindViewById<LoginButton> (Resource.Id.login_button);
+<<<<<<< HEAD
 
 			button.SetReadPermissions ("user_friends");
 			mCallBackManager = CallbackManagerFactory.Create ();
 			button.RegisterCallback (mCallBackManager, this);
 		}
 
+=======
+
+			button.SetReadPermissions ("user_friends");
+			mCallBackManager = CallbackManagerFactory.Create ();
+			button.RegisterCallback (mCallBackManager, this);
+		}
+
+>>>>>>> origin/Facebook_Integration_Branch
 		public void OnCancel ()
 		{
 			//throw new NotImplementedException ();
@@ -90,6 +103,14 @@ namespace AutomaTech
 	{
 		public Profile mProfile;
 		public OnProfileChangedEventArgs (Profile profile) {mProfile = profile;}
+<<<<<<< HEAD
+=======
+	}
+
+	public static class GlobalVar
+	{
+		public const int userProfile = AccessToken.CurrentAccessToken;
+>>>>>>> origin/Facebook_Integration_Branch
 	}
 		
 }
