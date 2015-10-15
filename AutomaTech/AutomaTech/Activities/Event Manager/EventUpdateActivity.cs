@@ -104,9 +104,28 @@ namespace AutomaTech
 		}
 		private void UpdateDisplay ()
 		{
-			string time = string.Format ("{0}:{1}", hour, minute.ToString ().PadLeft (2, '0'));
+			string time = getMidiTime();
 			timeDisplay.Text = time;
 			dateDisplay.Text = date.ToString ("d");
+		}
+		private string getMidiTime()
+		{
+			string postfix;		//holds am or pm
+
+			//testing for pm or am
+			if (hour < 12)
+				postfix = " am";
+			else
+				postfix = " pm";
+
+			//converting military time to standard time
+			int tester = hour % 12;
+			if (tester == 0)
+				hour = 12;
+			else
+				hour = tester;
+			return hour.ToString() + ":" + minute.ToString().PadLeft (2, '0') + postfix;
+
 		}
 		private void TimePickerCallback (object sender, TimePickerDialog.TimeSetEventArgs e)
 		{
