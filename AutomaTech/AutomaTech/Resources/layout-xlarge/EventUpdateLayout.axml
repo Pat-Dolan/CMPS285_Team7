@@ -64,7 +64,7 @@
         p1:layout_marginLeft="60dp"
         p1:layout_marginBottom="15dp"
         p1:layout_marginRight="60dp" />
-    <EditText
+    <TextView
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:layout_below="@id/textView3"
@@ -132,7 +132,8 @@
         p1:id="@+id/btnUpdateTime"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginBottom="30dp" />
+        p1:layout_marginBottom="30dp"
+        p1:visibility="gone" />
     <Button
         p1:text="Update Date"
         p1:textSize="40sp"
@@ -142,5 +143,6 @@
         p1:id="@+id/btnUpdateDate"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginBottom="30dp" />
+        p1:layout_marginBottom="30dp"
+        p1:visibility="gone" />
 </RelativeLayout>

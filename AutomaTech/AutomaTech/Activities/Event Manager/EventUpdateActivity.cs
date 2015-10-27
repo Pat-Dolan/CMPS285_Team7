@@ -100,7 +100,8 @@ namespace AutomaTech
 			string result;
 			EventDB dbr = new EventDB ();
 			result = dbr.updateEvent ((GEventID.getEventId () +1), updateTitle.Text, updateLocation.Text, dateDisplay.Text, timeDisplay.Text);
-			Toast.MakeText(this, result, ToastLength.Short).Show();
+			StartActivity (typeof(EventMainActivity));
+			//Toast.MakeText(this, result, ToastLength.Short).Show();
 		}
 		private void UpdateDisplay ()
 		{

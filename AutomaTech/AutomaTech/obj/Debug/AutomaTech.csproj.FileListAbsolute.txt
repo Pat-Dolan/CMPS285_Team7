@@ -144,14 +144,12 @@ C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\AutomaTech
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\AutomaTech.pdb
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\android\bin\com.companyname.automatech.apk
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\main.xml
-C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\values\strings.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\drawable-hdpi\icon.png
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\drawable-mdpi\icon.png
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\drawable-xxhdpi\icon.png
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\drawable-xxxhdpi\icon.png
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\loginlayout.xml
-C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventmainlayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\tourmainlayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\bandmainlayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\registermainlayout.xml
@@ -160,14 +158,14 @@ C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\accountmainlayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\dbaccesslayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\bandcreationlayout.xml
-C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\R.cs.flag
-C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\uploadflags.txt
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\drawable\buttonstyle.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventcancellayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventlistviewrowlayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventselectlayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventupdatelayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventviewlayout.xml
+C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout\eventmainlayout.xml
+C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\values\strings.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout-xlarge\accountmainlayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout-xlarge\bandcreationlayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout-xlarge\bandmainlayout.xml
@@ -185,3 +183,5 @@ C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout-xlarge\registerfinalizelayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout-xlarge\registermainlayout.xml
 C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\res\layout-xlarge\tourmainlayout.xml
+C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\R.cs.flag
+C:\Users\christian\Documents\Projects\Automatech\AutomaTech\obj\Debug\uploadflags.txt

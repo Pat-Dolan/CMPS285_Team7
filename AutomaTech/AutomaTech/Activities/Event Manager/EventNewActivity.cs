@@ -88,7 +88,8 @@ namespace AutomaTech
 			string result;
 			EventDB dbr = new EventDB ();
 			result = dbr.InsertEvent (newTitle.Text, newLocation.Text, dateDisplay.Text, timeDisplay.Text);
-			Toast.MakeText(this, result, ToastLength.Short).Show();
+			StartActivity (typeof(EventMainActivity));
+			//Toast.MakeText(this, result, ToastLength.Short).Show();
 		}
 		//MIDI time
 		private void UpdateDisplay ()
