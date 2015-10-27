@@ -10,6 +10,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace AutomaTech
 {
@@ -22,7 +24,7 @@ namespace AutomaTech
 		Button update;
 		Button back;
 		int nCount;
-
+		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
 		private TextView timeDisplay;
 
 		private int hour;
@@ -69,12 +71,9 @@ namespace AutomaTech
 			back.Click += Back_Click;
 			update.SetText(Resource.String.UpdateEvent);
 
-			EventDB dbr = new EventDB ();
-			nCount = dbr.getEventTotal ();
-			if (nCount != 0) 
-			{
-				SetFields ((GEventID.getEventId () ));
-			}
+			//EventDB dbr = new EventDB ();
+			//nCount = dbr.getEventTotal ();
+			SetFields (GEventID.getEventId());
 
 
 		}
@@ -83,25 +82,86 @@ namespace AutomaTech
 		{
 			StartActivity(typeof(EventMainActivity));
 		}
+	
 		private void SetFields(int ID)
 		{
-			EventDB dbr = new EventDB ();
-			var tempEvent = dbr.GetEventById ((ID + 1));
 
-			updateTitle.Text = tempEvent.title;
-			updateLocation.Text = tempEvent.location;
-			dateDisplay.Text = tempEvent.date;
-			timeDisplay.Text = tempEvent.time;
+//SQLite DB tools
+//			EventDB dbr = new EventDB ();
+//			var tempEvent = dbr.GetEventById ((ID + 1));
 
+//			updateTitle.Text = tempEvent.title;
+//			updateLocation.Text = tempEvent.location;
+//			dateDisplay.Text = tempEvent.date;
+//			timeDisplay.Text = tempEvent.time;
+
+//SQL Server DB Tools
+			bool found = false;
+			int eventId;
+			IDbConnection dbcon;
+			using (dbcon = new SqlConnection (conString)) 
+			{
+				dbcon.Open ();
+				using (IDbCommand dbcmd = dbcon.CreateCommand ()) 
+				{
+					string sqlGetEventInfo = " SELECT (id), (title), (location), (date), (time) FROM eventinfo ";
+
+					dbcmd.CommandText = sqlGetEventInfo;
+					using (IDataReader reader = dbcmd.ExecuteReader ()) 
+					{
+						while (reader.Read() && (found == false)) 
+						{
+							eventId = (int)reader ["id"];
+					
+							updateTitle.Text = (string)reader ["title"];
+							updateLocation.Text = (string)reader ["location"];
+							dateDisplay.Text = (string)reader ["date"];
+							timeDisplay.Text = (string)reader ["time"];
+							if(eventId == ID)
+								found = true;
+						}
+						reader.Close ();
+						dbcon.Close ();
+					}
+				}
+
+			}
 		}
+
 
 		void Update_Click (object sender, EventArgs e)
 		{
-			string result;
-			EventDB dbr = new EventDB ();
-			result = dbr.updateEvent ((GEventID.getEventId () +1), updateTitle.Text, updateLocation.Text, dateDisplay.Text, timeDisplay.Text);
-			Toast.MakeText(this, result, ToastLength.Short).Show();
+//SQLite Database Tools
+//			string result;
+//			EventDB dbr = new EventDB ();
+//			result = dbr.updateEvent ((GEventID.getEventId () +1), updateTitle.Text, updateLocation.Text, dateDisplay.Text, timeDisplay.Text);
+//			Toast.MakeText(this, result, ToastLength.Short).Show();
+
+
+//SQL Server Database Tools
+
+				using (SqlConnection connection = new SqlConnection(conString))
+				{
+
+				SqlCommand cmd = new SqlCommand("UPDATE EventInfo SET title = @Title, location = @Location, date = @Date, time = @Time WHERE id = @Id ");
+				cmd.CommandType = CommandType.Text;
+				cmd.Connection = connection;
+
+				cmd.Parameters.AddWithValue ("@Id", GEventID.getEventId());
+				cmd.Parameters.AddWithValue("@Title", updateTitle.Text);
+				cmd.Parameters.AddWithValue ("@Location", updateLocation.Text);
+				cmd.Parameters.AddWithValue ("@Date", dateDisplay.Text);
+				cmd.Parameters.AddWithValue ("@Time", timeDisplay.Text); 
+					
+				connection.Open();
+				cmd.ExecuteNonQuery();
+				connection.Close ();
+				}
+			StartActivity (typeof(EventMainActivity));
 		}
+
+
+
 		private void UpdateDisplay ()
 		{
 			string time = getMidiTime();
