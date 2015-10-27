@@ -26,16 +26,13 @@ namespace AutomaTech
 		{
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.EventSelectLayout);
-
 			nView = FindViewById<Button> (Resource.Id.btnViewEvent);
 			nView.Click += NView_Click ;
 
 			nUpdate = FindViewById<Button> (Resource.Id.btnUpdateEvent);
 			nUpdate.Click += NUpdate_Click;
-
 			nCancel = FindViewById<Button> (Resource.Id.btnRemoveEvent);
 			nCancel.Click += NCancel_Click;
-
 			nBack = FindViewById<Button> (Resource.Id.btnSelectBack);
 			nBack.Click += NBack_Click;
 			// Create your application here

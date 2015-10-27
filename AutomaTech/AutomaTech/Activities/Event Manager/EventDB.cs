@@ -51,7 +51,7 @@ namespace AutomaTech
 				item.location = location;
 				item.date = date;
 				item.time = time;
-				item.visible = 1;
+				item.access = 1;
 				db.Insert(item);
 				return "Record added...";
 			}
@@ -130,7 +130,7 @@ namespace AutomaTech
 			string dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "AutomatechORM.db3");
 			var db = new SQLiteConnection (dbPath);
 			var item = db.Get<EventInfo> (id);
-			item.visible = 0;
+			item.access = 0;
 			return "Record Deleted...";
 		}
 	}
