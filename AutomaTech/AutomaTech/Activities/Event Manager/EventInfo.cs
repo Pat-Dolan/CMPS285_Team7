@@ -14,7 +14,7 @@ namespace AutomaTech
 		public string title{ get; set;}
 		public string date{ get; set; }
 		public string time{ get; set;}
-		public int access{ get; set; }	//visibility 1 for visible, 0 for invisible
+		public int visible{ get; set; }	//visibility 1 for visible, 0 for invisible
 
 	}
 }

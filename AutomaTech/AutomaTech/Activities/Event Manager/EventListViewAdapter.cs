@@ -43,7 +43,7 @@ namespace AutomaTech
 		public override View GetView (int position, View convertView, ViewGroup parent)
 		{
 			View row = convertView;
-		
+
 			if (row == null) 
 			{
 				row = LayoutInflater.From (nEventContext).Inflate (Resource.Layout.EventListViewRowLayout, null, false);
@@ -53,9 +53,9 @@ namespace AutomaTech
 			txtEvent.Text = nEvents [position].eventTitle;
 			TextView txtEDate = row.FindViewById<TextView> (Resource.Id.txtEventDate);
 			txtEDate.Text = nEvents [position].eventDate;
-		
+
 			return row;
-		
+
 		}
 	}
 }

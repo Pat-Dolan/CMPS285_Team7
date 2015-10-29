@@ -11,6 +11,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SQLite;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace AutomaTech
 {
@@ -23,6 +25,8 @@ namespace AutomaTech
 		Button newEvent;
 		Button back;
 		int nCount;
+		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
+
 
 		private TextView timeDisplay;
 		private Button pick_button;
@@ -67,6 +71,7 @@ namespace AutomaTech
 
 			newTitle = FindViewById <EditText> (Resource.Id.txtTitle);
 			newLocation = FindViewById<EditText> (Resource.Id.txtLocation);
+
 			newEvent = FindViewById <Button> (Resource.Id.btnUpdate);
 			newEvent.Click += new_Click;
 
@@ -74,22 +79,43 @@ namespace AutomaTech
 			back = FindViewById<Button> (Resource.Id.btnUpdateBack);
 			back.Click += Back_Click;
 
-			EventDB dbr = new EventDB ();
-			nCount = dbr.getEventTotal ();
+			//EventDB dbr = new EventDB ();
+			//nCount = dbr.getEventTotal ();
 		}
 		void Back_Click (object sender, EventArgs e)
 		{
 			StartActivity (typeof(EventMainActivity));
-		
+
 		}
-			
+
 		void new_Click (object sender, EventArgs e)
 		{
-			string result;
-			EventDB dbr = new EventDB ();
-			result = dbr.InsertEvent (newTitle.Text, newLocation.Text, dateDisplay.Text, timeDisplay.Text);
+
+			//SQLite Database
+			//			string result;
+			//			EventDB dbr = new EventDB ();
+			//			result = dbr.InsertEvent (newTitle.Text, newLocation.Text, dateDisplay.Text, timeDisplay.Text);
+			//			Toast.MakeText(this, result, ToastLength.Short).Show();
+
+			//SQL Server Database
+
+			using (SqlConnection connection = new SqlConnection(conString))
+			{
+
+				SqlCommand cmd = new SqlCommand("INSERT INTO EventInfo (id, title,location, date, time, visible) VALUES (@Id, @Title, @Location, @Date, @Time, @Visible)");
+				cmd.CommandType = CommandType.Text;
+				cmd.Connection = connection;
+				cmd.Parameters.AddWithValue ("@Id", (GEventID.getEventTotal()));
+				cmd.Parameters.AddWithValue("@Title",newTitle.Text);
+				cmd.Parameters.AddWithValue ("@Location", newLocation.Text);
+				cmd.Parameters.AddWithValue ("@Date", dateDisplay.Text);
+				cmd.Parameters.AddWithValue ("@Time", timeDisplay.Text); 
+				cmd.Parameters.AddWithValue ("@Visible", 1);  
+				connection.Open();
+				cmd.ExecuteNonQuery();
+				connection.Close ();
+			}
 			StartActivity (typeof(EventMainActivity));
-			//Toast.MakeText(this, result, ToastLength.Short).Show();
 		}
 		//MIDI time
 		private void UpdateDisplay ()
@@ -129,7 +155,7 @@ namespace AutomaTech
 			switch (id) {
 			case DATE_DIALOG_ID:
 				return new DatePickerDialog (this, OnDateSet, date.Year, date.Month - 1, date.Day); 
-			
+
 			case TIME_DIALOG_ID:
 				return new TimePickerDialog (this, TimePickerCallback, hour, minute, false);
 			}
