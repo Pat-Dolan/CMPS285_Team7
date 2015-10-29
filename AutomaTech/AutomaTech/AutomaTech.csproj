@@ -136,6 +136,7 @@
     <AndroidResource Include="Resources\layout-xlarge\TourMainLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <Import Project="packages\xamstore-xamarin.social.1.1.1\build\monoandroid\xamstore-xamarin.social.props" Condition="Exists('packages\xamstore-xamarin.social.1.1.1\build\monoandroid\xamstore-xamarin.social.props')" />
   <ItemGroup>
     <Folder Include="Activities\" />
     <Folder Include="ORM\" />
