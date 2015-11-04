@@ -27,10 +27,10 @@ namespace AutomaTech
 			eventCancel = FindViewById<Button> (Resource.Id.btnCancel);
 			eventCancel.Click += EventCancel_Click;
 			//TextView title = FindViewById<TextView> (Resource.Id.txtCancelTitle);
-	
+
 			back = FindViewById<Button> (Resource.Id.btnCancelBack);
 			back.Click += Back_Click;
-	
+
 			//EventDB dbr = new EventDB ();
 			//var item = dbr.GetEventById (GEventID.getEventId () + 1);
 

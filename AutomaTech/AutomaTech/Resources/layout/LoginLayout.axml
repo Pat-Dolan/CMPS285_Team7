@@ -24,19 +24,8 @@
         android:id="@+id/textView4"
         android:layout_marginLeft="85dp"
         android:layout_marginRight="25dp"
-<<<<<<< HEAD
         android:layout_marginBottom="15dp"
         android:layout_centerInParent="true" />
-=======
-        android:layout_marginBottom="15dp" />
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="30.0dp" />
->>>>>>> origin/Facebook_Integration_Branch
     <Button
         android:text="Login"
         android:layout_width="250dp"
@@ -46,7 +35,6 @@
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp"
-<<<<<<< HEAD
         android:layout_centerInParent="true" />
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
@@ -60,8 +48,3 @@
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
-=======
-        android:background="@drawable/buttonstyle"
-        android:visibility="invisible" />
-</LinearLayout>
->>>>>>> origin/Facebook_Integration_Branch

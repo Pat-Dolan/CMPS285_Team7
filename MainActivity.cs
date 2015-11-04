@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +31,7 @@ namespace Login
 					mTwitter = new TwitterService {
 						ConsumerKey = "ERMyIfX25iuUtKmmk2CRoSJFA",
 						ConsumerSecret = "smCmzT6KpFBetryvpfGE7fvu0WmVdY1sRhJxqV7gwOIweFPs3d",
-						CallbackUrl = new Uri ("http://www.twitter.com")
+						CallbackUrl = new Uri ("http://mobile.twitter.com")
 					};
 				}
 

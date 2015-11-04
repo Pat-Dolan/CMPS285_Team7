@@ -22,11 +22,7 @@ namespace AutomaTech
 		GlobalVars g = GlobalVars.getInstance();
 
 		private ICallbackManager mCallBackManager;
-<<<<<<< HEAD
-		private myProfileTracker mProfileTracker;
-=======
 		public myProfileTracker mProfileTracker;
->>>>>>> origin/Facebook_Integration_Branch
 
 
 		protected override void OnCreate (Bundle bundle)
@@ -42,21 +38,22 @@ namespace AutomaTech
 			mProfileTracker.StartTracking ();
 
 			LoginButton button = FindViewById<LoginButton> (Resource.Id.login_button);
-<<<<<<< HEAD
+
+			Button tempLogin = FindViewById<Button> (Resource.Id.tempLogin);
+			tempLogin.Click += TempLogin_Click;
+
+
 
 			button.SetReadPermissions ("user_friends");
 			mCallBackManager = CallbackManagerFactory.Create ();
 			button.RegisterCallback (mCallBackManager, this);
 		}
 
-=======
-
-			button.SetReadPermissions ("user_friends");
-			mCallBackManager = CallbackManagerFactory.Create ();
-			button.RegisterCallback (mCallBackManager, this);
+		void TempLogin_Click (object sender, EventArgs e)
+		{
+			StartActivity (typeof(MainActivity));
 		}
 
->>>>>>> origin/Facebook_Integration_Branch
 		public void OnCancel ()
 		{
 			//throw new NotImplementedException ();
@@ -103,16 +100,12 @@ namespace AutomaTech
 	{
 		public Profile mProfile;
 		public OnProfileChangedEventArgs (Profile profile) {mProfile = profile;}
-<<<<<<< HEAD
-=======
 	}
 
-	public static class GlobalVar
-	{
-		public const int userProfile = AccessToken.CurrentAccessToken;
->>>>>>> origin/Facebook_Integration_Branch
-	}
-		
+	//public static class GlobalVar
+	//{
+	//	public const int userProfile = AccessToken.CurrentAccessToken;
+	//}
 }
 //
 //		protected override void OnDestroy()
@@ -126,13 +119,9 @@ namespace AutomaTech
 //			var result = dbr.CreateDB ();						//returns testing string
 //			//Toast.MakeText (this, result.ToString(), ToastLength.Short).Show ();		//displaying testing value
 //
-//			Button tempLogin = FindViewById<Button> (Resource.Id.tempLogin);
-//			tempLogin.Click += TempLogin_Click;
+			
 //		}
-//		void TempLogin_Click (object sender, EventArgs e)
-//		{
-//			StartActivity (typeof(MainActivity));
-//		}
+		
 //	}
 //}
 
