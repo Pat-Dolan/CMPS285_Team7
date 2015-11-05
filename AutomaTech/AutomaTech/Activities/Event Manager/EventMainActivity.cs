@@ -20,13 +20,15 @@ namespace AutomaTech
 		private List<Event> nEvents;	
 		private ListView nEventListView;
 		int skip = 0;
+
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
+
 		Button firstEventbtn;
 
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
+			skip = 0;
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.EventMainLayout);
 
@@ -82,11 +84,13 @@ namespace AutomaTech
 							string eventTitle = (string)reader ["title"];
 							string eventDate = (string)reader ["date"];
 							int eventVisible = (int)reader ["visible"];
-							//for cancel				//if (eventVisible == 1) {
-							nEvents.Add (new Event ((eventId + skip), eventTitle, eventDate, eventVisible));
-
-							//} else
-							//	skip++;
+							//for cancel	
+							if (eventVisible == 1) {
+								nEvents.Add (new Event ((eventId + skip), eventTitle, eventDate, eventVisible));
+							}
+							//else
+							//skip++;
+							
 							nCount++;
 						}
 						GEventID.setEventTotal (nCount);
@@ -108,8 +112,8 @@ namespace AutomaTech
 
 		void NEventListView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)
 		{
-			GEventID.setEventId(e.Position);
-			string result = " " + e.Position;
+			GEventID.setEventId(nEvents[e.Position].eventId);
+			string result = " " + nEvents[e.Position].eventId;
 			Toast.MakeText (this, result, ToastLength.Short).Show ();
 			StartActivity (typeof(EventSelectActivity));
 		}

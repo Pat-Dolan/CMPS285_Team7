@@ -110,7 +110,7 @@ namespace AutomaTech
 				SqlCommand cmd = new SqlCommand("INSERT INTO EventInfo (id, title,location, date, time, visible) VALUES (@Id, @Title, @Location, @Date, @Time, @Visible)");
 				cmd.CommandType = CommandType.Text;
 				cmd.Connection = connection;
-				cmd.Parameters.AddWithValue ("@Id", (GEventID.getEventTotal()));
+				cmd.Parameters.AddWithValue ("@Id", (GEventID.getEventTotal() + 1));
 				cmd.Parameters.AddWithValue("@Title",newTitle.Text);
 				cmd.Parameters.AddWithValue ("@Location", newLocation.Text);
 				cmd.Parameters.AddWithValue ("@Date", dateDisplay.Text);
