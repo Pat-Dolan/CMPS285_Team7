@@ -29,17 +29,16 @@
         p1:layout_marginBottom="30dp"
         p1:layout_marginRight="150dp" />
     <Button
-        p1:text="Cancel"
+        p1:text="Remove"
         p1:textSize="40sp"
         p1:layout_width="500dp"
-        p1:layout_height="75dp"
+        p1:layout_height="100dp"
         p1:layout_below="@id/btnUpdateEvent"
         p1:id="@+id/btnRemoveEvent"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
         p1:layout_marginLeft="150dp"
         p1:layout_marginBottom="30dp"
-        p1:visibility="gone"
         p1:layout_marginRight="150dp" />
     <Button
         p1:text="Back"

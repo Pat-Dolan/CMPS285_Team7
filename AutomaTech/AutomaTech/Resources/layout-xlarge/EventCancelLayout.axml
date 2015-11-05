@@ -5,7 +5,7 @@
     p1:id="@+id/relativeLayout1"
     p1:background="#ff353432">
     <TextView
-        p1:text="Cancel  Event"
+        p1:text="Remove Event"
         p1:textSize="40sp"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_width="wrap_content"
@@ -25,7 +25,7 @@
         p1:layout_centerHorizontal="true"
         p1:layout_marginBottom="30dp" />
     <Button
-        p1:text="Cancel Event"
+        p1:text="Remove Event"
         p1:textSize="40sp"
         p1:layout_width="500dp"
         p1:layout_height="100dp"
