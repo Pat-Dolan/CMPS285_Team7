@@ -48,12 +48,13 @@ namespace AutomaTech
 			{
 				row = LayoutInflater.From (nEventContext).Inflate (Resource.Layout.EventListViewRowLayout, null, false);
 			}
+	
+				TextView txtEvent = row.FindViewById<TextView> (Resource.Id.txtEventTitle);
+				txtEvent.Text = nEvents [position].eventTitle;
 
-			TextView txtEvent = row.FindViewById<TextView> (Resource.Id.txtEventTitle);
-			txtEvent.Text = nEvents [position].eventTitle;
-			TextView txtEDate = row.FindViewById<TextView> (Resource.Id.txtEventDate);
-			txtEDate.Text = nEvents [position].eventDate;
-
+				TextView txtEDate = row.FindViewById<TextView> (Resource.Id.txtEventDate);
+				txtEDate.Text = nEvents [position].eventDate;
+			
 			return row;
 
 		}

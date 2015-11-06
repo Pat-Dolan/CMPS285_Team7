@@ -1,72 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:minWidth="25px"
-    android:minHeight="25px"
+    android:weightSum="100"
     android:background="#ff353432">
-    <TextView
-        android:text="Band Manager"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:layout_marginLeft="120dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp" />
     <Button
         android:text="Manage a New Band"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:id="@+id/btnNewBand"
+        android:layout_weight="10"
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp"
-        android:layout_below="@+id/textView1" />
+        android:layout_marginTop="5dp" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvBand"
+        android:layout_weight="80"
+        android:background="#ff353432" />
     <Button
-        android:text="Update Band Information"
+        android:text="Back"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:id="@+id/btnUpdateBand"
+        android:id="@+id/btnBandMainBack"
+        android:layout_weight="10"
         android:background="@drawable/buttonstyle"
-        android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp"
-        android:layout_below="@+id/btnNewBand"
-        android:visibility="gone" />
-    <Button
-        android:text="View Band"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:id="@+id/btnGetBands"
-        android:background="@drawable/buttonstyle"
-        android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp"
-        android:layout_below="@+id/btnUpdateBand"
-        android:visibility="gone" />
-    <Button
-        android:text="Delete Band"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:id="@+id/btnRemoveBand"
-        android:background="@drawable/buttonstyle"
-        android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp"
-        android:layout_below="@+id/btnGetBands"
-        android:visibility="gone" />
-    <Button
-        android:text="Back To Home Page"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:id="@+id/homeFromBand"
-        android:background="@drawable/buttonstyle"
-        android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp"
-        android:layout_below="@+id/btnRemoveBand" />
-</RelativeLayout>
+        android:layout_marginLeft="73dp" />
+</LinearLayout>

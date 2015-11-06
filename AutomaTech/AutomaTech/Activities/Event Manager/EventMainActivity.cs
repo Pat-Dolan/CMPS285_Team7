@@ -19,7 +19,7 @@ namespace AutomaTech
 		int nCount = 0;
 		private List<Event> nEvents;	
 		private ListView nEventListView;
-		int skip = 0;
+
 
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
 
@@ -28,7 +28,7 @@ namespace AutomaTech
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			skip = 0;
+
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.EventMainLayout);
 
@@ -86,10 +86,9 @@ namespace AutomaTech
 							int eventVisible = (int)reader ["visible"];
 							//for cancel	
 							if (eventVisible == 1) {
-								nEvents.Add (new Event ((eventId + skip), eventTitle, eventDate, eventVisible));
+								nEvents.Add (new Event ((eventId), eventTitle, eventDate, eventVisible));
 							}
-							//else
-							//skip++;
+
 							
 							nCount++;
 						}

@@ -18,7 +18,7 @@
         android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1"
+        android:id="@+id/txtNewBandName"
         android:textColor="#ffffff"
         android:background="#ff726e6a"
         android:layout_marginLeft="25dp"
@@ -30,6 +30,16 @@
         android:paddingBottom="7.5dp"
         android:layout_below="@+id/bandName" />
     <Button
+        android:text="Add New Member"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnAddMember"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_below="@+id/txtNewBandName" />
+    <Button
         android:text="Finish"
         android:layout_width="250dp"
         android:layout_height="50dp"
@@ -38,5 +48,15 @@
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/buttonstyle"
-        android:layout_below="@+id/editText1" />
+        android:layout_below="@+id/btnAddMember" />
+    <Button
+        android:text="Back"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnBackBandNew"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_below="@+id/finishCreation" />
 </RelativeLayout>
