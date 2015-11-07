@@ -114,7 +114,7 @@ namespace AutomaTech
 				dbcon.Open ();
 				using (IDbCommand dbcmd = dbcon.CreateCommand ()) 
 				{
-					string sqlGetEventInfo = " SELECT (id), (title), (location), (date), (time) FROM eventinfo ";
+					string sqlGetEventInfo = " SELECT (id), (title), (location), (date), (time) FROM EventList ";
 
 					dbcmd.CommandText = sqlGetEventInfo;
 					using (IDataReader reader = dbcmd.ExecuteReader ()) 
@@ -141,19 +141,12 @@ namespace AutomaTech
 
 		void Update_Click (object sender, EventArgs e)
 		{
-			//SQLite Database Tools
-			//			string result;
-			//			EventDB dbr = new EventDB ();
-			//			result = dbr.updateEvent ((GEventID.getEventId () +1), updateTitle.Text, updateLocation.Text, dateDisplay.Text, timeDisplay.Text);
-			//			Toast.MakeText(this, result, ToastLength.Short).Show();
-
-
 			//SQL Server Database Tools
 
 			using (SqlConnection connection = new SqlConnection(conString))
 			{
 
-				SqlCommand cmd = new SqlCommand("UPDATE EventInfo SET title = @Title, location = @Location, date = @Date, time = @Time WHERE id = @Id ");
+				SqlCommand cmd = new SqlCommand("UPDATE EventList SET title = @Title, location = @Location, date = @Date, time = @Time WHERE id = @Id ");
 				cmd.CommandType = CommandType.Text;
 				cmd.Connection = connection;
 

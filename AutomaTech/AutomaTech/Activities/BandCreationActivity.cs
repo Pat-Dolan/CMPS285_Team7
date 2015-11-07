@@ -38,7 +38,7 @@ namespace AutomaTech
 			back = FindViewById<Button> (Resource.Id.btnBackBandNew);
 			back.Click += Back_Click;
 
-				newBand = FindViewById<Button> (Resource.Id.finishCreation);
+			newBand = FindViewById<Button> (Resource.Id.finishCreation);
 			newBand.Click += NewBand_Click;
 		}
 
@@ -51,6 +51,7 @@ namespace AutomaTech
 		{
 			string result = "Add Member Here";
 			Toast.MakeText (this, result, ToastLength.Short).Show ();
+
 		}
 
 		void NewBand_Click (object sender, EventArgs e)
@@ -58,12 +59,12 @@ namespace AutomaTech
 			using (SqlConnection connection = new SqlConnection(conString))
 			{
 
-				SqlCommand cmd = new SqlCommand("INSERT INTO bandList (bandId, bandName, bandManager, bandVisible) VALUES (@Id, @BandName, @Manager, @Visible)");
+				SqlCommand cmd = new SqlCommand("INSERT INTO bandList (id, bandName, managerId, visible) VALUES (@Id, @BandName, @Manager, @Visible)");
 				cmd.CommandType = CommandType.Text;
 				cmd.Connection = connection;
 				cmd.Parameters.AddWithValue ("@Id", (GBand.getBandTotal() + 1));
 				cmd.Parameters.AddWithValue ("@BandName", bandName.Text);
-				cmd.Parameters.AddWithValue ("@Manager", "The Boss");
+				cmd.Parameters.AddWithValue ("@Manager", GBand.getManagerId());
 				cmd.Parameters.AddWithValue ("@Visible", 1);  
 				connection.Open();
 				cmd.ExecuteNonQuery();

@@ -42,20 +42,6 @@ namespace AutomaTech
 
 			nEvents = new List<Event>();
 
-			//SQLite Database
-			//			EventDB dbr = new EventDB ();
-			//			var result = dbr.CreateDB ();
-			//			nCount = dbr.getEventTotal ();
-
-
-			//			Building the event table
-			//			if (nCount != 0) {
-			//				for (int i = 1; i <= nCount; i++) {
-			//					var nextEvent = dbr.GetEventById (i);
-			//					nEvents.Add (new Event (nextEvent.title, nextEvent.date));
-			//				}
-			//			}
-
 			//SQL Server Database
 			UpdateEventList ();
 
@@ -71,8 +57,8 @@ namespace AutomaTech
 				dbcon.Open ();
 				using (IDbCommand dbcmd = dbcon.CreateCommand ()) 
 				{
-					string sqlGetTitle = " SELECT (id),(title),(date),(time), (visible) " +
-						" FROM eventinfo ";
+					string sqlGetTitle = " SELECT (id),(title),(date),(time), (visible), (bandId) " +
+						" FROM EventList ";
 					dbcmd.CommandText = sqlGetTitle;
 					using (IDataReader reader = dbcmd.ExecuteReader ()) 
 					{
@@ -84,8 +70,9 @@ namespace AutomaTech
 							string eventTitle = (string)reader ["title"];
 							string eventDate = (string)reader ["date"];
 							int eventVisible = (int)reader ["visible"];
-							//for cancel	
-							if (eventVisible == 1) {
+							int eventBandId = (int)reader ["bandId"];
+								
+							if ((eventVisible == 1)&& (eventBandId == GEventID.getDefaultBandId())) {
 								nEvents.Add (new Event ((eventId), eventTitle, eventDate, eventVisible));
 							}
 
@@ -106,8 +93,6 @@ namespace AutomaTech
 		{
 			StartActivity (typeof(MainActivity));
 		}
-
-
 
 		void NEventListView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)
 		{

@@ -63,7 +63,7 @@ namespace AutomaTech
 				dbcon.Open ();
 				using (IDbCommand dbcmd = dbcon.CreateCommand ()) 
 				{
-					string sqlGetEventInfo = " SELECT (id), (title), (location), (date), (time) FROM eventinfo ";
+					string sqlGetEventInfo = " SELECT (id), (title), (location), (date), (time) FROM EventList ";
 
 					dbcmd.CommandText = sqlGetEventInfo;
 					using (IDataReader reader = dbcmd.ExecuteReader ()) 

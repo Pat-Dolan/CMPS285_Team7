@@ -16,6 +16,7 @@ namespace AutomaTech
 			eventTitle = title;
 			eventDate = date;
 			eventVisible = visible;
+
 		}
 	}
 }

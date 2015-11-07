@@ -57,7 +57,7 @@ namespace AutomaTech
 				dbcon.Open ();
 				using (IDbCommand dbcmd = dbcon.CreateCommand ()) 
 				{
-					string sqlGetTitle = " SELECT (bandId),(bandName),(bandManager),(bandVisible) " +
+					string sqlGetTitle = " SELECT (id),(bandName),(managerId),(visible) " +
 						" FROM bandList ";
 					dbcmd.CommandText = sqlGetTitle;
 					using (IDataReader reader = dbcmd.ExecuteReader ()) 
@@ -66,12 +66,14 @@ namespace AutomaTech
 						while (reader.Read ()) 
 						{
 
-							int bandId = (int)reader ["bandId"];
+							int bandId = (int)reader ["id"];
 							string bandName = (string)reader ["bandName"];
-							string bandManager = (string)reader ["bandManager"];
-							int bandVisible = (int)reader ["bandVisible"];
+							string bandManager = (string)reader ["managerId"];
+							int bandVisible = (int)reader ["visible"];
 							//for cancel	
 							if (bandVisible == 1) {
+								if (bandId == GBand.getDefaultBandId ())
+									bandName += " DEFAULT";
 								nBands.Add(new Band(bandId, bandName, bandManager, bandVisible));
 							}
 							nCount++;
@@ -90,10 +92,7 @@ namespace AutomaTech
 		void NBandListView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)
 		{
 			GBand.setBandId(nBands[e.Position].bandId);
-			string result = " " + nBands [e.Position].bandId;
-			Toast.MakeText (this, result, ToastLength.Short).Show ();
 			StartActivity(typeof(BandViewActivity));
-
 		}
 			
 

@@ -50,7 +50,7 @@ namespace AutomaTech
 			using (SqlConnection connection = new SqlConnection(conString))
 			{
 
-				SqlCommand cmd = new SqlCommand("UPDATE EventInfo SET visible = @Visible WHERE id = @Id ");
+				SqlCommand cmd = new SqlCommand("UPDATE EventList SET visible = @Visible WHERE id = @Id ");
 				cmd.CommandType = CommandType.Text;
 				cmd.Connection = connection;
 

@@ -107,7 +107,7 @@ namespace AutomaTech
 			using (SqlConnection connection = new SqlConnection(conString))
 			{
 
-				SqlCommand cmd = new SqlCommand("INSERT INTO EventInfo (id, title,location, date, time, visible) VALUES (@Id, @Title, @Location, @Date, @Time, @Visible)");
+				SqlCommand cmd = new SqlCommand("INSERT INTO EventList (id, title,location, date, time, visible, bandId) VALUES (@Id, @Title, @Location, @Date, @Time, @Visible, @BandId)");
 				cmd.CommandType = CommandType.Text;
 				cmd.Connection = connection;
 				cmd.Parameters.AddWithValue ("@Id", (GEventID.getEventTotal() + 1));
@@ -115,7 +115,8 @@ namespace AutomaTech
 				cmd.Parameters.AddWithValue ("@Location", newLocation.Text);
 				cmd.Parameters.AddWithValue ("@Date", dateDisplay.Text);
 				cmd.Parameters.AddWithValue ("@Time", timeDisplay.Text); 
-				cmd.Parameters.AddWithValue ("@Visible", 1);  
+				cmd.Parameters.AddWithValue ("@Visible", 1);
+				cmd.Parameters.AddWithValue ("@BandId", GEventID.getDefaultBandId ());
 				connection.Open();
 				cmd.ExecuteNonQuery();
 				connection.Close ();
