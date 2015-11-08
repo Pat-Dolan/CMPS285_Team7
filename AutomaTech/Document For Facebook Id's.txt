@@ -1,0 +1,4 @@
+Hey, I was recently in contact with Jay about adding more Facebook Accounts for testing.
+Visit the site findmyfbid.com while logged into any Facebook Account, follow the simple instructions,
+an then message anyone that is currently already an admin on the app, myself, Christian, John Smith can 
+approve that number as a loginable account on the app.
