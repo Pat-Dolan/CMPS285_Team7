@@ -25,6 +25,7 @@ namespace AutomaTech
 		GlobalVariables GUser = GlobalVariables.getInstance();
 		private ICallbackManager mCallBackManager;
 		public myProfileTracker mProfileTracker;
+		int nCount;
 
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
 		protected override void OnCreate (Bundle bundle)
@@ -95,6 +96,10 @@ namespace AutomaTech
 				StartActivity (typeof(MainActivity));
 			}
 			else{
+				GUser.setDefaultBandId (0);
+				GUser.setBandId (0);
+				GUser.setManagerId (0);
+
 				StartActivity (typeof(RegisterMainActivity));		//New User
 			}
 		}
@@ -128,7 +133,7 @@ Toast.MakeText(this, didit, ToastLength.Short).Show();
 
 */
 			//##############################################
-
+			nCount = 0;
 			bool found = false;
 			IDbConnection dbcon;
 			using (dbcon = new SqlConnection (conString)) 
@@ -160,10 +165,13 @@ Toast.MakeText(this, didit, ToastLength.Short).Show();
 								//Should be from Facebook, but can be from database
 								GUser.setUserName (userName);
 								GUser.setConfirm (confirm);
-							} 
+							
+							}
+							nCount++;
 						}
 						reader.Close ();
 						dbcon.Close ();
+						GUser.setUserTotal (nCount);
 					}
 				}
 			}
