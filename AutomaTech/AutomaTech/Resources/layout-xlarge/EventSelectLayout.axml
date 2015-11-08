@@ -29,7 +29,7 @@
         p1:layout_marginBottom="30dp"
         p1:layout_marginRight="150dp" />
     <Button
-        p1:text="Remove"
+        p1:text="Cancel"
         p1:textSize="40sp"
         p1:layout_width="500dp"
         p1:layout_height="100dp"

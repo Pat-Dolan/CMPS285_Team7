@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100"
+    android:background="#ff353432">
+    <Button
+        android:text="Create A New Event"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnFirstEvent"
+        android:layout_weight="10"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="5dp" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvEvent"
+        android:layout_weight="80"
+        android:background="#ff353432" />
+    <Button
+        android:text="Back"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnEventMainBack"
+        android:layout_weight="10"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="73dp" />
+</LinearLayout>

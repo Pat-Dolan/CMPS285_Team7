@@ -6,42 +6,65 @@
     android:background="#ff353432">
     <TextView
         android:text="Band Name:"
-        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bandName"
         android:layout_marginLeft="60dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginRight="60dp"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="30dp"
+        android:textSize="40sp" />
     <EditText
         android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText1"
+        android:id="@+id/txtNewBandName"
         android:textColor="#ffffff"
         android:background="#ff726e6a"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:paddingTop="20dp"
+        android:paddingTop="7.5dp"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
         android:layout_marginBottom="30dp"
-        android:paddingBottom="20dp"
+        android:paddingBottom="7.5dp"
         android:layout_below="@+id/bandName"
+        android:textSize="40sp" />
+    <Button
+        android:text="Add New Member"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnAddMember"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_below="@+id/txtNewBandName"
         android:layout_centerHorizontal="true"
         android:textSize="40sp" />
     <Button
         android:text="Finish"
-        android:textSize="40sp"
         android:layout_width="500dp"
         android:layout_height="100dp"
         android:id="@+id/finishCreation"
-        android:layout_marginLeft="150dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="75dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/buttonstyle"
-        android:layout_marginRight="150dp"
-        android:layout_below="@+id/editText1"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/btnAddMember"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
+    <Button
+        android:text="Back"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnBackBandNew"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_below="@+id/finishCreation"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
 </RelativeLayout>
