@@ -28,6 +28,12 @@
         p1:layout_height="194.2dp"
         p1:id="@+id/lvMember" />
     <Button
+        p1:text="Add New Member"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:background="@drawable/buttonstyle"
+        p1:id="@+id/btnBandViewAddNewMember" />
+    <Button
         p1:text="Remove Band"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"

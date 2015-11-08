@@ -24,6 +24,7 @@ namespace AutomaTech
 		int nCount;
 		Button back;
 		Button removeBand;
+		Button addMember;
 		Button setAsDefault;
 		TextView bandName;
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
@@ -40,6 +41,9 @@ namespace AutomaTech
 			bandName = FindViewById<TextView> (Resource.Id.txtBandViewName);
 			bandName.Text = GMemberID.getBandName ();
 
+			addMember = FindViewById<Button> (Resource.Id.btnBandViewAddNewMember);
+			addMember.Click += AddMember_Click;
+
 			back = FindViewById<Button> (Resource.Id.btnBackBandView);
 			back.Click += Back_Click;
 
@@ -55,6 +59,12 @@ namespace AutomaTech
 
 			UpdateMemberList ();
 
+		}
+
+		void AddMember_Click (object sender, EventArgs e)
+		{
+			
+			StartActivity (typeof(BandViewAddMemberActivity));
 		}
 
 		void RemoveBand_Click (object sender, EventArgs e)
