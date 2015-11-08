@@ -116,7 +116,7 @@ namespace AutomaTech
 				dbcon.Open ();
 				using (IDbCommand dbcmd = dbcon.CreateCommand ()) 
 				{
-					string sqlGetTitle = " SELECT (userId), (userName), (access), (visible), (defaultBandId)" +
+					string sqlGetTitle = " SELECT (userId), (userName), (access),(managerId), (visible), (defaultBandId)" +
 										 " FROM userList  ";
 					dbcmd.CommandText = sqlGetTitle;
 					using (IDataReader reader = dbcmd.ExecuteReader ()) 
@@ -128,11 +128,12 @@ namespace AutomaTech
 							long memberUserId = (long)reader ["userId"];
 							string memberName = (string)reader ["userName"];
 							int access = (int)reader ["access"];
+							long memberManager = (long)reader ["managerId"];
 							int memberVisible = (int)reader ["visible"];
 							int defaultBandId = (int)reader ["defaultBandId"];
 
 							//Member determined by defaultBandId, determined by user if mutiple bands	
-							if ((defaultBandId == GMemberID.getBandId()) && (access == 0) && (memberVisible == 1)) {
+							if ((defaultBandId == GMemberID.getBandId()) && (access == 0) && (memberVisible == 1) && memberManager == GMemberID.getManagerId()) {
 								nMembers.Add(new User(memberUserId, memberName));
 							}
 							nCount++;
@@ -152,8 +153,6 @@ namespace AutomaTech
 		{
 			GMemberID.setMemberId(nMembers[e.Position].userId);
 			GMemberID.setMemberName (nMembers [e.Position].userName);
-			string result = " " + nMembers [e.Position].userId;
-			Toast.MakeText (this, result, ToastLength.Short).Show ();
 			StartActivity(typeof(MemberViewActivity));	
 
 		}

@@ -59,15 +59,16 @@ namespace AutomaTech
 		//This handler sets access level for Artists
 		void AccessA_Click (object sender, EventArgs e)
 		{
-			GUser.setAccessLevel (1);
-			GUser.setManagerId (GUser.getUserId ());
+			GUser.setAccessLevel (0);
+			GUser.setManagerId (0);
+		
 		}
 
 		//This handler sets access level for Managers
 		void AccessM_Click (object sender, EventArgs e)
 		{
-			GUser.setAccessLevel (0);
-			GUser.setManagerId (0);
+			GUser.setAccessLevel (1);
+			GUser.setManagerId (GUser.getUserId ());
 		}
 
 		//This handler tests and saves information for a new user
@@ -76,7 +77,7 @@ namespace AutomaTech
 			using (SqlConnection connection = new SqlConnection(conString))
 			{
 
-				SqlCommand cmd = new SqlCommand("INSERT INTO userList (id, userId, userName, managerId, visible, access, defaultBandId, confirmed ) VALUES (@Id, @UserId, @UserName, @ManagerId, @Visible, @Default, @Confirm)");
+				SqlCommand cmd = new SqlCommand("INSERT INTO userList (id, userId, userName, managerId, visible, access, defaultBandId, confirmed ) VALUES (@Id, @UserId, @UserName, @ManagerId, @Visible,@Access, @Default, @Confirm)");
 				cmd.CommandType = CommandType.Text;
 				cmd.Connection = connection;
 				cmd.Parameters.AddWithValue ("@Id", (GUser.getUserTotal() + 1));
@@ -84,6 +85,7 @@ namespace AutomaTech
 				cmd.Parameters.AddWithValue ("@UserName", ("User" +	(GUser.getUserTotal() + 1)));		//GUser.getUserName()); from FACEBOOK
 				cmd.Parameters.AddWithValue ("@ManagerId", GUser.getManagerId());
 				cmd.Parameters.AddWithValue ("@Visible", 1);
+				cmd.Parameters.AddWithValue ("@Access", GUser.getAccessLevel());
 				cmd.Parameters.AddWithValue ("@Default", GUser.getDefaultBandId ());
 				cmd.Parameters.AddWithValue ("@Confirm", 1);
 				connection.Open();

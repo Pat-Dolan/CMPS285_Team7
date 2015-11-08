@@ -141,7 +141,7 @@ Toast.MakeText(this, didit, ToastLength.Short).Show();
 				dbcon.Open ();
 				using (IDbCommand dbcmd = dbcon.CreateCommand ()) 
 				{
-					string sqlGetTitle = " SELECT (userId), (userName), (access), (visible),(defaultBandId),(confirmed) " +
+					string sqlGetTitle = " SELECT (userId), (userName), (access),(managerId), (visible),(defaultBandId),(confirmed) " +
 						" FROM userList ";
 					dbcmd.CommandText = sqlGetTitle;
 					using (IDataReader reader = dbcmd.ExecuteReader ()) 
@@ -153,6 +153,7 @@ Toast.MakeText(this, didit, ToastLength.Short).Show();
 							//string userId = (string)reader ["userId"];
 							string userName = (string)reader ["userName"];
 							int access = (int)reader ["access"];
+							long managerId = (long)reader ["managerId"];
 							int visible = (int)reader ["visible"];
 							int defaultBandId = (int)reader ["defaultBandId"];
 							int confirm = (int)reader ["confirmed"];
@@ -162,6 +163,8 @@ Toast.MakeText(this, didit, ToastLength.Short).Show();
 								GUser.setUserId (userId);
 								GUser.setDefaultBandId (defaultBandId);
 								GUser.setAccessLevel (access);
+								if (GUser.getAccessLevel () == 1)
+									GUser.setManagerId (GUser.getUserId ());
 								//Should be from Facebook, but can be from database
 								GUser.setUserName (userName);
 								GUser.setConfirm (confirm);
