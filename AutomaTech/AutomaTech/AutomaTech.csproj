@@ -83,6 +83,18 @@
     <Compile Include="Activities\Event Manager\EventUpdateActivity.cs" />
     <Compile Include="Activities\Event Manager\EventViewActivity.cs" />
     <Compile Include="Activities\Event Manager\GlobalVariables.cs" />
+    <Compile Include="Activities\Band.cs" />
+    <Compile Include="Activities\BandListViewAdapter.cs" />
+    <Compile Include="Activities\BandViewActivity.cs" />
+    <Compile Include="Activities\User.cs" />
+    <Compile Include="Activities\NewMemberMainActivity.cs" />
+    <Compile Include="Activities\MemberListViewAdapter.cs" />
+    <Compile Include="Activities\MemberViewActivity.cs" />
+    <Compile Include="Activities\BandViewAddMemberActivity.cs" />
+    <Compile Include="Activities\MemberNewViewActivity.cs" />
+    <Compile Include="Activities\MemberNewActivity.cs" />
+    <Compile Include="Activities\MemberRemoveActivity.cs" />
+    <Compile Include="Activities\MemberNewRemoveActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -132,26 +144,6 @@
     <AndroidResource Include="Resources\layout-xlarge\RegisterFinalizeLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\RegisterMainLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\TourMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\AccountMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\BandCreationLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\BandListViewRowLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\BandMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\BandViewLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\DBAccessLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\EventCancelLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\EventListViewRowLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\EventMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\EventSelectLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\EventUpdateLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\EventViewLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\LoginLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\Main.axml" />
-    <AndroidResource Include="Resources\layout-normal\MemberListViewRowLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\MyAccountMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\RegisterConfirmationLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\RegisterFinalizeLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\RegisterMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-normal\TourMainLayout.axml" />
     <AndroidResource Include="Resources\layout-small\AccountMainLayout.axml" />
     <AndroidResource Include="Resources\layout-small\BandCreationLayout.axml" />
     <AndroidResource Include="Resources\layout-small\BandListViewRowLayout.axml" />
@@ -172,6 +164,10 @@
     <AndroidResource Include="Resources\layout-small\RegisterFinalizeLayout.axml" />
     <AndroidResource Include="Resources\layout-small\RegisterMainLayout.axml" />
     <AndroidResource Include="Resources\layout-small\TourMainLayout.axml" />
+    <AndroidResource Include="Resources\layout\BandViewLayout.axml" />
+    <AndroidResource Include="Resources\layout\AddMemberLayout.axml" />
+    <AndroidResource Include="Resources\layout\MemberViewLayout.axml" />
+    <AndroidResource Include="Resources\layout\NewMemberLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="packages\xamstore-xamarin.social.1.1.1\build\monoandroid\xamstore-xamarin.social.props" Condition="Exists('packages\xamstore-xamarin.social.1.1.1\build\monoandroid\xamstore-xamarin.social.props')" />
@@ -182,7 +178,6 @@
     <Folder Include="Activities\Event Manager\" />
     <Folder Include="Resources\values\" />
     <Folder Include="Resources\layout-xlarge\" />
-    <Folder Include="Resources\layout-normal\" />
     <Folder Include="Resources\layout-small\" />
   </ItemGroup>
   <ItemGroup>
