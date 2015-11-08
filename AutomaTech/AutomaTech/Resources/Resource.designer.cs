@@ -395,8 +395,8 @@ namespace AutomaTech
 			// aapt resource value: 0x7f080025
 			public const int btnNewMemberBack = 2131230757;
 			
-			// aapt resource value: 0x7f080080
-			public const int btnRegister = 2131230848;
+			// aapt resource value: 0x7f080078
+			public const int btnRegister = 2131230840;
 			
 			// aapt resource value: 0x7f080073
 			public const int btnRegisterScreen = 2131230835;
@@ -527,14 +527,14 @@ namespace AutomaTech
 			// aapt resource value: 0x7f080001
 			public const int page = 2131230721;
 			
-			// aapt resource value: 0x7f08007f
-			public const int rBtnArtist = 2131230847;
+			// aapt resource value: 0x7f080077
+			public const int rBtnArtist = 2131230839;
 			
-			// aapt resource value: 0x7f08007e
-			public const int rBtnManager = 2131230846;
+			// aapt resource value: 0x7f080076
+			public const int rBtnManager = 2131230838;
 			
-			// aapt resource value: 0x7f08007d
-			public const int rGroupAccess = 2131230845;
+			// aapt resource value: 0x7f080075
+			public const int rGroupAccess = 2131230837;
 			
 			// aapt resource value: 0x7f08004e
 			public const int relativeLayout1 = 2131230798;
@@ -575,8 +575,8 @@ namespace AutomaTech
 			// aapt resource value: 0x7f08001d
 			public const int textView5 = 2131230749;
 			
-			// aapt resource value: 0x7f08007a
-			public const int textView6 = 2131230842;
+			// aapt resource value: 0x7f08007e
+			public const int textView6 = 2131230846;
 			
 			// aapt resource value: 0x7f08001f
 			public const int textView7 = 2131230751;
@@ -626,8 +626,8 @@ namespace AutomaTech
 			// aapt resource value: 0x7f080071
 			public const int txtEConfirm = 2131230833;
 			
-			// aapt resource value: 0x7f08007b
-			public const int txtEmail = 2131230843;
+			// aapt resource value: 0x7f08007f
+			public const int txtEmail = 2131230847;
 			
 			// aapt resource value: 0x7f080052
 			public const int txtEventDate = 2131230802;
@@ -635,8 +635,8 @@ namespace AutomaTech
 			// aapt resource value: 0x7f080051
 			public const int txtEventTitle = 2131230801;
 			
-			// aapt resource value: 0x7f080075
-			public const int txtFName = 2131230837;
+			// aapt resource value: 0x7f080079
+			public const int txtFName = 2131230841;
 			
 			// aapt resource value: 0x7f080013
 			public const int txtFirstName = 2131230739;
@@ -653,8 +653,8 @@ namespace AutomaTech
 			// aapt resource value: 0x7f08001c
 			public const int txtGetUsername = 2131230748;
 			
-			// aapt resource value: 0x7f080076
-			public const int txtLName = 2131230838;
+			// aapt resource value: 0x7f08007a
+			public const int txtLName = 2131230842;
 			
 			// aapt resource value: 0x7f08005b
 			public const int txtLocation = 2131230811;
@@ -668,14 +668,14 @@ namespace AutomaTech
 			// aapt resource value: 0x7f080027
 			public const int txtNewBandName = 2131230759;
 			
+			// aapt resource value: 0x7f080080
+			public const int txtPName = 2131230848;
+			
 			// aapt resource value: 0x7f08007c
-			public const int txtPName = 2131230844;
+			public const int txtPassword = 2131230844;
 			
-			// aapt resource value: 0x7f080078
-			public const int txtPassword = 2131230840;
-			
-			// aapt resource value: 0x7f080079
-			public const int txtRePassword = 2131230841;
+			// aapt resource value: 0x7f08007d
+			public const int txtRePassword = 2131230845;
 			
 			// aapt resource value: 0x7f08005e
 			public const int txtTime = 2131230814;
@@ -683,8 +683,8 @@ namespace AutomaTech
 			// aapt resource value: 0x7f08005a
 			public const int txtTitle = 2131230810;
 			
-			// aapt resource value: 0x7f080077
-			public const int txtUsername = 2131230839;
+			// aapt resource value: 0x7f08007b
+			public const int txtUsername = 2131230843;
 			
 			// aapt resource value: 0x7f080002
 			public const int unknown = 2131230722;

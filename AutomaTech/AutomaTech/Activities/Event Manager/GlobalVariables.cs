@@ -2,7 +2,6 @@
 
 namespace AutomaTech
 {
-
 	public class GlobalVariables
 	{
 		private static GlobalVariables instance;
@@ -21,6 +20,7 @@ namespace AutomaTech
 		private static int confirm;
 		private static string bandName;
 		private static int userTotal;
+
 		public void setUserTotal(int total)
 		{
 			GlobalVariables.userTotal = total;

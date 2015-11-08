@@ -16,20 +16,19 @@ namespace AutomaTech
 	{
 
 		GlobalVariables GEventID = GlobalVariables.getInstance();	//Should be used to get username from Facebook
+
 		int nCount = 0;
 		private List<Event> nEvents;	
 		private ListView nEventListView;
 
+		Button firstEventbtn;
 
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
-
-		Button firstEventbtn;
 
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 
-			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.EventMainLayout);
 
 			firstEventbtn = FindViewById<Button> (Resource.Id.btnFirstEvent);
@@ -39,15 +38,13 @@ namespace AutomaTech
 			back.Click += Back_Click;
 
 			nEventListView = FindViewById<ListView> (Resource.Id.lvEvent);
+			nEventListView.ItemClick += NEventListView_ItemClick;
 
 			nEvents = new List<Event>();
 
-			//SQL Server Database
 			UpdateEventList ();
-
-
-			nEventListView.ItemClick += NEventListView_ItemClick;
 		}
+
 		void UpdateEventList ()
 		{
 			//getting titles for initial event list view
@@ -85,10 +82,11 @@ namespace AutomaTech
 					}
 				}
 			}
-			EventListViewAdapter adapter = new EventListViewAdapter (this, nEvents);
 
+			EventListViewAdapter adapter = new EventListViewAdapter (this, nEvents);
 			nEventListView.Adapter = adapter;
 		}
+
 		void Back_Click (object sender, EventArgs e)
 		{
 			StartActivity (typeof(MainActivity));
@@ -97,8 +95,7 @@ namespace AutomaTech
 		void NEventListView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)
 		{
 			GEventID.setEventId(nEvents[e.Position].eventId);
-			string result = " " + nEvents[e.Position].eventId;
-			Toast.MakeText (this, result, ToastLength.Short).Show ();
+
 			StartActivity (typeof(EventSelectActivity));
 		}
 

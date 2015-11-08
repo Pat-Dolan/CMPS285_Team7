@@ -2,7 +2,6 @@
 using SQLite;
 using System.IO;
 
-
 namespace AutomaTech
 {
 	public class EventDB

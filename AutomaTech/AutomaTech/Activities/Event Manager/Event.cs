@@ -4,7 +4,6 @@ namespace AutomaTech
 {
 	public class Event
 	{
-
 		public string eventTitle{ get; set; }
 		public string eventDate{ get; set; }
 		public int eventId{ get; set; }
@@ -16,7 +15,6 @@ namespace AutomaTech
 			eventTitle = title;
 			eventDate = date;
 			eventVisible = visible;
-
 		}
 	}
 }

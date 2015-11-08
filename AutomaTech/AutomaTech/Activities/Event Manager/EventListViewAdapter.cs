@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -10,11 +9,13 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SQLite;
+
 namespace AutomaTech
 {
 	public class EventListViewAdapter : BaseAdapter<Event>
 	{
 		GlobalVariables GEventID = GlobalVariables.getInstance();
+
 		public List<Event> nEvents;
 		private Context nEventContext;
 
@@ -23,7 +24,9 @@ namespace AutomaTech
 			nEvents = events;
 			nEventContext = context;
 		}
-		public override int Count {
+
+		public override int Count 
+		{
 			get 
 			{
 				return nEvents.Count ();
@@ -34,12 +37,15 @@ namespace AutomaTech
 		{
 			return position;
 		}
-		public override Event this[int position] {
+
+		public override Event this[int position] 
+		{
 			get 
 			{
 				return nEvents [position];
 			}
 		}
+
 		public override View GetView (int position, View convertView, ViewGroup parent)
 		{
 			View row = convertView;
@@ -56,7 +62,6 @@ namespace AutomaTech
 				txtEDate.Text = nEvents [position].eventDate;
 			
 			return row;
-
 		}
 	}
 }

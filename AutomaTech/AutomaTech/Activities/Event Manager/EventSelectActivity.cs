@@ -1,9 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -17,6 +15,7 @@ namespace AutomaTech
 	public class EventSelectActivity : Activity
 	{
 		GlobalVariables GEventID = GlobalVariables.getInstance();
+
 		private Button nView;
 		private Button nUpdate;
 		private Button nCancel;
@@ -25,6 +24,7 @@ namespace AutomaTech
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+
 			SetContentView (Resource.Layout.EventSelectLayout);
 
 			nView = FindViewById<Button> (Resource.Id.btnViewEvent);
@@ -38,7 +38,7 @@ namespace AutomaTech
 
 			nBack = FindViewById<Button> (Resource.Id.btnSelectBack);
 			nBack.Click += NBack_Click;
-			// Create your application here
+
 		}
 
 		void NBack_Click (object sender, EventArgs e)

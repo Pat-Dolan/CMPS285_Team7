@@ -78,24 +78,17 @@ namespace AutomaTech
 			bool found = false;
 			LoginResult loginResult = result as LoginResult; 
 			Console.WriteLine(loginResult.AccessToken.UserId); //Token is the Unique Key for UserFacebooks
-			long thingy = Int64.Parse(loginResult.AccessToken.UserId);
-			GUser.setUserId(thingy);
-			string thing;
-			//if(loginResult.AccessToken.UserId == GUser.getUserId())
-			//	thing ="Good";
-			//else
-			//	 thing = "Bad";
-			//Toast.MakeText(this, thing, ToastLength.Short).Show();
-			
-
+			long facebookId = Int64.Parse(loginResult.AccessToken.UserId);
+			GUser.setUserId(facebookId);
+		
 			found = loadUser ();
-			//if not found, begin new registration
-
 
 			if(found == true){
 				StartActivity (typeof(MainActivity));
 			}
-			else{
+
+			else
+			{
 				GUser.setDefaultBandId (0);
 				GUser.setBandId (0);
 				GUser.setManagerId (0);
@@ -105,37 +98,11 @@ namespace AutomaTech
 		}
 		public bool loadUser ()
 		{
-			//################################################
-			// EXPERIMENTAL DATABASE TEST  	FOR INSERTING A NEW USER
-			//###############################################
-			/*
-			using (SqlConnection connection = new SqlConnection(conString))
-			{
-
-				SqlCommand cmd = new SqlCommand("INSERT INTO userList (id, userId, userName, access, managerId, visible, defaultBandId, confirmed) " + 
-												"VALUES (@Id, @UserId, @UserName,@Access, @ManagerId, @Visible, @DefaultBandId, @Confirm)");
-				cmd.CommandType = CommandType.Text;
-				cmd.Connection = connection;
-				cmd.Parameters.AddWithValue ("@Id", 1);
-				cmd.Parameters.AddWithValue ("@UserId", GUser.getUserId());
-				cmd.Parameters.AddWithValue ("@UserName", "John Smith");
-				cmd.Parameters.AddWithValue ("@Access", 1);
-				cmd.Parameters.AddWithValue ("@ManagerId", GUser.getUserName());
-				cmd.Parameters.AddWithValue ("@Visible", 1); 
-				cmd.Parameters.AddWithValue ("@DefaultBandId", 1); 
-				cmd.Parameters.AddWithValue ("@Confirm", 1); 
-				connection.Open();
-				cmd.ExecuteNonQuery();
-				connection.Close ();
-			}
-string didit = "Found";
-Toast.MakeText(this, didit, ToastLength.Short).Show();
-
-*/
-			//##############################################
 			nCount = 0;
 			bool found = false;
+
 			IDbConnection dbcon;
+
 			using (dbcon = new SqlConnection (conString)) 
 			{
 				dbcon.Open ();
@@ -216,21 +183,4 @@ Toast.MakeText(this, didit, ToastLength.Short).Show();
 	//	public const int userProfile = AccessToken.CurrentAccessToken;
 	//}
 }
-//
-//		protected override void OnDestroy()
-//		{
-//			mProfileTracker.StopTracking ();
-//			base.OnDestroy ();
-//		}
-//
-//			//Opening database connection for testing login info
-//			DBRepository dbr = new DBRepository ();
-//			var result = dbr.CreateDB ();						//returns testing string
-//			//Toast.MakeText (this, result.ToString(), ToastLength.Short).Show ();		//displaying testing value
-//
-
-//		}
-
-//	}
-//}
 

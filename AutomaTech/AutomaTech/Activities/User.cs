@@ -11,6 +11,7 @@ namespace AutomaTech
 		public int userAccess{get;set;}
 		public int userDefaultBand{get;set;}
 		public int userConfirm{get;set;}
+
 		public User (long id, string name)
 		{
 			userId = id;
