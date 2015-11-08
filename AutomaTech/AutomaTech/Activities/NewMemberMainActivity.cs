@@ -41,13 +41,21 @@ namespace AutomaTech
 			back.Click += Back_Click;
 
 			nMemberListView = FindViewById<ListView> (Resource.Id.lvAddMember);
-		
+			nMemberListView.ItemClick += NMemberListView_ItemClick;
 			nMembers = new List<User>();
 
 			UpdateMemberList ();
 			// Create your application here
 		}
+		void NMemberListView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)
+		{
+			GMember.setMemberId(nMembers[e.Position].userId);
+			GMember.setMemberName (nMembers [e.Position].userName);
+			string result = " " + nMembers [e.Position].userId;
+			Toast.MakeText (this, result, ToastLength.Short).Show ();
+			StartActivity(typeof(MemberNewViewActivity));	
 
+		}
 		void Finish_Click (object sender, EventArgs e)
 		{
 			StartActivity (typeof(BandMainActivity));

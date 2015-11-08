@@ -92,6 +92,7 @@ namespace AutomaTech
 		void NBandListView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)
 		{
 			GBand.setBandId(nBands[e.Position].bandId);
+			GBand.setBandName (nBands [e.Position].bandName);
 			StartActivity(typeof(BandViewActivity));
 		}
 			

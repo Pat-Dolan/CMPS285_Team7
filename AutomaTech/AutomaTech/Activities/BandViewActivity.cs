@@ -25,6 +25,7 @@ namespace AutomaTech
 		Button back;
 		Button removeBand;
 		Button setAsDefault;
+		TextView bandName;
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -35,6 +36,9 @@ namespace AutomaTech
 			//MemberListView
 			setAsDefault = FindViewById<Button>(Resource.Id.btnSetBandDefault);
 			setAsDefault.Click += SetAsDefault_Click;
+
+			bandName = FindViewById<TextView> (Resource.Id.txtBandViewName);
+			bandName.Text = GMemberID.getBandName ();
 
 			back = FindViewById<Button> (Resource.Id.btnBackBandView);
 			back.Click += Back_Click;

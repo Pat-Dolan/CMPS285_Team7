@@ -20,7 +20,6 @@ namespace AutomaTech
 		GlobalVariables GMember = GlobalVariables.getInstance();
 		Button addMember;
 		Button back;
-		string name;
 		EditText memberName;
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
 
@@ -52,13 +51,14 @@ namespace AutomaTech
 			using (SqlConnection connection = new SqlConnection(conString))
 			{
 
-				SqlCommand cmd = new SqlCommand("UPDATE userList SET managerId = @ManagerId, defaultBandId = @BandId WHERE userName = @Name ");
+				SqlCommand cmd = new SqlCommand("UPDATE userList SET managerId = @ManagerId, defaultBandId = @BandId, visible = @Visible WHERE userName = @Name ");
 				cmd.CommandType = CommandType.Text;
 				cmd.Connection = connection;
 
 				cmd.Parameters.AddWithValue ("@ManagerId", GMember.getUserId());
 				cmd.Parameters.AddWithValue("@BandId", GMember.getBandId());
 				cmd.Parameters.AddWithValue("@Name", memberName.Text);
+				cmd.Parameters.AddWithValue ("@Visible", 1);
 
 				connection.Open();
 				cmd.ExecuteNonQuery();

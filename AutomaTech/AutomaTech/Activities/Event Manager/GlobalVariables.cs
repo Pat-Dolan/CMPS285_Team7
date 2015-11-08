@@ -19,6 +19,17 @@ namespace AutomaTech
 		private static string userName;
 		private static string memberName;
 		private static int confirm;
+		private static string bandName;
+
+
+		public void setBandName(string name)
+		{
+			GlobalVariables.bandName = name;
+		}
+		public string getBandName()
+		{
+			return GlobalVariables.bandName;
+		}
 
 		public void setMemberName(string name)
 		{

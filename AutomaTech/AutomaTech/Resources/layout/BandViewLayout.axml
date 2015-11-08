@@ -13,8 +13,8 @@
     <TextView
         p1:text="Example"
         p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/textView4" />
+        p1:layout_height="25.2dp"
+        p1:id="@+id/txtBandViewName" />
     <TextView
         p1:text="Members: "
         p1:textAppearance="?android:attr/textAppearanceLarge"
