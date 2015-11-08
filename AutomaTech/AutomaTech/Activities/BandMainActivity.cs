@@ -71,7 +71,7 @@ namespace AutomaTech
 							long bandManager = (long)reader ["managerId"];
 							int bandVisible = (int)reader ["visible"];
 							//for cancel	
-							if ((bandVisible == 1) && (bandManager == GBand.getUserId())) {
+							if ((bandVisible == 1) && (bandManager == GBand.getManagerId())) {
 								if (bandId == GBand.getDefaultBandId ())
 									bandName += " DEFAULT";
 								nBands.Add(new Band(bandId, bandName, bandManager, bandVisible));
