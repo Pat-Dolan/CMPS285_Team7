@@ -30,25 +30,15 @@
         android:paddingBottom="7.5dp"
         android:layout_below="@+id/bandName" />
     <Button
-        android:text="Add New Member"
+        android:text="Next"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:id="@+id/btnAddMember"
+        android:id="@+id/btnNewBandNext"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/buttonstyle"
         android:layout_below="@+id/txtNewBandName" />
-    <Button
-        android:text="Finish"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:id="@+id/finishCreation"
-        android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/buttonstyle"
-        android:layout_below="@+id/btnAddMember" />
     <Button
         android:text="Back"
         android:layout_width="250dp"
@@ -58,5 +48,5 @@
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/buttonstyle"
-        android:layout_below="@+id/finishCreation" />
+        android:layout_below="@+id/btnNewBandNext" />
 </RelativeLayout>

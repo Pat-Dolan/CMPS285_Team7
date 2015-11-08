@@ -98,6 +98,7 @@ namespace AutomaTech
 
 		void NewBand_Click (object sender, EventArgs e)
 		{
+			GBand.setBandId((GBand.getBandTotal() + 1));
 			StartActivity (typeof(BandCreationActivity));
 		}
 			

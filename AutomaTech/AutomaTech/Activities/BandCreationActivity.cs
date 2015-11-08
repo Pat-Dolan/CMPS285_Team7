@@ -19,7 +19,6 @@ namespace AutomaTech
 		GlobalVariables GBand = GlobalVariables.getInstance();
 		EditText bandName;
 		Button newBand;
-		Button addMember;
 		Button back;
 
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
@@ -32,13 +31,10 @@ namespace AutomaTech
 
 			bandName = FindViewById<EditText>(Resource.Id.txtNewBandName);
 
-			addMember = FindViewById<Button> (Resource.Id.btnAddMember);
-			addMember.Click += AddMember_Click;
-
 			back = FindViewById<Button> (Resource.Id.btnBackBandNew);
 			back.Click += Back_Click;
 
-			newBand = FindViewById<Button> (Resource.Id.finishCreation);
+			newBand = FindViewById<Button> (Resource.Id.btnNewBandNext);
 			newBand.Click += NewBand_Click;
 		}
 
@@ -46,13 +42,7 @@ namespace AutomaTech
 		{
 			StartActivity (typeof(BandMainActivity));
 		}
-
-		void AddMember_Click (object sender, EventArgs e)
-		{
-			string result = "Add Member Here";
-			Toast.MakeText (this, result, ToastLength.Short).Show ();
-
-		}
+			
 
 		void NewBand_Click (object sender, EventArgs e)
 		{
@@ -62,7 +52,7 @@ namespace AutomaTech
 				SqlCommand cmd = new SqlCommand("INSERT INTO bandList (id, bandName, managerId, visible) VALUES (@Id, @BandName, @Manager, @Visible)");
 				cmd.CommandType = CommandType.Text;
 				cmd.Connection = connection;
-				cmd.Parameters.AddWithValue ("@Id", (GBand.getBandTotal() + 1));
+				cmd.Parameters.AddWithValue ("@Id", GBand.getBandId());
 				cmd.Parameters.AddWithValue ("@BandName", bandName.Text);
 				cmd.Parameters.AddWithValue ("@Manager", GBand.getManagerId());
 				cmd.Parameters.AddWithValue ("@Visible", 1);  
@@ -71,7 +61,7 @@ namespace AutomaTech
 				connection.Close ();
 			}
 
-			StartActivity (typeof(BandMainActivity));
+			StartActivity (typeof(NewMemberMainActivity));
 		}
 	}
 }

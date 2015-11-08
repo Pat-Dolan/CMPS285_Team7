@@ -17,7 +17,18 @@ namespace AutomaTech
 		private static long managerId;
 		private static int accessLevel;
 		private static string userName;
+		private static string memberName;
 		private static int confirm;
+
+		public void setMemberName(string name)
+		{
+			GlobalVariables.memberName = name;
+		}
+		public string getMemberName()
+		{
+			return GlobalVariables.memberName;
+		}
+
 
 		public void setConfirm(int conf)
 		{

@@ -23,6 +23,7 @@ namespace AutomaTech
 		private ListView nMemberListView;
 		int nCount;
 		Button back;
+		Button removeBand;
 		Button setAsDefault;
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
 		protected override void OnCreate (Bundle bundle)
@@ -38,6 +39,9 @@ namespace AutomaTech
 			back = FindViewById<Button> (Resource.Id.btnBackBandView);
 			back.Click += Back_Click;
 
+			removeBand = FindViewById<Button> (Resource.Id.btnRemoveBand);
+			removeBand.Click += RemoveBand_Click;
+
 			nMemberListView = FindViewById<ListView> (Resource.Id.lvMember);
 			if (GMemberID.getAccessLevel () == 1) {
 				nMemberListView.ItemClick += NMemberListView_ItemClick;
@@ -47,6 +51,25 @@ namespace AutomaTech
 
 			UpdateMemberList ();
 
+		}
+
+		void RemoveBand_Click (object sender, EventArgs e)
+		{
+			using (SqlConnection connection = new SqlConnection(conString))
+			{
+
+				SqlCommand cmd = new SqlCommand("UPDATE bandList SET visible = @Visible WHERE id = @Id ");
+				cmd.CommandType = CommandType.Text;
+				cmd.Connection = connection;
+
+				cmd.Parameters.AddWithValue ("@Id", GMemberID.getBandId());
+				cmd.Parameters.AddWithValue ("@Visible", 0);
+
+				connection.Open();
+				cmd.ExecuteNonQuery();
+				connection.Close ();
+			}
+			StartActivity (typeof(BandMainActivity));
 		}
 
 		void SetAsDefault_Click (object sender, EventArgs e)
@@ -114,9 +137,10 @@ namespace AutomaTech
 		void NMemberListView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)
 		{
 			GMemberID.setMemberId(nMembers[e.Position].userId);
+			GMemberID.setMemberName (nMembers [e.Position].userName);
 			string result = " " + nMembers [e.Position].userId;
 			Toast.MakeText (this, result, ToastLength.Short).Show ();
-			//StartActivity(typeof(MemberViewActivity));	???Maybe!
+			StartActivity(typeof(MemberViewActivity));	
 
 		}
 			
