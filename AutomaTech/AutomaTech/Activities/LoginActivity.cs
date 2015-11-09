@@ -56,7 +56,7 @@ namespace AutomaTech
 		{
 			StartActivity (typeof(MainActivity));
 			GUser.setUserId (120195718336160);
-			GUser.setDefaultBandId (1);
+			GUser.setDefaultBandId (0);
 			GUser.setAccessLevel (1);
 			//Should be from Facebook, but is not necessary
 			GUser.setUserName ("John Smith");
