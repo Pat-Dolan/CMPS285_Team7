@@ -30,6 +30,7 @@ namespace AutomaTech
 			SetContentView (Resource.Layout.EventCancelLayout);
 			removeMember = FindViewById<Button> (Resource.Id.btnCancel);
 			removeMember.Click += RemoveMember_Click;
+			removeMember.SetText (Resource.String.RemoveMember);
 
 			back = FindViewById<Button> (Resource.Id.btnCancelBack);
 			back.Click += Back_Click;

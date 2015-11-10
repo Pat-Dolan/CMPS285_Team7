@@ -28,8 +28,13 @@ namespace AutomaTech
 			base.OnCreate (bundle);
 
 			SetContentView (Resource.Layout.EventCancelLayout);
+
+			TextView titleText = FindViewById<TextView> (Resource.Id.txtRemoveTitle);
+			titleText.SetText (Resource.String.RemoveMember);
+
 			removeMember = FindViewById<Button> (Resource.Id.btnCancel);
 			removeMember.Click += RemoveMember_Click;
+			removeMember.SetText (Resource.String.RemoveMember);
 		
 			back = FindViewById<Button> (Resource.Id.btnCancelBack);
 			back.Click += Back_Click;

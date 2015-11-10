@@ -42,25 +42,9 @@ namespace AutomaTech
 		{
 			StartActivity (typeof(BandMainActivity));
 		}
-			
-
 		void NewBand_Click (object sender, EventArgs e)
 		{
-			using (SqlConnection connection = new SqlConnection(conString))
-			{
-
-				SqlCommand cmd = new SqlCommand("INSERT INTO bandList (id, bandName, managerId, visible) VALUES (@Id, @BandName, @Manager, @Visible)");
-				cmd.CommandType = CommandType.Text;
-				cmd.Connection = connection;
-				cmd.Parameters.AddWithValue ("@Id", GBand.getBandId());
-				cmd.Parameters.AddWithValue ("@BandName", bandName.Text);
-				cmd.Parameters.AddWithValue ("@Manager", GBand.getManagerId());
-				cmd.Parameters.AddWithValue ("@Visible", 1);  
-				connection.Open();
-				cmd.ExecuteNonQuery();
-				connection.Close ();
-			}
-
+			GBand.setBandName (bandName.Text);
 			StartActivity (typeof(NewMemberMainActivity));
 		}
 	}

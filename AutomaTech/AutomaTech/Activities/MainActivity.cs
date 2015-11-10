@@ -22,8 +22,7 @@ namespace AutomaTech
 			SetContentView (Resource.Layout.Main);
 
 			//Adding layout components
-			Button eventScreen = FindViewById<Button> (Resource.Id.btnEventScreen);
-			eventScreen.Click += EventScreen_Click;
+
 
 			Button bandScreen = FindViewById<Button> (Resource.Id.btnBandScreen);
 			bandScreen.Click += BandScreen_Click;
@@ -60,10 +59,6 @@ namespace AutomaTech
 			StartActivity (typeof(BandMainActivity));
 		}
 
-		void EventScreen_Click (object sender, EventArgs e)
-		{
-			StartActivity (typeof(EventMainActivity));
-		}
 
 		void LogoutScreen_Click (object sender, EventArgs e)
 		{

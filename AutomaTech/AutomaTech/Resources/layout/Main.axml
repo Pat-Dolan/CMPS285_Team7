@@ -25,20 +25,10 @@
         android:layout_marginRight="75dp"
         android:layout_marginBottom="15dp" />
     <Button
-        android:text="Event Manager"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btnAccount"
-        android:id="@+id/btnEventScreen"
-        android:background="@drawable/buttonstyle"
-        android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp" />
-    <Button
         android:text="Band Manager"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/btnEventScreen"
+        android:layout_below="@+id/btnAccount"
         android:id="@+id/btnBandScreen"
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"

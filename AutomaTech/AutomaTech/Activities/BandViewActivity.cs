@@ -27,6 +27,7 @@ namespace AutomaTech
 		Button addMember;
 		Button setAsDefault;
 		TextView bandName;
+		Button eventScreen;
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -34,9 +35,11 @@ namespace AutomaTech
 
 			SetContentView (Resource.Layout.BandViewLayout);
 
-			//MemberListView
-			setAsDefault = FindViewById<Button>(Resource.Id.btnSetBandDefault);
-			setAsDefault.Click += SetAsDefault_Click;
+			eventScreen = FindViewById<Button> (Resource.Id.btnEventScreen);
+			eventScreen.Click += EventScreen_Click;
+
+		//	setAsDefault = FindViewById<Button>(Resource.Id.btnSetBandDefault);
+		//	setAsDefault.Click += SetAsDefault_Click;
 
 			bandName = FindViewById<TextView> (Resource.Id.txtBandViewName);
 			bandName.Text = GMemberID.getBandName ();
@@ -59,6 +62,13 @@ namespace AutomaTech
 
 			UpdateMemberList ();
 
+		}
+
+
+		void EventScreen_Click (object sender, EventArgs e)
+		{
+			GMemberID.setDefaultBandId (GMemberID.getBandId ());
+			StartActivity (typeof(EventMainActivity));
 		}
 
 		void AddMember_Click (object sender, EventArgs e)
@@ -116,7 +126,7 @@ namespace AutomaTech
 				dbcon.Open ();
 				using (IDbCommand dbcmd = dbcon.CreateCommand ()) 
 				{
-					string sqlGetTitle = " SELECT (userId), (userName), (access),(managerId), (visible), (defaultBandId)" +
+					string sqlGetTitle = " SELECT (userId), (userName), (access),(managerId), (visible), (defaultBandId), (confirmed)" +
 										 " FROM userList  ";
 					dbcmd.CommandText = sqlGetTitle;
 					using (IDataReader reader = dbcmd.ExecuteReader ()) 
@@ -131,6 +141,7 @@ namespace AutomaTech
 							long memberManager = (long)reader ["managerId"];
 							int memberVisible = (int)reader ["visible"];
 							int defaultBandId = (int)reader ["defaultBandId"];
+							int confirm = (int)reader ["confirmed"];
 
 							//Member determined by defaultBandId, determined by user if mutiple bands	
 							if ((defaultBandId == GMemberID.getBandId()) && (access == 0) && (memberVisible == 1) && memberManager == GMemberID.getManagerId()) {

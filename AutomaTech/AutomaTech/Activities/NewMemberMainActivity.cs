@@ -58,12 +58,26 @@ namespace AutomaTech
 		}
 		void Finish_Click (object sender, EventArgs e)
 		{
+			using (SqlConnection connection = new SqlConnection(conString))
+			{
+
+				SqlCommand cmd = new SqlCommand("INSERT INTO bandList (id, bandName, managerId, visible) VALUES (@Id, @BandName, @Manager, @Visible)");
+				cmd.CommandType = CommandType.Text;
+				cmd.Connection = connection;
+				cmd.Parameters.AddWithValue ("@Id", GMember.getBandId());
+				cmd.Parameters.AddWithValue ("@BandName", GMember.getBandName());
+				cmd.Parameters.AddWithValue ("@Manager", GMember.getManagerId());
+				cmd.Parameters.AddWithValue ("@Visible", 1);  
+				connection.Open();
+				cmd.ExecuteNonQuery();
+				connection.Close ();
+			}
 			StartActivity (typeof(BandMainActivity));
 		}
 
 		void Back_Click (object sender, EventArgs e)
 		{
-			StartActivity (typeof(BandMainActivity));
+			StartActivity (typeof(BandCreationActivity));
 		}
 
 		void AddNewMember_Click (object sender, EventArgs e)

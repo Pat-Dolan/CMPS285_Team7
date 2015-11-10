@@ -28,27 +28,36 @@
         p1:layout_height="194.2dp"
         p1:id="@+id/lvMember" />
     <Button
-        p1:text="Add New Member"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
+        p1:text="Event Manager"
+        p1:layout_width="250dp"
+        p1:layout_height="50dp"
+        p1:layout_below="@+id/lvMember"
+        p1:id="@+id/btnEventScreen"
         p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginRight="75dp" />
+    <Button
+        p1:text="Add New Member"
+        p1:layout_width="250dp"
+        p1:layout_height="50dp"
+        p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginRight="75dp"
         p1:id="@+id/btnBandViewAddNewMember" />
     <Button
         p1:text="Remove Band"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
+        p1:layout_width="250dp"
+        p1:layout_height="50dp"
         p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginRight="75dp"
         p1:id="@+id/btnRemoveBand" />
     <Button
-        p1:text="Set As Default Band"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:background="@drawable/buttonstyle"
-        p1:id="@+id/btnSetBandDefault" />
-    <Button
         p1:text="Back"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
+        p1:layout_width="250dp"
+        p1:layout_height="50dp"
         p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginRight="75dp"
         p1:id="@+id/btnBackBandView" />
 </LinearLayout>

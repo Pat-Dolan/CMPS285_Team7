@@ -29,8 +29,12 @@ namespace AutomaTech
 
 			SetContentView (Resource.Layout.EventCancelLayout);
 
+			TextView title = FindViewById<TextView> (Resource.Id.txtRemoveTitle);
+			title.SetText (Resource.String.RemoveEvent);
+
 			eventCancel = FindViewById<Button> (Resource.Id.btnCancel);
 			eventCancel.Click += EventCancel_Click;
+			eventCancel.SetText (Resource.String.RemoveEvent);
 
 			back = FindViewById<Button> (Resource.Id.btnCancelBack);
 			back.Click += Back_Click;

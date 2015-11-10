@@ -5,5 +5,7 @@
 	<string name="facebook_app_id">1678466092385983</string>
 	<string name="NewEvent">New</string>
 	<string name="UpdateEvent">Update</string>
+	<string name="RemoveMember">Remove Member</string>
+	<string name="RemoveEvent">Cancel Event</string>
 	<string name="Title"/>
 </resources>

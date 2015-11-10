@@ -89,7 +89,7 @@ namespace AutomaTech
 
 		void Back_Click (object sender, EventArgs e)
 		{
-			StartActivity (typeof(MainActivity));
+			StartActivity (typeof(BandViewActivity));
 		}
 
 		void NEventListView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)
