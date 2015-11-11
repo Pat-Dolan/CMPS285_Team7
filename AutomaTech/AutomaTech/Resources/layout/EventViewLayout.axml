@@ -84,4 +84,14 @@
         p1:background="@drawable/buttonstyle"
         p1:layout_marginLeft="73dp"
         p1:layout_marginBottom="15dp" />
+    <Button
+        p1:text="Share to Twitter"
+        p1:layout_width="250dp"
+        p1:layout_height="50dp"
+        p1:layout_below="@id/btnViewBack"
+        p1:id="@+id/TwitterShare"
+        p1:layout_centerHorizontal="true"
+        p1:background="@drawable/buttonstyle"
+        p1:layout_marginLeft="73dp"
+        p1:layout_marginBottom="15dp" />
 </RelativeLayout>

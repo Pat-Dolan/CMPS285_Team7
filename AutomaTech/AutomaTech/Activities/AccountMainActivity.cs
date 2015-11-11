@@ -1,13 +1,20 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Xamarin.Social;
+using Xamarin.Social.Services;
+using Xamarin.Auth;
+using System.Threading.Tasks;
+using Xamarin.Media;
 using Xamarin.Facebook;
 
 namespace AutomaTech
@@ -15,6 +22,30 @@ namespace AutomaTech
 	[Activity (Label = "TourPlus+", Icon = "@drawable/Icon")]			
 	public class AccountMainActivity : Activity
 	{
+		public void TwitterLogin()
+		{
+			var auth = new OAuth1Authenticator
+				(
+					consumerKey: "ERMyIfX25iuUtKmmk2CRoSJFA",
+					consumerSecret: "smCmzT6KpFBetryvpfGE7fvu0WmVdY1sRhJxqV7gwOIweFPs3d",
+					requestTokenUrl: new Uri("https://api.twitter.com/oauth/request_token"),
+					authorizeUrl: new Uri("https://api.twitter.com/oauth/authorize"),
+					accessTokenUrl: new Uri("https://api.twitter.com/oauth/access_token"),
+					callbackUrl: new Uri("http://mobile.twitter.com")
+				);
+			auth.AllowCancel = true;
+			StartActivity(auth.GetUI(this));
+			auth.Completed += (s, eventArgs) =>
+			{
+				if (eventArgs.IsAuthenticated)
+				{
+					Account loggedInAccount = eventArgs.Account;
+					//save the account data for a later session, according to Twitter docs, this doesn't expire
+					AccountStore.Create(this).Save(loggedInAccount, "Twitter");
+				}
+			};
+		}
+
 		private TextView mTxtFirstName;
 		public myProfileTracker mProfileTracker;
 
@@ -29,9 +60,9 @@ namespace AutomaTech
 
 			mTxtFirstName = FindViewById<TextView> (Resource.Id.txtFirstName);
 			Button loadAccount = FindViewById<Button>(Resource.Id.btnLoadAccount);
-			
-			//loadAccount.Click += LoadAccount_Click;
 
+			//loadAccount.Click += LoadAccount_Click;
+			
 			Button homeFromAccount = FindViewById<Button> (Resource.Id.homeFromAccount);
 			homeFromAccount.Click += HomeFromAccount_Click;
 		}
@@ -53,6 +84,7 @@ namespace AutomaTech
 				}
 			}
 		}
+
 
 		//This function loads the text fields with user information
 		//UNDER CONSTRUCTION !! GLOBAL VARIABLE FOR DETERMINING USER ID IS NECESSARY
