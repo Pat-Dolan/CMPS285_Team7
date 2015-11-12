@@ -25,7 +25,7 @@ namespace AutomaTech
 		Button back;
 		Button removeBand;
 		Button addMember;
-		Button setAsDefault;
+
 		TextView bandName;
 		Button eventScreen;
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
@@ -38,14 +38,14 @@ namespace AutomaTech
 			eventScreen = FindViewById<Button> (Resource.Id.btnEventScreen);
 			eventScreen.Click += EventScreen_Click;
 
-		//	setAsDefault = FindViewById<Button>(Resource.Id.btnSetBandDefault);
-		//	setAsDefault.Click += SetAsDefault_Click;
-
 			bandName = FindViewById<TextView> (Resource.Id.txtBandViewName);
 			bandName.Text = GMemberID.getBandName ();
 
 			addMember = FindViewById<Button> (Resource.Id.btnBandViewAddNewMember);
 			addMember.Click += AddMember_Click;
+			//if user is a member, hide new member button
+			if(GMemberID.getAccessLevel() == 0)
+			addMember.Visibility = ViewStates.Gone;
 
 			back = FindViewById<Button> (Resource.Id.btnBackBandView);
 			back.Click += Back_Click;
@@ -53,6 +53,11 @@ namespace AutomaTech
 			removeBand = FindViewById<Button> (Resource.Id.btnRemoveBand);
 			removeBand.Click += RemoveBand_Click;
 
+			//if user is a member, hide the remove band button
+			if(GMemberID.getAccessLevel() == 0)
+			removeBand.Visibility = ViewStates.Gone;
+
+			//building the member list, if a manager, allowing clicks
 			nMemberListView = FindViewById<ListView> (Resource.Id.lvMember);
 			if (GMemberID.getAccessLevel () == 1) {
 				nMemberListView.ItemClick += NMemberListView_ItemClick;

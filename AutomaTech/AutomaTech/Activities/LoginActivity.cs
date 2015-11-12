@@ -38,10 +38,12 @@ namespace AutomaTech
 			SetContentView (Resource.Layout.LoginLayout);
 
 			mProfileTracker = new myProfileTracker ();
+
+			mProfileTracker.mOnProfileChanged += MProfileTracker_mOnProfileChanged;
+
 			mProfileTracker.StartTracking ();
 
 			LoginButton button = FindViewById<LoginButton> (Resource.Id.login_button);
-
 			Button tempLogin = FindViewById<Button> (Resource.Id.tempLogin);
 			tempLogin.Click += TempLogin_Click;
 
@@ -52,6 +54,13 @@ namespace AutomaTech
 			button.RegisterCallback (mCallBackManager, this);
 		}
 
+		void MProfileTracker_mOnProfileChanged (object sender, OnProfileChangedEventArgs e)
+		{
+			if(e.mProfile != null)
+			GUser.setUserName(e.mProfile.Name);
+			
+		}
+
 		void TempLogin_Click (object sender, EventArgs e)
 		{
 			StartActivity (typeof(MainActivity));
@@ -59,7 +68,7 @@ namespace AutomaTech
 			GUser.setDefaultBandId (0);
 			GUser.setAccessLevel (1);
 			//Should be from Facebook, but is not necessary
-			GUser.setUserName ("John Smith");
+			GUser.setUserName ("TesterMan");
 			GUser.setManagerId (120195718336160);
 		}
 
@@ -75,9 +84,11 @@ namespace AutomaTech
 
 		public void OnSuccess (Java.Lang.Object result)
 		{
+			
 			bool found = false;
 			LoginResult loginResult = result as LoginResult; 
 			Console.WriteLine(loginResult.AccessToken.UserId); //Token is the Unique Key for UserFacebooks
+		
 			long facebookId = Int64.Parse(loginResult.AccessToken.UserId);
 			GUser.setUserId(facebookId);
 		
@@ -165,11 +176,14 @@ namespace AutomaTech
 		public event EventHandler<OnProfileChangedEventArgs> mOnProfileChanged;
 		protected override void OnCurrentProfileChanged(Profile oldProfile, Profile newProfile)
 		{
+			
 			if (mOnProfileChanged != null) 
 			{
+				
 				mOnProfileChanged.Invoke (this, new OnProfileChangedEventArgs (newProfile));
 			}
 		}
+
 	}
 
 	public class OnProfileChangedEventArgs : EventArgs

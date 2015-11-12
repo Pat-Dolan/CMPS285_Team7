@@ -35,6 +35,9 @@ namespace AutomaTech
 			//Adding components
 
 			newBand = FindViewById<Button> (Resource.Id.btnNewBand);
+			//if user is a member, remove the new band button
+			if (GBand.getAccessLevel() == 0)
+				newBand.Visibility = ViewStates.Gone;
 			newBand.Click += NewBand_Click;
 			//Test if any bands managed
 
@@ -72,9 +75,11 @@ namespace AutomaTech
 							int bandVisible = (int)reader ["visible"];
 							//for cancel	
 							if ((bandVisible == 1) && (bandManager == GBand.getManagerId())) {
-								//if (bandId == GBand.getDefaultBandId ())
-								//	bandName += " DEFAULT";
-								nBands.Add(new Band(bandId, bandName, bandManager, bandVisible));
+								if(GBand.getAccessLevel() == 1)
+									nBands.Add(new Band(bandId, bandName, bandManager, bandVisible));
+								//if the user is a member, display only default band
+								else if(bandId == GBand.getDefaultBandId())
+									nBands.Add(new Band(bandId, bandName, bandManager, bandVisible));
 							}
 							nCount++;
 						}

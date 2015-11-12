@@ -33,8 +33,16 @@ namespace AutomaTech
 			nUpdate = FindViewById<Button> (Resource.Id.btnUpdateEvent);
 			nUpdate.Click += NUpdate_Click;
 
+			//if a member, hide the update event button
+			//if(GEventID.getAccessLevel() == 0)
+			//nUpdate.Visibility = ViewStates.Gone;
+
 			nCancel = FindViewById<Button> (Resource.Id.btnRemoveEvent);
 			nCancel.Click += NCancel_Click;
+
+			//if a member, hide the cancel event button
+			//if(GEventID.getAccessLevel() == 0)
+			//nCancel.Visibility = ViewStates.Gone;
 
 			nBack = FindViewById<Button> (Resource.Id.btnSelectBack);
 			nBack.Click += NBack_Click;

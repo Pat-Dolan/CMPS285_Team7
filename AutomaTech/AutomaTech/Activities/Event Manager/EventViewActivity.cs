@@ -80,7 +80,8 @@ namespace AutomaTech
 			};
 
 			Intent intent = service.GetShareUI (this, item, shareResult => {
-				shareButton.Text = "Done!";
+				string tweetResult = "Tweet Successful";
+				Toast.MakeText(this, tweetResult, ToastLength.Short).Show();
 			});
 
 			StartActivity (intent);
@@ -164,7 +165,10 @@ namespace AutomaTech
 		}
 		void NBack_Click (object sender, EventArgs e)
 		{
-			StartActivity(typeof(EventSelectActivity));
+			if (GEventID.getAccessLevel () == 1)
+				StartActivity (typeof(EventSelectActivity));
+			else
+				StartActivity (typeof(EventMainActivity));
 		}
 
 

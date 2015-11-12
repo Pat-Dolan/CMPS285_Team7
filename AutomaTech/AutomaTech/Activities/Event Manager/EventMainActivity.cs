@@ -34,6 +34,10 @@ namespace AutomaTech
 			firstEventbtn = FindViewById<Button> (Resource.Id.btnFirstEvent);
 			firstEventbtn.Click += FirstEventbtn_Click;
 
+			//if user is a member, hide the new event button
+			if(GEventID.getAccessLevel() == 0)
+			firstEventbtn.Visibility = ViewStates.Gone;
+
 			Button back = FindViewById<Button> (Resource.Id.btnEventMainBack);
 			back.Click += Back_Click;
 
@@ -95,8 +99,10 @@ namespace AutomaTech
 		void NEventListView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)
 		{
 			GEventID.setEventId(nEvents[e.Position].eventId);
-
-			StartActivity (typeof(EventSelectActivity));
+			if (GEventID.getAccessLevel () == 1)
+				StartActivity (typeof(EventSelectActivity));
+			else
+				StartActivity (typeof(EventViewActivity));
 		}
 
 		void FirstEventbtn_Click (object sender, EventArgs e)
