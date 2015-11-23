@@ -28,6 +28,7 @@ namespace AutomaTech
 		int nCount;
 
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -37,6 +38,13 @@ namespace AutomaTech
 			//Setting layout
 			SetContentView (Resource.Layout.LoginLayout);
 
+			Button faceBookButton = FindViewById<Button>(Resource.Id.button);
+
+			if (AccessToken.CurrentAccessToken != null){
+				//The user is logged in through facebook
+				faceBookButton.Text = "Log Out";
+			}
+	
 			mProfileTracker = new myProfileTracker ();
 
 			mProfileTracker.mOnProfileChanged += MProfileTracker_mOnProfileChanged;
@@ -44,14 +52,32 @@ namespace AutomaTech
 			mProfileTracker.StartTracking ();
 
 			LoginButton button = FindViewById<LoginButton> (Resource.Id.login_button);
+
 			Button tempLogin = FindViewById<Button> (Resource.Id.tempLogin);
+
 			tempLogin.Click += TempLogin_Click;
 
-
-
-			button.SetReadPermissions ("user_friends");
 			mCallBackManager = CallbackManagerFactory.Create ();
-			button.RegisterCallback (mCallBackManager, this);
+
+			LoginManager.Instance.RegisterCallback(mCallBackManager,this);
+
+			faceBookButton.Click += (o, e) =>
+			{
+				if (AccessToken.CurrentAccessToken != null)
+				{
+					//The user is logged in through facebook
+					LoginManager.Instance.LogOut();
+					faceBookButton.Text = "Login to TourPlus+";
+				}
+
+				else
+				{
+					//The user is not logged in
+					LoginManager.Instance.LogInWithReadPermissions(this, new List<string> {"public_profile", "user_friends"});
+				}
+					
+			};
+
 		}
 
 		void MProfileTracker_mOnProfileChanged (object sender, OnProfileChangedEventArgs e)
