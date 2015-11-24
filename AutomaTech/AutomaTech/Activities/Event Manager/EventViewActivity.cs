@@ -17,6 +17,10 @@ using Xamarin.Social;
 using Xamarin.Social.Services;
 using Xamarin.Auth;
 using Xamarin.Media;
+using Xamarin.Facebook.Share.Widget;
+using Xamarin.Facebook.Share;
+using Xamarin.Facebook;
+using Xamarin.Facebook.Share.Model;
 
 namespace AutomaTech
 {
@@ -26,6 +30,8 @@ namespace AutomaTech
 	{
 		private static TwitterService mTwitter;
 
+		private ShareButton mBtnShared; 
+
 		GlobalVariables GEventID = GlobalVariables.getInstance();
 		private TextView nTitle;
 		private TextView nLocation;
@@ -33,21 +39,28 @@ namespace AutomaTech
 		private TextView nTime;
 		private Button nBack;
 		string conString = string.Format("Server=104.225.129.25;Database=f15-s1-t7;User Id=s1-team7;Password=!@QWaszx;Integrated Security=False");
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+
 			SetContentView(Resource.Layout.EventViewLayout);
+
+
 			nTitle = FindViewById<TextView> (Resource.Id.txtTitle);
 			nLocation = FindViewById<TextView> (Resource.Id.txtLocation);
 			nDate = FindViewById<TextView> (Resource.Id.txtDate);
 			nTime = FindViewById<TextView> (Resource.Id.txtTime);
 
+
+			mBtnShared = FindViewById<ShareButton> (Resource.Id.btnShare);
 			nBack = FindViewById<Button> (Resource.Id.btnViewBack);
 			nBack.Click += NBack_Click;
 
 			SetFields (GEventID.getEventId());
 
 			Button twitter = FindViewById<Button> (Resource.Id.TwitterShare);
+
 			twitter.Click += (object sender, EventArgs e) => {
 				try {
 					Sharing (Twitter, twitter);
@@ -55,6 +68,11 @@ namespace AutomaTech
 					ShowMessage ("Twitter: " + ex.Message);
 				}
 			};
+
+			ShareLinkContent content = new ShareLinkContent.Builder ().Build ();
+
+			mBtnShared.ShareContent = content;
+
 		}
 
 		public static TwitterService Twitter

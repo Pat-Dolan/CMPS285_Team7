@@ -94,4 +94,10 @@
         p1:background="@drawable/buttonstyle"
         p1:layout_marginLeft="73dp"
         p1:layout_marginBottom="15dp" />
+    <com.facebook.share.widget.ShareButton
+        p1:id="@+id/btnShare"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_gravity="center_horizontal"
+        p1:layout_below="@id/TwitterShare" />
 </RelativeLayout>

@@ -3,10 +3,15 @@
 	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19" />
 	<application android:label="TourPlus+">
 		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+		<activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" />
+
+		<provider android:authorities="com.facebook.app.FacebookContentProvider1678466092385983"
+				   android:name="com.facebook.FacebookContentProvider"
+				   android:exported="true"/>	
+				   			
 		<!--Facebook Necessary API's-->
 		<uses-permission android:name="android.permission.INTERNET" />
 		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-		<activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" />
 	</application>
 	<uses-permission android:name="android.permission.INTERNET" />
 </manifest>
