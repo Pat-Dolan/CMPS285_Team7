@@ -9,12 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:id="@+id/txtEventTitle"
-        android:layout_weight="50"
-        android:textSize="40sp" />
+        android:layout_weight="50" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:id="@+id/txtEventDate"
-        android:layout_weight="50"
-        android:textSize="40sp" />
+        android:layout_weight="50" />
 </LinearLayout>

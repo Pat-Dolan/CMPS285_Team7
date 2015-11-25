@@ -3,44 +3,30 @@
     p1:orientation="vertical"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
-    p1:id="@+id/linearLayout1"
-    p1:background="#ff353432">
+    p1:id="@+id/linearLayout1">
     <TextView
         p1:text="Band Name: "
         p1:textAppearance="?android:attr/textAppearanceLarge"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/textView1"
-        p1:layout_marginLeft="30dp"
-        p1:layout_marginTop="15dp"
-        p1:layout_marginRight="30dp"
-        p1:layout_marginBottom="15dp" />
+        p1:id="@+id/textView1" />
     <TextView
         p1:text="Example"
         p1:layout_width="match_parent"
         p1:layout_height="25.2dp"
-        p1:id="@+id/txtBandViewName"
-        p1:layout_marginLeft="30dp"
-        p1:layout_marginRight="30dp"
-        p1:layout_marginBottom="15dp" />
+        p1:id="@+id/txtBandViewName" />
     <TextView
         p1:text="Members: "
         p1:textAppearance="?android:attr/textAppearanceLarge"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/textView2"
-        p1:layout_marginLeft="30dp"
-        p1:layout_marginRight="30dp"
-        p1:layout_marginBottom="15dp" />
+        p1:id="@+id/textView2" />
     <ListView
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:layout_width="match_parent"
         p1:layout_height="194.2dp"
-        p1:id="@+id/lvMember"
-        p1:layout_marginLeft="30dp"
-        p1:layout_marginRight="30dp"
-        p1:layout_marginBottom="15dp" />
+        p1:id="@+id/lvMember" />
     <Button
         p1:text="Event Manager"
         p1:layout_width="250dp"

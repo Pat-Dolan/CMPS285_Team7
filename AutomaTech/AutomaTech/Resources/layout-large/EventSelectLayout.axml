@@ -6,46 +6,42 @@
     p1:background="#ff353432">
     <Button
         p1:text="View"
-        p1:layout_width="500dp"
-        p1:layout_height="80dp"
+        p1:layout_width="375dp"
+        p1:layout_height="75dp"
         p1:id="@+id/btnViewEvent"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginLeft="73dp"
-        p1:layout_marginTop="30dp"
-        p1:layout_marginBottom="30dp"
-        p1:textSize="40sp" />
+        p1:layout_marginTop="25dp"
+        p1:layout_marginBottom="25dp"
+        p1:textSize="30sp" />
     <Button
         p1:text="Update"
-        p1:layout_width="500dp"
-        p1:layout_height="80dp"
+        p1:layout_width="375dp"
+        p1:layout_height="75dp"
         p1:layout_below="@id/btnViewEvent"
         p1:id="@+id/btnUpdateEvent"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginLeft="73dp"
-        p1:layout_marginBottom="30dp"
-        p1:textSize="40sp" />
+        p1:layout_marginBottom="25dp"
+        p1:textSize="30sp" />
     <Button
         p1:text="Cancel"
-        p1:layout_width="500dp"
-        p1:layout_height="80dp"
+        p1:layout_width="375dp"
+        p1:layout_height="75dp"
         p1:layout_below="@id/btnUpdateEvent"
         p1:id="@+id/btnRemoveEvent"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginLeft="73dp"
-        p1:layout_marginBottom="30dp"
-        p1:textSize="40sp" />
+        p1:layout_marginBottom="25dp"
+        p1:textSize="30sp" />
     <Button
         p1:text="Back"
-        p1:layout_width="500dp"
-        p1:layout_height="80dp"
+        p1:layout_width="375dp"
+        p1:layout_height="75dp"
         p1:layout_below="@id/btnRemoveEvent"
         p1:id="@+id/btnSelectBack"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
-        p1:layout_marginLeft="73dp"
-        p1:layout_marginBottom="30dp"
-        p1:textSize="40sp" />
+        p1:layout_marginBottom="25dp"
+        p1:textSize="30sp" />
 </RelativeLayout>

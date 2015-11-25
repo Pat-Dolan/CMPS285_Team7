@@ -10,19 +10,20 @@
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:id="@+id/textView1"
-        p1:layout_marginLeft="60dp"
-        p1:layout_marginTop="30dp"
-        p1:layout_marginBottom="15dp"
-        p1:textSize="40sp" />
+        p1:layout_marginLeft="35dp"
+        p1:layout_marginTop="25dp"
+        p1:layout_marginBottom="5dp"
+        p1:layout_centerHorizontal="false"
+        p1:textSize="30sp" />
     <TextView
         p1:layout_width="match_parent"
-        p1:layout_height="60dp"
+        p1:layout_height="30dp"
         p1:layout_below="@id/textView1"
         p1:id="@+id/txtTitle"
-        p1:layout_marginLeft="60dp"
-        p1:layout_marginRight="60dp"
-        p1:layout_marginBottom="15dp"
-        p1:textSize="40sp" />
+        p1:layout_marginLeft="35dp"
+        p1:layout_marginRight="35dp"
+        p1:textSize="30sp"
+        p1:layout_marginBottom="5dp" />
     <TextView
         p1:text=" Location:"
         p1:textAppearance="?android:attr/textAppearanceMedium"
@@ -30,19 +31,18 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@id/txtTitle"
         p1:id="@+id/textView2"
-        p1:layout_marginLeft="60dp"
-        p1:layout_marginBottom="15dp"
-        p1:textSize="40sp"
-        p1:layout_marginRight="60dp" />
+        p1:layout_marginLeft="35dp"
+        p1:textSize="30sp"
+        p1:layout_marginBottom="5dp" />
     <TextView
         p1:layout_width="match_parent"
-        p1:layout_height="60dp"
+        p1:layout_height="30dp"
         p1:layout_below="@id/textView2"
         p1:id="@+id/txtLocation"
-        p1:layout_marginLeft="60dp"
-        p1:layout_marginRight="60dp"
-        p1:layout_marginBottom="15dp"
-        p1:textSize="40sp" />
+        p1:layout_marginLeft="35dp"
+        p1:textSize="30sp"
+        p1:layout_marginRight="35dp"
+        p1:layout_marginBottom="5dp" />
     <TextView
         p1:text=" Date:"
         p1:textAppearance="?android:attr/textAppearanceMedium"
@@ -50,19 +50,19 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@id/txtLocation"
         p1:id="@+id/textView3"
-        p1:layout_marginLeft="60dp"
-        p1:layout_marginRight="60dp"
-        p1:layout_marginBottom="15dp"
-        p1:textSize="40sp" />
+        p1:layout_marginLeft="35dp"
+        p1:layout_marginRight="25dp"
+        p1:textSize="30sp"
+        p1:layout_marginBottom="5dp" />
     <TextView
         p1:layout_width="match_parent"
-        p1:layout_height="60dp"
+        p1:layout_height="30dp"
         p1:layout_below="@id/textView3"
         p1:id="@+id/txtDate"
-        p1:layout_marginLeft="60dp"
-        p1:layout_marginRight="60dp"
-        p1:layout_marginBottom="15dp"
-        p1:textSize="40sp" />
+        p1:layout_marginLeft="35dp"
+        p1:layout_marginRight="35dp"
+        p1:textSize="30sp"
+        p1:layout_marginBottom="5dp" />
     <TextView
         p1:text=" Time: "
         p1:textAppearance="?android:attr/textAppearanceMedium"
@@ -70,41 +70,41 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@id/txtDate"
         p1:id="@+id/textView4"
-        p1:layout_marginLeft="60dp"
-        p1:layout_marginRight="60dp"
-        p1:layout_marginBottom="15dp"
-        p1:textSize="40sp" />
+        p1:layout_marginLeft="35dp"
+        p1:layout_marginRight="25dp"
+        p1:textSize="30sp"
+        p1:layout_marginBottom="5dp" />
     <TextView
         p1:layout_width="match_parent"
-        p1:layout_height="60dp"
+        p1:layout_height="30dp"
         p1:layout_below="@id/textView4"
         p1:id="@+id/txtTime"
-        p1:layout_marginLeft="60dp"
-        p1:layout_marginRight="60dp"
-        p1:layout_marginBottom="30dp"
-        p1:textSize="40sp" />
+        p1:layout_marginLeft="35dp"
+        p1:layout_marginRight="35dp"
+        p1:textSize="30sp"
+        p1:layout_marginBottom="15dp" />
     <Button
         p1:text="Back"
-        p1:layout_width="500dp"
-        p1:layout_height="80dp"
+        p1:layout_width="375dp"
+        p1:layout_height="75dp"
         p1:layout_below="@id/txtTime"
         p1:id="@+id/btnViewBack"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
         p1:layout_marginLeft="73dp"
-        p1:layout_marginBottom="30dp"
-        p1:textSize="40sp" />
+        p1:textSize="30sp"
+        p1:layout_marginBottom="25dp" />
     <Button
         p1:text="Share to Twitter"
-        p1:layout_width="500dp"
-        p1:layout_height="80dp"
+        p1:layout_width="375dp"
+        p1:layout_height="75dp"
         p1:layout_below="@id/btnViewBack"
         p1:id="@+id/TwitterShare"
         p1:layout_centerHorizontal="true"
         p1:background="@drawable/buttonstyle"
         p1:layout_marginLeft="73dp"
-        p1:layout_marginBottom="30dp"
-        p1:textSize="40sp" />
+        p1:textSize="30sp"
+        p1:layout_marginBottom="25dp" />
     <Button
         p1:text="Get Directions"
         p1:layout_width="375dp"

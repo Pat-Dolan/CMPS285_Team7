@@ -1,79 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:minWidth="25px"
-    android:minHeight="25px"
+    android:weightSum="100"
     android:background="#ff353432">
-    <TextView
-        android:text="Band Manager"
-        android:textSize="40sp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_centerHorizontal="true" />
     <Button
         android:text="Manage a New Band"
-        android:textSize="40sp"
         android:layout_width="500dp"
-        android:layout_height="100dp"
         android:id="@+id/btnNewBand"
+        android:layout_weight="10"
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="150dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:layout_height="1dp"
         android:layout_marginRight="150dp"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true" />
-    <Button
-        android:text="Update Band Information"
+        android:layout_marginBottom="30dp" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvBand"
+        android:layout_weight="80"
+        android:background="#ff353432"
         android:textSize="40sp"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:id="@+id/btnUpdateBand"
-        android:background="@drawable/buttonstyle"
-        android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp"
-        android:visibility="gone"
-        android:layout_below="@+id/btnNewBand" />
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="30dp" />
     <Button
-        android:text="View Band"
-        android:textSize="40sp"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:id="@+id/btnGetBands"
-        android:background="@drawable/buttonstyle"
-        android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp"
-        android:visibility="gone"
-        android:layout_below="@+id/btnUpdateBand" />
-    <Button
-        android:text="Delete Band"
-        android:textSize="40sp"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:id="@+id/btnRemoveBand"
-        android:background="@drawable/buttonstyle"
-        android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="15dp"
-        android:visibility="gone"
-        android:layout_below="@+id/btnGetBands" />
-    <Button
-        android:text="Back To Home Page"
-        android:textSize="40sp"
+        android:text="Back"
         android:layout_width="500dp"
-        android:layout_height="100dp"
-        android:id="@+id/homeFromBand"
+        android:layout_height="2dp"
+        android:id="@+id/btnBandMainBack"
+        android:layout_weight="10"
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="150dp"
+        android:textSize="40sp"
         android:layout_marginRight="150dp"
-        android:layout_marginBottom="30dp"
-        android:layout_below="@+id/btnRemoveBand"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+        android:layout_marginBottom="30dp" />
+</LinearLayout>

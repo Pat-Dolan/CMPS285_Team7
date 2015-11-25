@@ -7,28 +7,31 @@
     <TextView
         android:text="Text"
         android:layout_width="match_parent"
-        android:layout_height="38.2dp"
+        android:layout_height="60dp"
         android:id="@+id/txtMemberViewName"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="15dp" />
+        android:textSize="40sp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="30dp" />
     <Button
         android:text="Remove"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
         android:background="@drawable/buttonstyle"
         android:id="@+id/btnMemberRemove"
-        android:layout_marginLeft="67dp"
-        android:layout_marginRight="67dp"
-        android:layout_marginBottom="15dp" />
+        android:textSize="40sp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="30dp" />
     <Button
         android:text="Back"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
         android:background="@drawable/buttonstyle"
         android:id="@+id/btnMemberViewBack"
-        android:layout_marginLeft="67dp"
-        android:layout_marginRight="67dp"
+        android:textSize="40sp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
         android:layout_marginBottom="30dp" />
 </LinearLayout>

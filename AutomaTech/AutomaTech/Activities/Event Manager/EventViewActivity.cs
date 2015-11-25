@@ -17,6 +17,11 @@ using Xamarin.Social;
 using Xamarin.Social.Services;
 using Xamarin.Auth;
 using Xamarin.Media;
+using Xamarin.Facebook.Share.Widget;
+using Xamarin.Facebook.Share;
+using Xamarin.Facebook;
+using Xamarin.Facebook.Share.Model;
+
 
 namespace AutomaTech
 {
@@ -25,6 +30,7 @@ namespace AutomaTech
 
 	{
 		private static TwitterService mTwitter;
+		private ShareButton mBtnShared; 
 
 		GlobalVariables GEventID = GlobalVariables.getInstance();
 		private TextView nTitle;
@@ -42,8 +48,12 @@ namespace AutomaTech
 			nDate = FindViewById<TextView> (Resource.Id.txtDate);
 			nTime = FindViewById<TextView> (Resource.Id.txtTime);
 
+			mBtnShared = FindViewById<ShareButton> (Resource.Id.btnShare);
 			nBack = FindViewById<Button> (Resource.Id.btnViewBack);
 			nBack.Click += NBack_Click;
+
+			Button getDirections = FindViewById<Button> (Resource.Id.btnDirections);
+			getDirections.Click += GetDirections_Click;
 
 			SetFields (GEventID.getEventId());
 
@@ -55,6 +65,12 @@ namespace AutomaTech
 					ShowMessage ("Twitter: " + ex.Message);
 				}
 			};
+
+			ShareLinkContent content = new ShareLinkContent.Builder ()
+				.Build ();
+			
+			mBtnShared.ShareContent = content;
+
 		}
 
 		public static TwitterService Twitter
@@ -162,6 +178,13 @@ namespace AutomaTech
 			{
 				ShowMessage(" " + ex.Message);
 			}
+		}
+		void GetDirections_Click (object sender, EventArgs e)
+		{
+			Intent intent = new Intent (Intent.ActionView, Android.Net.Uri.Parse("geo:0,0?q=" + nLocation.Text.TrimEnd()));
+			intent.SetClassName("com.google.android.apps.maps","com.google.android.maps.MapsActivity");
+			intent.AddFlags(ActivityFlags.NewTask);
+			Application.Context.StartActivity(intent);
 		}
 		void NBack_Click (object sender, EventArgs e)
 		{

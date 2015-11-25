@@ -8,26 +8,22 @@
     android:background="#ff353432">
     <TextView
         android:text="Tour Manager"
-        android:textSize="40sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp" />
     <TextView
-        android:text="Under Construction!"
-        android:textSize="40sp"
+        android:text="Under Construction!!!"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
         android:id="@+id/textView2"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:layout_marginBottom="30dp"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginBottom="15dp" />
 </RelativeLayout>

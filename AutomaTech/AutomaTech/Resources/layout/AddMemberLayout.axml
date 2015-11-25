@@ -2,35 +2,52 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#ff353432">
     <TextView
         android:text="Members: "
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
+        android:id="@+id/textView1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="174.9dp"
-        android:id="@+id/lvAddMember" />
+        android:layout_height="250dp"
+        android:id="@+id/lvAddMember"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp" />
     <Button
         android:text="Add New Member"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnNewMember" />
+        android:id="@+id/btnNewMember"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="15dp" />
     <Button
         android:text="Finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnFinishCreation" />
+        android:id="@+id/btnFinishCreation"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="15dp" />
     <Button
         android:text="Back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnNewMemberBack" />
+        android:id="@+id/btnNewMemberBack"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="15dp" />
 </LinearLayout>

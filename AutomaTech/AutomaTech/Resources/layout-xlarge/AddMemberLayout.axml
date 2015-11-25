@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff353432">
+    <TextView
+        android:text="Members: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/lvAddMember"
+        android:textSize="40sp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="30dp" />
+    <Button
+        android:text="Add New Member"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
+        android:background="@drawable/buttonstyle"
+        android:id="@+id/btnNewMember"
+        android:textSize="40sp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="30dp" />
+    <Button
+        android:text="Finish"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
+        android:background="@drawable/buttonstyle"
+        android:id="@+id/btnFinishCreation"
+        android:textSize="40sp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="30dp" />
+    <Button
+        android:text="Back"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
+        android:background="@drawable/buttonstyle"
+        android:id="@+id/btnNewMemberBack"
+        android:textSize="40sp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="30dp" />
+</LinearLayout>

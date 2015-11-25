@@ -5,6 +5,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Xamarin.Facebook;
+using Xamarin.Facebook.Login;
+using Xamarin.Facebook.Login.Widget;
+
 
 namespace AutomaTech
 {
@@ -36,6 +40,8 @@ namespace AutomaTech
 			//Test components
 			Button logoutScreen = FindViewById<Button> (Resource.Id.btnLogoutScreen);
 			logoutScreen.Click += LogoutScreen_Click;
+
+
 		}
 
 		//For all events: Starting corresponding activity

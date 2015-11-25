@@ -59,7 +59,7 @@ namespace AutomaTech
 			//mProfileTracker.mOnProfileChanged += mProfileTracker_mOnProfileChanged;
 
 			mTxtFirstName = FindViewById<TextView> (Resource.Id.txtFirstName);
-			Button loadAccount = FindViewById<Button>(Resource.Id.btnLoadAccount);
+			//Button loadAccount = FindViewById<Button>(Resource.Id.btnLoadAccount);
 
 			//loadAccount.Click += LoadAccount_Click;
 			
@@ -94,11 +94,11 @@ namespace AutomaTech
 			var result = dbr.GetAccount();
 			Toast.MakeText (this, result, ToastLength.Short).Show ();
 
-			EditText ID = FindViewById<EditText> (Resource.Id.txtGetId);
+			//EditText ID = FindViewById<EditText> (Resource.Id.txtGetId);
 			//ID.SetText = dbr.GetAccount(UGHHHHH)
-			EditText user = FindViewById<EditText> (Resource.Id.txtGetUsername);
-			EditText pass = FindViewById<EditText> (Resource.Id.txtGetPassword);
-			EditText access = FindViewById<EditText> (Resource.Id.txtGetAccess);
+			//EditText user = FindViewById<EditText> (Resource.Id.txtGetUsername);
+			//EditText pass = FindViewById<EditText> (Resource.Id.txtGetPassword);
+			//EditText access = FindViewById<EditText> (Resource.Id.txtGetAccess);
 		}
 		void HomeFromAccount_Click (object sender, EventArgs e)
 		{

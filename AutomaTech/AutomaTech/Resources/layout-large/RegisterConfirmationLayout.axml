@@ -10,30 +10,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
-        android:layout_marginLeft="25dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="15dp" />
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:textSize="30sp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:id="@+id/txtEConfirm"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="25dp"
         android:background="#ff726e6a"
         android:paddingTop="15dp"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp" />
+        android:layout_marginLeft="35dp"
+        android:textSize="30sp"
+        android:layout_marginRight="35dp" />
     <Button
         android:text="Submit"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
         android:layout_below="@+id/txtEConfirm"
         android:id="@+id/btnConfirmCode"
         android:background="@drawable/buttonstyle"
         android:layout_marginLeft="73dp"
         android:layout_marginRight="75dp"
+        android:textSize="30sp"
         android:layout_marginBottom="15dp" />
     <Button
         android:text="Edit Registration Information"

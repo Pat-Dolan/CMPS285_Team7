@@ -2,29 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#ff353432">
+    android:layout_height="fill_parent">
     <TextView
-        android:text="Enter Member's Name:"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtAddMember"
-        android:hint="ie: John Doe" />
+        android:layout_height="38.2dp"
+        android:id="@+id/txtMemberViewName" />
     <Button
-        android:text="Add Member"
+        android:text="Remove"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnNewMember" />
+        android:id="@+id/btnMemberRemove" />
     <Button
         android:text="Back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnNewMemberBack" />
+        android:id="@+id/btnMemberViewBack" />
 </LinearLayout>
