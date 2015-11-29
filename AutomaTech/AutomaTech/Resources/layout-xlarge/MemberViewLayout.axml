@@ -7,7 +7,7 @@
     <TextView
         android:text="Text"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:id="@+id/txtMemberViewName"
         android:textSize="40sp"
         android:layout_marginLeft="60dp"

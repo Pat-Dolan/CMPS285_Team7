@@ -40,9 +40,10 @@ namespace AutomaTech
 
 			Button faceBookButton = FindViewById<Button>(Resource.Id.button);
 
+
 			if (AccessToken.CurrentAccessToken != null){
 				//The user is logged in through facebook
-				faceBookButton.Text = "Log Out";
+				faceBookButton.Text = "Enter TourPlus+";
 			}
 	
 			mProfileTracker = new myProfileTracker ();
@@ -51,7 +52,7 @@ namespace AutomaTech
 
 			mProfileTracker.StartTracking ();
 
-			LoginButton button = FindViewById<LoginButton> (Resource.Id.login_button);
+			Button button = FindViewById<Button> (Resource.Id.button);
 
 			Button tempLogin = FindViewById<Button> (Resource.Id.tempLogin);
 
@@ -65,9 +66,14 @@ namespace AutomaTech
 			{
 				if (AccessToken.CurrentAccessToken != null)
 				{
+					bool found = false;
+					long facebookId = Int64.Parse(AccessToken.CurrentAccessToken.UserId);
+					GUser.setUserId(facebookId);
+
+					found = loadUser ();
 					//The user is logged in through facebook
-					LoginManager.Instance.LogOut();
-					faceBookButton.Text = "Login to TourPlus+";
+					StartActivity (typeof(MainActivity));
+
 				}
 
 				else

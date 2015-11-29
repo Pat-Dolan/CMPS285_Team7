@@ -15,7 +15,7 @@ using System.Data.SqlClient;
 
 namespace AutomaTech
 {
-	[Activity (Label = "NewMemberMainActivity")]			
+	[Activity (Label = "TourPlus+", Icon = "@drawable/Icon")]			
 	public class NewMemberMainActivity : Activity
 	{
 		GlobalVariables GMember = GlobalVariables.getInstance();

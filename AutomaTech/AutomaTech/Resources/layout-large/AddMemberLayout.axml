@@ -1,36 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#ff353432">
     <TextView
         android:text="Members: "
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
+        android:id="@+id/textView1"
+        android:layout_marginLeft="35dp"
+        android:textSize="30sp"
+        android:layout_marginTop="25dp" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="174.9dp"
-        android:id="@+id/lvAddMember" />
+        android:layout_below="@+id/textView1"
+        android:layout_height="525dp"
+        android:id="@+id/lvAddMember"
+        android:textSize="30sp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="15dp" />
     <Button
         android:text="Add New Member"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/lvAddMember"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnNewMember" />
+        android:id="@+id/btnNewMember"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
     <Button
         android:text="Finish"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/btnNewMember"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnFinishCreation" />
+        android:id="@+id/btnFinishCreation"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
     <Button
         android:text="Back"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/btnFinishCreation"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnNewMemberBack" />
-</LinearLayout>
+        android:id="@+id/btnNewMemberBack"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

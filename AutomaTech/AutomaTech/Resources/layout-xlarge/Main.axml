@@ -27,7 +27,8 @@
         android:layout_marginRight="75dp"
         android:layout_marginBottom="30dp"
         android:textSize="40sp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
     <Button
         android:text="Band Manager"
         android:layout_width="500dp"

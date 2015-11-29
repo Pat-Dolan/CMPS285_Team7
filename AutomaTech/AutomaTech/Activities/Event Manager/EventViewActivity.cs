@@ -21,6 +21,8 @@ using Xamarin.Facebook.Share.Widget;
 using Xamarin.Facebook.Share;
 using Xamarin.Facebook;
 using Xamarin.Facebook.Share.Model;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 
 namespace AutomaTech
@@ -70,7 +72,24 @@ namespace AutomaTech
 				.Build ();
 			
 			mBtnShared.ShareContent = content;
+			string tempTime = nTime.Text;
+			tempTime = tempTime.TrimEnd();
+			string dateString = nDate.Text.Trim () + " " + tempTime;
 
+			DateTime dt = Convert.ToDateTime (dateString);
+
+			//This is Trevor's Idiot idea of a calendar....
+			Button button = FindViewById<Button> (Resource.Id.btnUpdateCal);
+			button.Click += delegate {
+				Intent intentCalendar = new Intent (Intent.ActionEdit);
+				intentCalendar.SetType ("vnd.android.cursor.item/event");
+				intentCalendar.PutExtra ("beginTime", dt.Ticks);
+				intentCalendar.PutExtra ("allDay", false);
+				intentCalendar.PutExtra ("endTime", dt.Ticks);
+				intentCalendar.PutExtra ("title", nTitle.Text.Trim ());
+				intentCalendar.PutExtra ("eventLocation", nLocation.Text.Trim ());
+				StartActivity (intentCalendar);
+			};
 		}
 
 		public static TwitterService Twitter

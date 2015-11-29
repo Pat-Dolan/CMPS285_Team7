@@ -18,7 +18,7 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="275dp"
         android:id="@+id/lvAddMember"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
@@ -31,7 +31,7 @@
         android:id="@+id/btnNewMember"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="10dp" />
     <Button
         android:text="Finish"
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
         android:id="@+id/btnFinishCreation"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="10dp" />
     <Button
         android:text="Back"
         android:layout_width="match_parent"
@@ -49,5 +49,5 @@
         android:id="@+id/btnNewMemberBack"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="10dp" />
 </LinearLayout>

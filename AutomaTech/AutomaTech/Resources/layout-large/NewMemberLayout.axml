@@ -1,29 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#ff353432">
     <TextView
         android:text="Enter Member's Name:"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
+        android:textSize="30sp"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtAddMember"
-        android:hint="ie: John Doe" />
+        android:layout_below="@+id/textView1"
+        android:textSize="30sp"
+        android:hint="ie: John Doe"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="25dp" />
     <Button
         android:text="Add Member"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/txtAddMember"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnNewMember" />
+        android:textSize="30sp"
+        android:id="@+id/btnNewMember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
     <Button
         android:text="Back"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/btnNewMember"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnNewMemberBack" />
-</LinearLayout>
+        android:textSize="30sp"
+        android:id="@+id/btnNewMemberBack"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

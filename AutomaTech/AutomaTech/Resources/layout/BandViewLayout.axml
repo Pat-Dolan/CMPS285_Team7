@@ -18,7 +18,7 @@
     <TextView
         p1:text="Example"
         p1:layout_width="match_parent"
-        p1:layout_height="25.2dp"
+        p1:layout_height="wrap_content"
         p1:id="@+id/txtBandViewName"
         p1:layout_marginLeft="30dp"
         p1:layout_marginRight="30dp"
@@ -31,16 +31,16 @@
         p1:id="@+id/textView2"
         p1:layout_marginLeft="30dp"
         p1:layout_marginRight="30dp"
-        p1:layout_marginBottom="15dp" />
+        p1:layout_marginBottom="10dp" />
     <ListView
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:layout_width="match_parent"
-        p1:layout_height="194.2dp"
+        p1:layout_height="200dp"
         p1:id="@+id/lvMember"
         p1:layout_marginLeft="30dp"
         p1:layout_marginRight="30dp"
-        p1:layout_marginBottom="15dp" />
+        p1:layout_marginBottom="10dp" />
     <Button
         p1:text="Event Manager"
         p1:layout_width="250dp"

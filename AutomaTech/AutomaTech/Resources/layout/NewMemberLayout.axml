@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -9,22 +9,34 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
+        android:id="@+id/textView1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
         android:id="@+id/txtAddMember"
-        android:hint="ie: John Doe" />
+        android:hint="ie: John Doe"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp" />
     <Button
         android:text="Add Member"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtAddMember"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnNewMember" />
+        android:id="@+id/btnNewMember"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
     <Button
         android:text="Back"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnNewMember"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnNewMemberBack" />
-</LinearLayout>
+        android:id="@+id/btnNewMemberBack"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

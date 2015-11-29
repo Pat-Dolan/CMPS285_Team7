@@ -34,8 +34,8 @@
         android:layout_below="@+id/txtEConfirm"
         android:id="@+id/btnConfirmCode"
         android:background="@drawable/buttonstyle"
-        android:layout_marginLeft="73dp"
-        android:layout_marginRight="75dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginRight="112dp"
         android:textSize="30sp"
         android:layout_marginBottom="15dp" />
     <Button

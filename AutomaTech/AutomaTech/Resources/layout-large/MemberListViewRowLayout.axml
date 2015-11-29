@@ -5,11 +5,13 @@
     p1:minHeight="25px"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
-    p1:id="@+id/linearLayout1">
+    p1:id="@+id/linearLayout1"
+    p1:background="#ff353432">
     <TextView
         p1:layout_width="match_parent"
         p1:layout_height="52.3dp"
         p1:id="@+id/txtMemberName"
         p1:layout_marginBottom="8.3dp"
-        p1:layout_marginTop="12.5dp" />
+        p1:layout_marginTop="12.5dp"
+        p1:textSize="30sp" />
 </LinearLayout>

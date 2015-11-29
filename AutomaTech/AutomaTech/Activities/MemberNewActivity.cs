@@ -48,22 +48,74 @@ namespace AutomaTech
 
 		void AddMember_Click (object sender, EventArgs e)
 		{
-			using (SqlConnection connection = new SqlConnection(conString))
+			bool memberFound = false;
+			IDbConnection dbcon;
+			using (dbcon = new SqlConnection (conString)) 
 			{
+				dbcon.Open ();
+				using (IDbCommand dbcmd = dbcon.CreateCommand ()) 
+				{
+					string sqlGetTitle = " SELECT (userName), (access),(managerId), (visible), (defaultBandId)" +
+						" FROM userList  ";
+					dbcmd.CommandText = sqlGetTitle;
+					using (IDataReader reader = dbcmd.ExecuteReader ()) 
+					{
+						//nCount = 0;
+						while ((reader.Read ()) && (memberFound == false)) 
+						{
 
-				SqlCommand cmd = new SqlCommand("UPDATE userList SET managerId = @ManagerId, defaultBandId = @BandId, visible = @Visible WHERE userName = @Name ");
-				cmd.CommandType = CommandType.Text;
-				cmd.Connection = connection;
+							//long memberUserId = (long)reader ["userId"];
+							string memName = (string)reader ["userName"];
+							int access = (int)reader ["access"];
+							long memberManager = (long)reader ["managerId"];
+							int memberVisible = (int)reader ["visible"];
+							int defaultBandId = (int)reader ["defaultBandId"];
+							//int confirm = (int)reader ["confirmed"];
+							memName = memName.Trim ();
+							//Member determined by defaultBandId, determined by user if mutiple bands	
+							if ((memName == memberName.Text) && (access == 0)) 
+							{
+								//add member to band if found
+								using (SqlConnection connection = new SqlConnection (conString)) 
+								{
 
-				cmd.Parameters.AddWithValue ("@ManagerId", GMember.getUserId());
-				cmd.Parameters.AddWithValue("@BandId", GMember.getBandId());
-				cmd.Parameters.AddWithValue("@Name", memberName.Text);
-				cmd.Parameters.AddWithValue ("@Visible", 1);
+									SqlCommand cmd = new SqlCommand ("UPDATE userList SET managerId = @ManagerId, defaultBandId = @BandId, visible = @Visible WHERE userName = @Name ");
+										cmd.CommandType = CommandType.Text;
+										cmd.Connection = connection;
 
-				connection.Open();
-				cmd.ExecuteNonQuery();
-				connection.Close ();
+										cmd.Parameters.AddWithValue ("@ManagerId", GMember.getUserId ());
+										cmd.Parameters.AddWithValue ("@BandId", GMember.getBandId ());
+										cmd.Parameters.AddWithValue ("@Name", memberName.Text);
+										cmd.Parameters.AddWithValue ("@Visible", 1);
+
+										connection.Open ();
+										cmd.ExecuteNonQuery ();
+										connection.Close ();
+								}
+
+								memberFound = true;
+							}
+						}
+
+						reader.Close ();
+						dbcon.Close ();
+					}
+
+					//Display search result
+					if (memberFound == true) 
+					{
+						string result = memberName.Text + " was added";
+						Toast.MakeText (this, result, ToastLength.Short).Show ();
+					} 
+					else 
+					{
+						//report that the search was unsuccessful
+						string result = memberName.Text + " was not found";
+						Toast.MakeText (this, result, ToastLength.Short).Show ();
+					}
+				}
 			}
+
 			StartActivity (typeof(NewMemberMainActivity));
 		}
 			

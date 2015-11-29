@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#ff353432">
     <TextView
         android:text="Text"
         android:layout_width="match_parent"
-        android:layout_height="38.2dp"
-        android:id="@+id/txtMemberViewName" />
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMemberViewName"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="30sp" />
     <Button
         android:text="Remove"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnMemberRemove" />
+        android:id="@+id/btnMemberRemove"
+        android:layout_below="@+id/txtMemberViewName"
+        android:layout_marginBottom="15dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
     <Button
         android:text="Back"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
         android:background="@drawable/buttonstyle"
-        android:id="@+id/btnMemberViewBack" />
-</LinearLayout>
+        android:id="@+id/btnMemberViewBack"
+        android:layout_below="@+id/btnMemberRemove"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

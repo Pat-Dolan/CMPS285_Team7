@@ -16,6 +16,8 @@
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>AutomaTech</AssemblyName>
     <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,6 +53,15 @@
     </Reference>
     <Reference Include="Xamarin.Facebook">
       <HintPath>..\packages\Xamarin.Facebook.Android.4.6.0.0\lib\MonoAndroid403\Xamarin.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth.Android">
+      <HintPath>Components\xamarin.social-1.1.7\lib\android\Xamarin.Auth.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Mobile">
+      <HintPath>Components\xamarin.social-1.1.7\lib\android\Xamarin.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Social.Android">
+      <HintPath>Components\xamarin.social-1.1.7\lib\android\Xamarin.Social.Android.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -116,7 +127,6 @@
     <AndroidResource Include="Resources\layout\RegisterMainLayout.axml" />
     <AndroidResource Include="Resources\layout\RegisterConfirmationLayout.axml" />
     <AndroidResource Include="Resources\layout\RegisterFinalizeLayout.axml" />
-    <AndroidResource Include="Resources\layout\AccountMainLayout.axml" />
     <AndroidResource Include="Resources\layout\DBAccessLayout.axml" />
     <AndroidResource Include="Resources\layout\BandCreationLayout.axml" />
     <AndroidResource Include="Resources\drawable\ButtonStyle.xml" />
@@ -124,12 +134,20 @@
     <AndroidResource Include="Resources\layout\EventListViewRowLayout.axml" />
     <AndroidResource Include="Resources\layout\EventSelectLayout.axml" />
     <AndroidResource Include="Resources\layout\EventUpdateLayout.axml" />
-    <AndroidResource Include="Resources\layout\EventViewLayout.axml" />
     <AndroidResource Include="Resources\layout\EventMainLayout.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\layout\BandViewLayout.axml" />
+    <AndroidResource Include="Resources\layout\AddMemberLayout.axml" />
+    <AndroidResource Include="Resources\layout\MemberViewLayout.axml" />
+    <AndroidResource Include="Resources\layout\NewMemberLayout.axml" />
+    <AndroidResource Include="Resources\layout\AccountMainLayout.axml" />
+    <AndroidResource Include="Resources\layout\EventViewLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\AccountMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\AddMemberLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\BandCreationLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\BandListViewRowLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\BandMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\BandViewLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\DBAccessLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\EventCancelLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\EventListViewRowLayout.axml" />
@@ -139,35 +157,39 @@
     <AndroidResource Include="Resources\layout-xlarge\EventViewLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\LoginLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\Main.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\MemberListViewRowLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\MemberViewLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\MyAccountMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-xlarge\NewMemberLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\RegisterConfirmationLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\RegisterFinalizeLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\RegisterMainLayout.axml" />
     <AndroidResource Include="Resources\layout-xlarge\TourMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\AccountMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\BandCreationLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\BandListViewRowLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\BandMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\BandViewLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\DBAccessLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\EventCancelLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\EventListViewRowLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\EventMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\EventSelectLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\EventUpdateLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\EventViewLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\LoginLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\Main.axml" />
-    <AndroidResource Include="Resources\layout-small\MemberListViewRowLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\MyAccountMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\RegisterConfirmationLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\RegisterFinalizeLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\RegisterMainLayout.axml" />
-    <AndroidResource Include="Resources\layout-small\TourMainLayout.axml" />
-    <AndroidResource Include="Resources\layout\BandViewLayout.axml" />
-    <AndroidResource Include="Resources\layout\AddMemberLayout.axml" />
-    <AndroidResource Include="Resources\layout\MemberViewLayout.axml" />
-    <AndroidResource Include="Resources\layout\NewMemberLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\AccountMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\AddMemberLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\BandCreationLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\BandListViewRowLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\BandMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\BandViewLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\DBAccessLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\EventCancelLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\EventListViewRowLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\EventMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\EventSelectLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\EventUpdateLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\EventViewLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\LoginLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\Main.axml" />
+    <AndroidResource Include="Resources\layout-large\MemberListViewRowLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\MemberViewLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\MyAccountMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\NewMemberLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\RegisterConfirmationLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\RegisterFinalizeLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\RegisterMainLayout.axml" />
+    <AndroidResource Include="Resources\layout-large\TourMainLayout.axml" />
+    <AndroidResource Include="Resources\layout\MemberListViewRowLayout.axml" />
+    <AndroidResource Include="Resources\layout\BandListViewRowLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="packages\xamstore-xamarin.social.1.1.1\build\monoandroid\xamstore-xamarin.social.props" Condition="Exists('packages\xamstore-xamarin.social.1.1.1\build\monoandroid\xamstore-xamarin.social.props')" />
@@ -178,11 +200,15 @@
     <Folder Include="Activities\Event Manager\" />
     <Folder Include="Resources\values\" />
     <Folder Include="Resources\layout-xlarge\" />
-    <Folder Include="Resources\layout-small\" />
+    <Folder Include="Resources\layout-large\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="facebookandroid">
       <Version>4.5.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.social">
+      <Version>1.1.7</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

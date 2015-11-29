@@ -10,6 +10,9 @@ using Android.Views;
 using Android.Widget;
 using System.Data.SqlClient;
 using System.Data;
+using Android.Provider;
+using Java.Util;
+
 
 namespace AutomaTech
 {
@@ -33,6 +36,15 @@ namespace AutomaTech
 
 			accessM.Click += AccessM_Click;
 			accessA.Click += AccessA_Click;
+
+			// List Calendars
+			var calendarsUri = CalendarContract.Calendars.ContentUri;
+
+			string[] calendarsProjection = {
+				CalendarContract.Calendars.InterfaceConsts.Id,
+				CalendarContract.Calendars.InterfaceConsts.CalendarDisplayName,
+				CalendarContract.Calendars.InterfaceConsts.AccountName
+			};
 		
 			//Begins registration check
 			Button register = FindViewById<Button>(Resource.Id.btnRegister);

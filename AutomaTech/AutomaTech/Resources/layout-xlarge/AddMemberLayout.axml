@@ -19,7 +19,7 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="700dp"
         android:id="@+id/lvAddMember"
         android:textSize="40sp"
         android:layout_marginLeft="60dp"

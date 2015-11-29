@@ -15,7 +15,7 @@ using System.Data.SqlClient;
 
 namespace AutomaTech
 {
-	[Activity (Label = "BandViewActivity")]			
+	[Activity (Label = "TourPlus+", Icon = "@drawable/Icon")]			
 	public class BandViewActivity : Activity
 	{
 		GlobalVariables GMemberID = GlobalVariables.getInstance();

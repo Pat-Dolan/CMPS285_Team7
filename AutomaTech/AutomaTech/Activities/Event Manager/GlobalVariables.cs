@@ -19,7 +19,7 @@ namespace AutomaTech
 		private static string memberName;
 		private static int confirm;
 		private static string bandName;
-		private static int userTotal;
+		private static int userTotal; 
 
 		public void setUserTotal(int total)
 		{

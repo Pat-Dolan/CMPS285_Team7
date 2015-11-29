@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace AutomaTech
 {
-	[Activity (Label = "MemberViewActivity")]			
+	[Activity (Label = "TourPlus+", Icon = "@drawable/Icon")]			
 	public class MemberViewActivity : Activity
 	{
 		GlobalVariables GMember = GlobalVariables.getInstance();

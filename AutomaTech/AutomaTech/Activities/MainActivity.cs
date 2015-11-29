@@ -26,7 +26,8 @@ namespace AutomaTech
 			SetContentView (Resource.Layout.Main);
 
 			//Adding layout components
-
+			Button faceBookButton2 = FindViewById<Button>(Resource.Id.button2);
+			 
 
 			Button bandScreen = FindViewById<Button> (Resource.Id.btnBandScreen);
 			bandScreen.Click += BandScreen_Click;
@@ -37,11 +38,13 @@ namespace AutomaTech
 			Button myAccount = FindViewById<Button> (Resource.Id.btnAccount);
 			myAccount.Click += MyAccount_Click;
 
-			//Test components
-			Button logoutScreen = FindViewById<Button> (Resource.Id.btnLogoutScreen);
-			logoutScreen.Click += LogoutScreen_Click;
+			faceBookButton2.Click += (o, e) =>
+			{
+				//The user is logged in through facebook
+				LoginManager.Instance.LogOut();
+				StartActivity (typeof(LoginActivity));
 
-
+			};
 		}
 
 		//For all events: Starting corresponding activity

@@ -15,7 +15,7 @@ using System.Data;
 
 namespace AutomaTech
 {
-	[Activity (Label = "MemberRemoveActivity")]			
+	[Activity (Label = "TourPlus+", Icon = "@drawable/Icon")]			
 	public class MemberNewRemoveActivity : Activity
 	{
 		GlobalVariables GMember = GlobalVariables.getInstance();

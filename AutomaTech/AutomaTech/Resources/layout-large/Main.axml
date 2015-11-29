@@ -23,7 +23,8 @@
         android:background="@drawable/buttonstyle"
         android:layout_marginBottom="25dp"
         android:textSize="30sp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
     <Button
         android:text="Band Manager"
         android:layout_width="375dp"
@@ -35,14 +36,13 @@
         android:textSize="30sp"
         android:layout_centerHorizontal="true" />
     <Button
-        android:id="@+id/btnLogoutScreen"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btnBandScreen"
+        android:id="@+id/button2"
         android:text="Logout"
-        android:layout_marginBottom="25dp"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
         android:textSize="30sp"
-        android:background="@drawable/buttonstyle"
+        android:layout_below="@id/btnBandScreen"
+        android:background="@drawable/ButtonStyle"
         android:layout_centerHorizontal="true" />
     <Button
         android:text="Tour Manager"

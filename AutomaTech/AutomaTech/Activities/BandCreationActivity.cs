@@ -44,8 +44,16 @@ namespace AutomaTech
 		}
 		void NewBand_Click (object sender, EventArgs e)
 		{
-			GBand.setBandName (bandName.Text);
-			StartActivity (typeof(NewMemberMainActivity));
+			if (bandName.Text != "") 
+			{
+				GBand.setBandName (bandName.Text);
+				StartActivity (typeof(NewMemberMainActivity));
+			} 
+			else 
+			{
+				string tip = "Enter a Band Name to continue";
+				Toast.MakeText (this, tip, ToastLength.Short).Show ();
+			}
 		}
 	}
 }
